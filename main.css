@@ -1,16 +1,114 @@
 * {
+	margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+	font-family: "Roboto", sans-serif;
 }
 
-div {
+header {
+	background: #009688;
+	color: whitesmoke;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+	position: fixed; 
+	width: 100%;
+	letter-spacing: 0.1em;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	float: left;
+}
+li a {
+	text-decoration: none;
+	color: whitesmoke;
+  padding: 0 16px;
+	display: block;
+	line-height: 50px;
+}
+li a:hover {
+	background: #00796B;
+}
+li:first-child {
+	background: #00796B;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-right: solid #009688;
+	display: block;
+}
+.hide {
+	display: none;
+}
+.show {
+	transform: rotate(90deg);
+}
+
+section {
 	height: 100vh;
-	background: grey;
 }
-.colorSwitch {
-	background: lightgrey;
+
+#home {
+	background: url("img/html.jpg");
+	background-size: cover;
+	background-position: center;
 }
+#home div {
+	padding-top: 32vh;
+	height: inherit;
+	background: rgba(256, 256, 256, 0.6);
+}
+#home h1 {
+	font-size: 8vh;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color: #00796B;
+}
+#home h2 {
+	font-size: 4vh;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #009688;
+}
+
+#about {
+	background: ;
+}
+
+#skills {
+	background: #CFD8DC;
+}
+
+#creations {
+	background: ;
+}
+
+#contact {
+	background: #CFD8DC;
+	height: 90vh;
+}
+
+footer {
+	background: #009688;
+	text-align: center;
+	color: whitesmoke;
+	box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.23), 0 -3px 10px rgba(0, 0, 0, 0.16);
+	bottom: 0;
+	letter-spacing: 0.1em;
+}
+footer p {
+	line-height: 50px;
+}
+
+/* > 768px ! */
+@media only screen and (min-width: 768px) {
+	.hide {
+		display: block;
+	}
+	#burger {
+		display: none;
+	}
+}
+

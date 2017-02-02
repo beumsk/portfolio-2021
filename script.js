@@ -1,3 +1,3 @@
-$("div").on("click", function() {
-	$("div").toggleClass("colorSwitch");
+$("#burger").on("click", function() {
+	$(this).toggleClass("show");
 });
