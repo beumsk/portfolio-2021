@@ -11,10 +11,13 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 }
+
 #back {
 	background: rgba(256, 256, 256, 0.6);
 }
 
+
+/*header is the navigation bar*/
 header {
 	background: #009688;
 	color: whitesmoke;
@@ -24,63 +27,67 @@ header {
 	letter-spacing: 0.1em;
 	z-index: 10;
 }
+
 #menu li a {
 	display: block;
 }
+
 .hidden {
 	display: none;
 }
+
 #mainHeader {
 	background: #00796B;
 	font-weight: bold;
 	text-transform: uppercase;
-	/*border-right: solid #009688;*/
 }
+
+#mainHeader span {
+	padding-left: 10px;
+}
+
+#mainHeader img {
+	vertical-align: middle;
+	height: 40px;
+	padding-right: 10px;
+	border-right: solid whitesmoke 2px;
+}
+
 .extLinks {
 	float: left;
 }
+
 ul {
 	list-style-type: none;
 }
+
 #menu a, #mainHeader a {
 	text-decoration: none;
 	color: whitesmoke;
   padding: 0 16px;
 	line-height: 50px;
 }
+
 #menu a:hover {
 	background: #00796B;
 }
 
+
+/*Sections are the different menu links*/
 section {
 	min-height: 100vh;
 }
 
-#home {
-	
-}
-#home div {
-	padding-top: 32vh;
-	min-height: 100vh;
-}
-#home h1 {
-	font-size: 8vh;
-	text-align: center;
-	letter-spacing: 0.2em;
-	color: #00796B;
-}
-#home h2 {
-	font-size: 4vh;
-	text-align: center;
-	letter-spacing: 0.1em;
-	color: #009688;
-}
 
+/*General section behaviour*/
 #about h1, #skills h1, #creations h1, #contact h1 {
 	color: whitesmoke;
-	text-align: center;
+	text-align: right;
+	padding-right: 14px;
 	background: #212121;
 	line-height: 50px;
+	font-size: 40px;
+	letter-spacing: 0.1em;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
 }
 
@@ -89,21 +96,43 @@ section {
 	padding-top: 50px;
 }
 
-#about {
-	
+
+/*Home design*/
+#home div {
+	padding-top: 32vh;
+	min-height: 100vh;
 }
 
-#skills {
-	
+#home h1 {
+	font-size: 8vh;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color: #00796B;
 }
 
-#creations {
-	
+#home h2 {
+	font-size: 4vh;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #009688;
 }
 
+
+/*About design*/
+#about {}
+
+
+/*Skills design*/
+#skills {}
+
+
+/*Creatinos design*/
+#creations {}
+
+
+/*Contact design; contains footer*/
 #contact {
 	position: relative;
-	z-index: ;
 }
 
 footer {
@@ -116,31 +145,45 @@ footer {
 	bottom: 0;
 	letter-spacing: 0.1em;
 }
+
 footer p {
 	line-height: 50px;
 }
 
+footer img {
+	vertical-align: middle;
+	height: 20px;
+}
 
-/* > 768px ! */
+
+
+/* design over 768px ! */
 @media only screen and (min-width: 768px) {
 	#mainHeader {
 		float: left;
+		border-right: solid #009688;
 	}
+	
 	#menu {
 		display: block;
 	}
+	
 	.hidden {
 		display: block;
 	}
+	
 	.intLinks {
 		float: left;
 	}
+	
 	#burger, #cross {
 		display: none;
 	}
+	
 	.extLinks {
 		float: right;
 	}
+	
 	#titleHeader {
 		display: block;
 		background: #00796B;
