@@ -18,19 +18,22 @@
 
 <body>
 	<header>
-		<ul>
-			<li><a href="#">Remy Beumier</a></li>
-			<li><a href="#about" class="hide">About</a></li>
-			<li><a href="#skills" class="hide">Skills</a></li>
-			<li><a href="#creations" class="hide">Creations</a></li>
-			<li><a href="#contact" class="hide">Contact</a></li>
+		<div id="mainHeader">
+			<a id="titleHeader" href="#">Remy Beumier</a>
+			<a id="burger" style="float: right"><i class="fa fa-bars"></i></a>
+			<a id="cross" style="float: right"><i class="fa fa-times"></i></a>
+		</div>
+		
+		<ul id="menu">
+			<li><a href="#about" class="intLinks">About</a></li>
+			<li><a href="#skills" class="intLinks">Skills</a></li>
+			<li><a href="#creations" class="intLinks">Creations</a></li>
+			<li><a href="#contact" class="intLinks">Contact</a></li>
 			
-			<li style="float: right"><a href="http://codepen.io/beumsk/" target="_blank" class="hide"><i class="fa fa-codepen"></i></a></li>
-			<li style="float: right"><a href="https://twitter.com/beumsk" target="_blank" class="hide"><i class="fa fa-twitter"></i></a></li>
-			<li style="float: right"><a href="https://github.com/beumsk" target="_blank" class="hide"><i class="fa fa-github"></i></a></li>
-			<li style="float: right"><a href="https://www.linkedin.com/in/remybeumier/" target="_blank" class="hide"><i class="fa fa-linkedin"></i></a></li>
-			
-			<li style="float: right"><a><i id="burger" class="fa fa-bars"></i></a></li>
+			<li><a href="http://codepen.io/beumsk/" class="extLinks" target="_blank"><i class="fa fa-codepen"></i></a></li>
+			<li><a href="https://twitter.com/beumsk" class="extLinks" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://github.com/beumsk" class="extLinks" target="_blank"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/remybeumier/" class="extLinks" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 		</ul>
 	</header>
 	
@@ -42,24 +45,33 @@
 	</section>
 	
 	<section id="about">
-		
+		<div>
+			<h1>About</h1>
+		</div>
 	</section>
 	
 	<section id="skills">
-		
+		<div>
+			<h1>Skills</h1>
+		</div>
 	</section>
 	
 	<section id="creations">
-		
+		<div>
+			<h1>Creations</h1>
+		</div>
 	</section>
 	
 	<section id="contact">
-		
+		<div>
+			<h1>Contact</h1>
+		</div>
+		<footer>
+			<p>&copy; 2017 - Remy Beumier</p>
+		</footer>
 	</section>
 	
-	<footer>
-		<p>&copy; 2017 - Remy Beumier</p>
-	</footer>
+	
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--jQuery library; always before js files-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><!--IU jQuery for better animations-->
