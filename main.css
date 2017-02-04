@@ -117,6 +117,13 @@ section {
 	color: #009688;
 }
 
+#home img {
+	padding-top: 20px;
+	width: 20%;
+	margin: auto;
+	display: block;
+}
+
 
 /*About design*/
 #about {}
