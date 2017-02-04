@@ -20,7 +20,6 @@ body {
 /*header is the navigation bar*/
 header {
 	background: #009688;
-	color: whitesmoke;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
 	position: fixed; 
 	width: 100%;
@@ -92,14 +91,13 @@ section {
 }
 
 #about, #skills, #creations, #contact {
-	background: ;
 	padding-top: 50px;
 }
 
 
 /*Home design*/
 #home div {
-	padding-top: 32vh;
+	padding-top: 22vh;
 	min-height: 100vh;
 }
 
@@ -165,7 +163,7 @@ footer img {
 
 
 /* design over 768px ! */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width : 769px) {
 	#mainHeader {
 		float: left;
 		border-right: solid #009688;

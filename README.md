@@ -9,6 +9,6 @@ Sections -> home > skills > creations > contact
 
 ToDo:
 
--New Logo
--define layout
+-add scrolling animation
+-add content for sections
 -create effective/attractive images
