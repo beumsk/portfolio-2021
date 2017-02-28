@@ -1,12 +1,12 @@
 * {
 	margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  	padding: 0;
+  	box-sizing: border-box;
 }
 
 body {
 	font-family: "Roboto", sans-serif;
-	background: url("img/html.jpg");
+	background: url("img/office.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -126,18 +126,46 @@ section {
 /*About design*/
 #about {}
 
-
-/*Skills design*/
-#skills {}
+#about p {
+	margin: 20px 10px;
+}
 
 
 /*Creatinos design*/
-#creations {}
+#creations {
+	text-align: center;
+}
+
+#creations .creas {
+	width: 90%;
+	height: 25vh;
+	margin: 20px auto;
+	background: whitesmoke;
+}
 
 
 /*Contact design; contains footer*/
 #contact {
 	position: relative;
+	text-align: center;
+}
+
+#contact #contactForm {
+	width: 90%;
+	height: 25vh;
+	margin: 20px auto;
+	background: whitesmoke;
+}
+
+#contact #contactInfo {
+	width: 90%;
+	height: 25vh;
+	margin: 20px auto;
+	background: whitesmoke;
+}
+
+#contact #resume {
+	margin-top: 20px;
 }
 
 footer {
