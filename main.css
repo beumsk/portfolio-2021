@@ -141,11 +141,62 @@ section {
 	text-align: center;
 }
 
+#creations div div {
+	margin-top: 40px;
+}
+
+#creations #filter span{
+	background: #009688;
+	color: whitesmoke;
+	padding: 10px 10px;
+	border-radius: 5px;
+	margin: auto 0px;
+	transition: background 1s ease, box-shadow 1s ease;
+	display: inline-block;
+}
+
+#creations #filter span:hover {
+ 	background: #00796B;
+ 	cursor: pointer;
+ 	box-shadow: whitesmoke 0 2px;
+}
+
 #creations .creas {
-	width: 90%;
-	height: 25vh;
-	margin: 20px auto;
+	width: 100%;
+	margin: 10px 0;
 	background: whitesmoke;
+	display: block;
+}
+
+#creations figure {
+	position: relative;
+	max-width: 90%;
+	display: inline-block;
+}
+
+#creations figcaption {
+	position: absolute;
+	bottom: 20px;
+	margin: 10px 0;
+	text-align: center;
+	width: 100%;
+	background: rgba(256, 256, 256, 0.7);
+	line-height: 30px;
+}
+
+#creations #more span {
+	width: 90%;
+	background: #009688;
+	color: whitesmoke;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background 1s ease, box-shadow 1s ease;
+}
+
+#creations #more span:hover {
+ 	background: #00796B;
+ 	cursor: pointer;
+ 	box-shadow: whitesmoke 0 2px;
 }
 
 
@@ -231,11 +282,20 @@ footer img {
 		padding: 20px 40px;
 	}
 
-	#creations .creas {
-		width: 40%;
-		height: 40vh;
-		margin: 20px 20px;
+	#creations figure {
 		display: inline-block;
+		position: relative;
+		width: 40%;
+		margin: 20px auto;
+	}
+
+	#creations .creas {
+		margin: 10px 20px;
+		display: inline-block;
+	}
+
+	#creations figcaption {
+		margin: auto 10px;
 	}
 
 	#contact #contactForm {
@@ -255,9 +315,13 @@ footer img {
 
 @media only screen and (min-width: 1024px) {
 	#creations .creas {
-		width: 30%;
-		height: 30vh;
-		margin: 20px 10px;
+		margin: 10px 10px;
 		display: inline-block;
 	}
+	#creations figure {
+		display: inline-block;
+		position: relative;
+		width: 30%;
+	}
+
 }
