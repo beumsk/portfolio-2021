@@ -41,7 +41,8 @@ $("a[href^='#']").on("click", function() {
 
 
 // highlight current section
-$(document).on("scroll", function() {
+// highlight on hover does not work after scroll !!!
+/*$(document).on("scroll", function() {
 	if ($(document).scrollTop() < $("#about").offset().top) {
 		$(".intLinks").css("background", "#009688");
 	}
@@ -61,10 +62,7 @@ $(document).on("scroll", function() {
 		$(".intLinks").css("background", "#009688");
 		$("[href='#contact']").css("background", "#00796B");
 	}
-});
+});*/
 
 
-// highlight on hover does not work after scroll !!!
-$(".intLinks").hover(function() {
-	(this).css("background", "#00796B");
-});
+
