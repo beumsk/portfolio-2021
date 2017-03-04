@@ -36,10 +36,10 @@
 			<li><a href="#creations" class="intLinks">Creations</a></li>
 			<li><a href="#contact" class="intLinks">Contact</a></li>
 			
-			<li><a href="http://codepen.io/beumsk/" class="extLinks" target="_blank"><i class="fa fa-codepen"></i></a></li>
 			<li><a href="https://twitter.com/beumsk" class="extLinks" target="_blank"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="https://github.com/beumsk" class="extLinks" target="_blank"><i class="fa fa-github"></i></a></li>
 			<li><a href="https://www.linkedin.com/in/remybeumier/" class="extLinks" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://github.com/beumsk" class="extLinks" target="_blank"><i class="fa fa-github"></i></a></li>
+			<li><a href="http://codepen.io/beumsk/" class="extLinks" target="_blank"><i class="fa fa-codepen"></i></a></li>
 		</ul>
 	</header>
 	
@@ -142,17 +142,53 @@
 			<h1><i class="fa fa-vcard"></i> Contact</h1>
 			
 			<div>
-				<div id="contactForm">Contact form</div>
-				<div id="contactInfo">Info</div>
+				<div id="contactForm">
+					<form>
+						<div>
+							<label for="name">Name</label>
+							<input id="name" type="text" name="name" placeholder="Type your full name" required>
+						</div>
+						<div>
+							<label for="mail">Email</label>
+							<input id="mail" type="email" name="mail" placeholder="Type your email address" required>
+						</div>
+						<div>
+							<label for="message">Message</label>
+							<textarea id="message" type="text" name="message" rows="1" placeholder="Type your message" required></textarea>
+						</div>
+						<div>
+							<input id="button" type="submit" name="" value="Send">
+						</div>
+					</form>
+				</div>
+
+				<div id="contactInfo">
+					<img src="img/wam-poly-.jpg">
+					<h3>Remy Beumier</h3>
+					<p>Brussels, Belgium</p>
+					<p>remy.beumier@gmail.com</p>
+					<div>
+						<a href="http://codepen.io/beumsk/" target="_blank"><i class="fa fa-codepen"></i></a>
+						<a href="https://github.com/beumsk" target="_blank"><i class="fa fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/remybeumier/" target="_blank"><i class="fa fa-linkedin"></i></a>
+						<a href="https://twitter.com/beumsk" target="_blank"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
 			</div>
 
 			<p id="resume">Check my resume <a href="CV_Remy_Beumier_Web.pdf" target="_blank">online</a> or download it <a href="CV_Remy_Beumier_Web.pdf" target="_blank" download="">here</a>.</p>
+
+			<div id="footy"></div>
 		</div>
 		
-		<footer>
+		<!--<footer>
 			<p>&copy; 2017 - Remy Beumier - <img src="img/wam-lolo2.png"></p>
-		</footer>
+		</footer>-->
 	</section>
+
+	<footer>
+		<p>&copy; 2017 - Remy Beumier - <img src="img/wam-lolo2.png"></p>
+	</footer>
 	
 </div>
 	

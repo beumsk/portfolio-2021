@@ -1,5 +1,5 @@
 // Manage navbar 
-if ($(window).width() < 768) {
+if ($(window).width() < 748) {
 	// hide cross and menu
 	$("#menu").hide();
 	$("#cross").hide();
@@ -22,20 +22,13 @@ if ($(window).width() < 768) {
 			$("#burger").show();
 		});
 	});
-	// hide burger menu on section
-	$("section").on("click", function() {
-		$("#menu").slideToggle(function() {
-			$("#cross").hide();
-			$("#burger").show();
-		});
-	});
 }
 
 
 // Manage scroll
 $("a[href^='#']").on("click", function() {
 	var theId = $(this).attr("href");
-	$("html, body").animate({scrollTop:$(theId).offset().top}, "slow");
+	$("html, body").animate({scrollTop:($(theId).offset().top)-50}, "slow");
 	return false;
 });
 
