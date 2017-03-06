@@ -25,12 +25,30 @@ if ($(window).width() < 748) {
 }
 
 
+// Manage more (more transforms into codepen when all loaded)
+$(".load1").hide();
+$("#more").on("click", function () {
+	$(".load1").show();
+});
+
 // Manage scroll
 $("a[href^='#']").on("click", function() {
+	if ($(window).width() < 748) {
+		$("#menu").hide();
+		$("#cross").hide();
+		$("#burger").show();
+	}
 	var theId = $(this).attr("href");
 	$("html, body").animate({scrollTop:($(theId).offset().top)-50}, "slow");
 	return false;
 });
+
+
+// Manage filter
+
+
+
+
 
 
 // highlight current section

@@ -12,12 +12,8 @@ body {
 	background-attachment: fixed;
 }
 
-#back {
-	background: rgba(256, 256, 256, 0.6);
-}
 
-
-/*header is the navigation bar*/
+/* Header; navigation bar */
 header {
 	background: #009688;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
@@ -76,18 +72,19 @@ ul {
 }
 
 
-/*Sections are the different menu links*/
+/* Sections are the different menu links */
 section {
 	min-height: 100vh;
+	background: rgba(256, 256, 256, 0.6);
 }
 
 
-/*General section behaviour*/
-#about h1, #skills h1, #creations h1, #contact h1 {
+/* sections h1 */
+#about h1, #creations h1, #contact h1 {
 	color: whitesmoke;
 	text-align: right;
 	padding-right: 14px;
-	background: #212121;
+	background: #333;
 	line-height: 50px;
 	font-size: 40px;
 	letter-spacing: 0.1em;
@@ -95,7 +92,8 @@ section {
 }
 
 
-/*Home design*/
+
+/* Home section; name, function and logo */
 #home > div {
 	padding-top: 22vh;
 	min-height: 100vh;
@@ -115,7 +113,7 @@ section {
 	font-size: 4vh;
 	text-align: center;
 	letter-spacing: 0.1em;
-	color: #009688;
+	color: #333;
 }
 
 #home img {
@@ -124,15 +122,35 @@ section {
 }
 
 
-/*About design*/
+
+/* About section; presentation text */
 #about {}
 
-#about p {
+#about h3 {
+	color: #00796B;
+}
+
+#about p, #about h3 {
 	padding: 20px 10px;
+	text-align: justify;
+	line-height: 22px;
+	letter-spacing: 0.06em;
+}
+
+#about a {
+	color: whitesmoke;
+	padding: 0 5px;
+	border-radius: 2.5px;
+	background: #009688;
+	text-decoration: none;
+}
+#about a:hover {
+	background: #00796B;
 }
 
 
-/*Creations design*/
+
+/* Creations section; miniatures and links */
 #creations {
 	text-align: center;
 }
@@ -144,17 +162,16 @@ section {
 #creations #filter span{
 	background: #009688;
 	color: whitesmoke;
-	padding: 10px 10px;
+	padding: 0 5px;
 	border-radius: 5px;
-	margin: auto 0px;
-	transition: background 1s ease, box-shadow 1s ease;
+	margin: 5px 0px;
+	transition: background 1s ease;
 	display: inline-block;
 }
 
 #creations #filter span:hover {
  	background: #00796B;
  	cursor: pointer;
- 	box-shadow: whitesmoke 0 2px;
 }
 
 #creations .creas {
@@ -186,8 +203,8 @@ section {
 }
 
 #more {
-	margin-top: 20px;
-	margin-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 40px;
 }
 
 #creations #more span {
@@ -196,17 +213,17 @@ section {
 	color: whitesmoke;
 	padding: 10px 20px;
 	border-radius: 5px;
-	transition: background 1s ease, box-shadow 1s ease;
+	transition: background 1s ease;
 }
 
 #creations #more span:hover {
  	background: #00796B;
  	cursor: pointer;
- 	box-shadow: whitesmoke 0 2px;
 }
 
 
-/*Contact design*/
+
+/* Contact section; form, info and resume */
 #contact {
 	position: relative;
 	text-align: center;
@@ -219,6 +236,7 @@ section {
 	background: rgba(256, 256, 256, 0.8);
 	padding: 10px;
 	display: flex;
+	border-radius: 5px;
 }
 
 #contactForm form{
@@ -227,25 +245,48 @@ section {
 	flex-direction: column;
 }
 
+#contact form legend {
+	color: #009688;
+	font-size: 18px;
+	font-weight: bold;
+}
+
 #contactForm form div {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
-#contactForm input, textarea {
-	display: flex;
-	width: 90%;
-	margin-bottom: 10px;
+#contactForm input, #contactForm textarea {
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
 }
 
 #contactForm label {
-	display: flex;
+	display: none;
+	color: #333;
 }
 
 #contactForm [type="submit"] {
-	float: right;
-	width: auto;
+	width: 100%;
+    background-color: #009688;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 1s ease;
+}
+#contactForm [type="submit"]:hover {
+	background: #00796B;
 }
 
 #contact #contactInfo {
@@ -255,6 +296,7 @@ section {
 	background: rgba(256, 256, 256, 0.8);
 	padding: 10px;
 	color: #009688;
+	border-radius: 5px;
 }
 
 #contactInfo p {
@@ -263,6 +305,7 @@ section {
 
 #contactInfo img {
 	width: 20%;
+	border-radius: 5px;
 }
 
 #contactInfo a {
@@ -282,17 +325,19 @@ section {
 }
 #resume a {
 	color: #009688;
+	text-decoration: none;
 }
 #resume a:hover {
 	color: #00796B;
 }
 
 #footy {
-	height: 70px;
+	height: 50px;
 }
 
 
-/*Footer; fixed at bottom*/
+
+/* Footer section; fixed at bottom */
 footer {
 	background: #009688;
 	text-align: center;
@@ -305,17 +350,18 @@ footer {
 }
 
 footer p {
-	line-height: 50px;
+	line-height: 25px;
+	font-size: 12px;
 }
 
 footer img {
 	vertical-align: middle;
-	height: 20px;
+	height: 16px;
 }
 
 
 
-/* design over 768px ! */
+/* over 768px ! */
 @media only screen and (min-width: 767px) {
 	#mainHeader {
 		float: left;
@@ -347,8 +393,10 @@ footer img {
 		background: #00796B;
 	}
 
-	#about p {
+	#about p, #about h3 {
 		padding: 20px 40px;
+		line-height: 24px;
+		letter-spacing: 0.07em;
 	}
 
 	#creations #filter span {
@@ -384,13 +432,21 @@ footer img {
 		margin: 20px 20px;
 	}
 
+	#contact form legend {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
 	#contactForm form div {
 		flex-direction: column;
 	}
 
-	#contactForm input, textarea {
+	#contactForm input, #contactForm textarea {
 		width: 100%;
-		height: 50px;
+	}
+
+	#contactForm label {
+		display: flex;
 	}
 
 	#contact #contactInfo {
@@ -417,6 +473,9 @@ footer img {
 	}
 }
 
+
+
+/* Over 1024px */
 @media only screen and (min-width: 1024px) {
 	#creations .creas {
 		margin: 10px 20px;
@@ -428,4 +487,7 @@ footer img {
 		width: 30%;
 	}
 
+	#resume {
+		font-size: 20px;
+	}
 }
