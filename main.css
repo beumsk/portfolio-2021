@@ -159,19 +159,27 @@ section {
 	margin-top: 40px;
 }
 
-#creations #filter span{
-	background: #009688;
-	color: whitesmoke;
-	padding: 0 5px;
-	border-radius: 5px;
+#creations #filter span {
+	padding: 5px 10px;
+	border-radius: 2.5px;
 	margin: 5px 0px;
-	transition: background 1s ease;
 	display: inline-block;
+	background: whitesmoke;
 }
-
-#creations #filter span:hover {
- 	background: #00796B;
- 	cursor: pointer;
+#creations #html {
+	color: #E44D26;
+}
+#creations #css {
+	color: #0765A3;
+}
+#creations #js {
+	color: #F1E05A;
+}
+#creations #bs {
+	color: #4E3773;
+}
+#creations #jq {
+	color: #144E9A;
 }
 
 #creations .creas {
@@ -194,8 +202,9 @@ section {
 	text-align: center;
 	width: 100%;
 	background: rgba(256, 256, 256, 0.7);
-	line-height: 30px;
+	line-height: 24px;
 	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.23), 0 0px 10px rgba(0, 0, 0, 0.16);
+	font-size: 18px;
 }
 
 #creations a {
