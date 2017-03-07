@@ -187,6 +187,11 @@ section {
 	margin: 10px 0;
 	background: whitesmoke;
 	display: block;
+	transition: box-shadow 0.5s ease;
+	border-radius: 5px;
+}
+#creations .creas:hover {
+	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.6);
 }
 
 #creations figure {
@@ -196,6 +201,7 @@ section {
 }
 
 #creations figcaption {
+	display: none;
 	position: absolute;
 	bottom: 20px;
 	margin: 10px 0;
@@ -205,6 +211,9 @@ section {
 	line-height: 24px;
 	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.23), 0 0px 10px rgba(0, 0, 0, 0.16);
 	font-size: 18px;
+}
+#creations .creas:hover + figcaption {
+	display: block;
 }
 
 #creations a {
@@ -340,10 +349,6 @@ section {
 	color: #00796B;
 }
 
-#footy {
-	height: 50px;
-}
-
 
 
 /* Footer section; fixed at bottom */
@@ -352,9 +357,7 @@ footer {
 	text-align: center;
 	color: whitesmoke;
 	box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.23), 0 -3px 10px rgba(0, 0, 0, 0.16);
-	position: fixed;
 	width: 100%;
-	bottom: 0;
 	letter-spacing: 0.1em;
 }
 
