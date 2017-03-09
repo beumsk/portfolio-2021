@@ -489,6 +489,10 @@ footer img {
 
 /* Over 1024px */
 @media only screen and (min-width: 1024px) {
+	#about h1 {
+		margin-bottom: 20px;
+	}
+
 	#creations .creas {
 		margin: 10px 20px;
 		display: inline-block;
@@ -497,6 +501,10 @@ footer img {
 		display: inline-block;
 		position: relative;
 		width: 30%;
+	}
+
+	#contact h1 {
+		margin-bottom: 20px;
 	}
 
 	#resume {
