@@ -26,10 +26,24 @@ if ($(window).width() < 748) {
 
 
 // Manage more (more transforms into codepen when all loaded)
-$(".load1").hide();
+$(".load1, .load2").hide();
+var load = 0;
 $("#more").on("click", function () {
-	$(".load1").show();
+	load++;
+	switch (load) {
+		case 1:
+			$(".load1").show();
+			break;
+		case 2:
+			$(".load2").show();
+			$("#more").html("<a href='http://codepen.io/beumsk/pens/public/' target='_blank'><span>More creations on Codepen.io</span></a>");
+			$("#more a").css("text-decoration", "none");
+			break;
+		default:
+			
+	}
 });
+
 
 // Manage scroll
 $("a[href^='#']").on("click", function() {
@@ -44,7 +58,6 @@ $("a[href^='#']").on("click", function() {
 });
 
 
-// Manage filter
 
 
 

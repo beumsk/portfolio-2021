@@ -64,7 +64,7 @@
 				<p>I started coding after some deep thinkings when I got 21 and my bachelor in Marketing. Those concerns where all about creativity which I have been able to fully rediscover when I entered the web. I followed a huge learning hunger which kept myself motivated through a long and sometimes complicated journey. As a self-taught, I must thank various brilliant and essential platforms : </br>
 				<a href="https://openclassrooms.com" target="_blank">OpenClassrooms.com</a>, <a href="https://freecodecamp.com" target="_blank">FreeCodecamp</a> and <a href="https://codecademy.com" target="_blank">CodeCademy</a>.</p>
 
-				<p>My self-teaching journey coming to its final goal of mastering main front-end languages and technologies, I am now looking for first major professional challenges. I create mainly with the usual trio <a>HTML</a> - <a>CSS</a> - <a>JS</a>, but I also use powerful tools such as <a>Bootstrap</a> and <a>jQuery</a>.</p> 
+				<p>My self-teaching journey coming to its final goal of mastering main front-end languages and technologies, I am now looking for first major professional challenges. I create mainly with the usual trio <span>HTML</span> - <span>CSS</span> - <span>JS</span>, but I also use powerful tools such as <span>Bootstrap</span> and <span>jQuery</span>.</p> 
 
 				<p>I invite you to check different projects I realised for a better overview of my skills in the <a href="#creations">Creations</a> section.<br>
 				If you have any question, comment or want to see my resume, feel free to reach the <a href="#contact">Contact</a> section.</p>
@@ -89,7 +89,7 @@
 			<!--creation gallery-->
 			<div>
 				<!--Selection of filters-->
-				<div id="filter">
+				<div id="lang">
 					<span id="html"><i class="devicon-html5-plain colored"></i> Html</span>
 					<span id="css"><i class="devicon-css3-plain colored"></i> Css</span>
 					<span id="js"><i class="devicon-javascript-plain colored"></i> Javascript</span>
@@ -152,22 +152,23 @@
 						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
 					</figcaption></a>
 				</figure>
-				<figure class="load1">
-					<a href="http://codepen.io/beumsk/full/LxOKqX/" target="_blank"><img class="creas" src="img/webapp-screen.jpg" alt="creation">
-					<figcaption>Web App<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
+
+				<figure class="load2">
+					<a href="http://codepen.io/beumsk/full/WpbQEQ/" target="_blank"><img class="creas" src="img/carousel-screen.jpg" alt="creation">
+					<figcaption>Carousel<br>
+						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i>
 					</figcaption></a>
 				</figure>
-				<figure class="load1">
-					<a href="http://codepen.io/beumsk/full/jybBYj/" target="_blank"><img class="creas" src="img/wiki-screen.jpg" alt="creation">
-					<figcaption>Wiki Viewer<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
+				<figure class="load2">
+					<a href="http://codepen.io/beumsk/full/NdydVq/" target="_blank"><img class="creas" src="img/material-screen.jpg" alt="creation">
+					<figcaption>Material Design<br>
+						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i>
 					</figcaption></a>
 				</figure>
-				<figure class="load1">
-					<a href="http://codepen.io/beumsk/full/ygOWoL/" target="_blank"><img class="creas" src="img/twitch-screen.jpg" alt="creation">
-					<figcaption>Twitch Check<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
+				<figure class="load2">
+					<a href="http://codepen.io/beumsk/full/aJJaNR/" target="_blank"><img class="creas" src="img/loader-screen.jpg" alt="creation">
+					<figcaption>Loader<br>
+						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i>
 					</figcaption></a>
 				</figure>
 				
@@ -190,7 +191,7 @@
 						<legend>Contact Form</legend>
 						<div>
 							<label for="name">Name</label>
-							<input id="name" type="text" name="name" placeholder="Type your full name" required>
+							<input id="name" type="text" name="name" placeholder="Type your full name" minlength="2" required>
 						</div>
 						<div>
 							<label for="mail">Email</label>
@@ -198,7 +199,7 @@
 						</div>
 						<div>
 							<label for="message">Message</label>
-							<textarea id="message" type="text" name="message" rows="1" placeholder="Type your message" required></textarea>
+							<textarea id="message" type="text" name="message" rows="1" placeholder="Type your message" minlength="2" required></textarea>
 						</div>
 						<div>
 							<input id="button" type="submit" name="" value="Send">

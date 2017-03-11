@@ -65,7 +65,7 @@ ul {
 }
 
 #menu a {
-	transition: background 0.75s ease;
+	transition: background 1.5s ease;
 }
 #menu a:hover {
 	background: #00796B;
@@ -137,15 +137,23 @@ section {
 	letter-spacing: 0.06em;
 }
 
+#about span {
+	color: #009688;
+	font-weight: bold;
+}
+
 #about a {
 	color: whitesmoke;
 	padding: 0 5px;
+	margin: 0 5px;
 	border-radius: 2.5px;
 	background: #009688;
 	text-decoration: none;
+	transition: background 1s ease, box-shadow 1s ease;
 }
 #about a:hover {
 	background: #00796B;
+	box-shadow: 2.5px 2.5px 5px 1.5px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -159,8 +167,9 @@ section {
 	margin-top: 20px;
 }
 
-#creations #filter span {
+#creations #lang span {
 	padding: 5px 10px;
+	border: solid 1px #607D8B;
 	border-radius: 2.5px;
 	margin: 5px 0px;
 	display: inline-block;
@@ -185,11 +194,7 @@ section {
 #creations .creas {
 	width: 100%;
 	display: block;
-	transition: box-shadow 0.5s ease;
 	border-radius: 5px;
-}
-#creations .creas:hover {
-	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.6);
 }
 
 #creations figure {
@@ -197,6 +202,11 @@ section {
 	margin: 10px 0;
 	max-width: 90%;
 	display: inline-block;
+	transition: box-shadow 0.5s ease;
+	border-radius: 5px;
+}
+#creations figure:hover {
+	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.6);
 }
 
 #creations figcaption {
@@ -229,12 +239,13 @@ section {
 	color: whitesmoke;
 	padding: 10px 20px;
 	border-radius: 5px;
-	transition: background 1s ease;
+	transition: background 1s ease, box-shadow 1s ease;
 }
 
 #creations #more span:hover {
  	background: #00796B;
  	cursor: pointer;
+ 	box-shadow: 2.5px 2.5px 5px 1.5px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -282,11 +293,22 @@ section {
     border-radius: 5px;
     box-sizing: border-box;
     resize: none;
+    transition: box-shadow 1s ease;
 }
 
 #contactForm label {
 	display: none;
 	color: #333;
+}
+
+#contactForm input:invalid:focus, textarea:invalid:focus {
+	box-shadow: #D32F2F 1px 1px 4px;
+}
+#contactForm input:valid:focus, textarea:valid:focus {
+	box-shadow: #388E3C 1px 1px 4px;
+}
+#contactForm input:focus, textarea:focus {
+	outline: none !important;
 }
 
 #contactForm [type="submit"] {
@@ -299,10 +321,12 @@ section {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-    transition: background 1s ease;
+    transition: background 1s ease, box-shadow 1s ease;
+    box-shadow: none !important;
 }
 #contactForm [type="submit"]:hover {
 	background: #00796B;
+	box-shadow: 2.5px 2.5px 5px 1.5px rgba(0, 0, 0, 0.6) !important;
 }
 
 #contact #contactInfo {
@@ -338,6 +362,7 @@ section {
 
 #contact #resume {
 	margin-top: 20px;
+	color: #333;
 }
 #resume a {
 	color: #009688;
@@ -409,19 +434,13 @@ footer img {
 		letter-spacing: 0.07em;
 	}
 
-	#creations #filter span {
+	#creations #lang span {
 		margin: 10px;
 	}
 
 	#creations figure {
-		display: inline-block;
-		position: relative;
 		width: 40%;
 		margin: 20px;
-	}
-
-	#creations .creas {
-		display: inline-block;
 	}
 
 	#contact div div {
@@ -486,12 +505,10 @@ footer img {
 		margin-bottom: 20px;
 	}
 
-	#creations .creas {
+	#creations figure {
 		display: inline-block;
 	}
 	#creations figure {
-		display: inline-block;
-		position: relative;
 		width: 30%;
 		margin: 10px 20px;
 	}
