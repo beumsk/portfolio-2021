@@ -6,10 +6,6 @@
 
 body {
 	font-family: "Roboto", sans-serif;
-	background: url("img/office.jpg");
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
 }
 
 
@@ -53,6 +49,10 @@ header {
 	float: left;
 }
 
+.intLinks i {
+	display: none;
+}
+
 ul {
 	list-style-type: none;
 }
@@ -75,7 +75,6 @@ ul {
 /* Sections are the different menu links */
 section {
 	min-height: 100vh;
-	background: rgba(256, 256, 256, 0.6);
 }
 
 
@@ -94,7 +93,15 @@ section {
 
 
 /* Home section; name, function and logo */
+#home {
+	background: url("img/office.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
 #home > div {
+	background: rgba(256, 256, 256, 0.6);
 	padding-top: 22vh;
 	min-height: 100vh;
 	font-family: 'Josefin Sans', sans-serif;
@@ -124,10 +131,21 @@ section {
 
 
 /* About section; presentation text */
-#about {}
+#about {
+	background: url("img/road.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#about > div {
+	background: rgba(256, 256, 256, 0.2);
+	min-height: 100vh;
+}
 
 #about h3 {
 	color: #00796B;
+	text-shadow: 0 0 1px whitesmoke;
 }
 
 #about p, #about h3 {
@@ -161,6 +179,13 @@ section {
 /* Creations section; miniatures and links */
 #creations {
 	text-align: center;
+	background: url("img/layout.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#creations div {
 }
 
 #creations > div > div {
@@ -254,13 +279,22 @@ section {
 #contact {
 	position: relative;
 	text-align: center;
+	background: url("img/phone.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#contact > div {
+	background: rgba(256, 256, 256, 0.6);
+	min-height: 100vh;
 }
 
 #contact #contactForm {
 	width: 90%;
 	min-height: 25vh;
 	margin: 20px auto;
-	background: rgba(256, 256, 256, 0.8);
+	background: rgba(256, 256, 256, 0.9);
 	padding: 10px;
 	display: flex;
 	border-radius: 5px;
@@ -363,6 +397,7 @@ section {
 #contact #resume {
 	margin-top: 20px;
 	color: #333;
+	text-shadow: 0px 0px 1px whitesmoke;
 }
 #resume a {
 	color: #009688;
@@ -398,6 +433,7 @@ footer img {
 
 /* over 768px ! */
 @media only screen and (min-width: 767px) {
+
 	#mainHeader {
 		float: left;
 		border-right: solid #009688;
@@ -501,6 +537,11 @@ footer img {
 
 /* Over 1024px */
 @media only screen and (min-width: 1024px) {
+
+	.intLinks i {
+		display: inline;
+	}
+
 	#about h1 {
 		margin-bottom: 20px;
 	}
