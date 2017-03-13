@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"/> <!--allow special characters to be displayed-->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!---->
-	<meta name="viewport" content="width=device-width, initial-scale=1" /> <!--make media queries work-->
+	<meta charset="utf-8"/> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 	
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
 	<meta name="description" content="Remy Beumier's portfolio website"/> <!--Website description-->
 	<meta name="keywords" content="remy, beumier, portfolio, beumsk"/> <!--keywords = for SEO-->
 	<meta name="author" content="remy beumier"/> <!--Page author-->
@@ -18,221 +18,245 @@
 </head>
 
 <body>
-<!--#back for a background color over background-image-->
-<div id="back">
+
+
+<!--HEADER; navigation bar-->
+<header>
+	<!--header for small screens-->
+	<div id="mainHeader">
+		<a id="titleHeader" href="#home"><img src="img/wam-lolo2.png"><span> Remy Beumier</span></a>
+		<a id="burger" style="float: right"><i class="fa fa-bars"></i></a>
+		<a id="cross" style="float: right" class="hidden"><i class="fa fa-times"></i></a>
+	</div>
 	
-	<!--header is the navigation bar-->
-	<header>
-		<!--header for small screens-->
-		<div id="mainHeader">
-			<a id="titleHeader" href="#home"><img src="img/wam-lolo2.png"><span> Remy Beumier</span></a>
-			<a id="burger" style="float: right"><i class="fa fa-bars"></i></a>
-			<a id="cross" style="float: right" class="hidden"><i class="fa fa-times"></i></a>
-		</div>
+	<!--expandable menu on small screen or menu on bigger ones-->
+	<ul id="menu" class="hidden">
+		<li><a href="#about" class="intLinks"><i class="fa fa-quote-left"></i> About</a></li>
+		<!--<li><a href="#skills" class="intLinks">Skills</a></li>-->
+		<li><a href="#creations" class="intLinks"><i class="fa fa-laptop"></i> Creations</a></li>
+		<li><a href="#contact" class="intLinks"><i class="fa fa-vcard"></i> Contact</a></li>
 		
-		<!--expandable menu on small screen or menu on bigger ones-->
-		<ul id="menu" class="hidden">
-			<li><a href="#about" class="intLinks"><i class="fa fa-quote-left"></i> About</a></li>
-			<!--<li><a href="#skills" class="intLinks">Skills</a></li>-->
-			<li><a href="#creations" class="intLinks"><i class="fa fa-laptop"></i> Creations</a></li>
-			<li><a href="#contact" class="intLinks"><i class="fa fa-vcard"></i> Contact</a></li>
-			
-			<li><a href="https://twitter.com/beumsk" class="extLinks" target="_blank"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/remybeumier/" class="extLinks" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/beumsk" class="extLinks" target="_blank"><i class="fa fa-github"></i></a></li>
-			<li><a href="http://codepen.io/beumsk/" class="extLinks" target="_blank"><i class="fa fa-codepen"></i></a></li>
-		</ul>
-	</header>
-	
-	<!--Home section; name and function-->
-	<section id="home">
+		<li><a href="https://twitter.com/beumsk" class="extLinks" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/remybeumier/" class="extLinks" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		<li><a href="https://github.com/beumsk" class="extLinks" target="_blank"><i class="fa fa-github"></i></a></li>
+		<li><a href="http://codepen.io/beumsk/" class="extLinks" target="_blank"><i class="fa fa-codepen"></i></a></li>
+	</ul>
+</header>
+
+
+<!--HOME SECTION; name, function and logo-->
+<section id="home">
+	<div>
+		<h1>REMY BEUMIER</h1>
+		<h2>Front-end Developer &amp; Webdesigner</h2>
+		<img src="img/wam-lolo4.png">
+	</div>
+</section>
+
+
+<!--ABOUT SECTION; small presentation-->
+<section id="about">
+	<div>
+		<!--Dark banner-->
+		<h1><i class="fa fa-quote-left"></i> About</h1>
+
 		<div>
-			<h1>REMY BEUMIER</h1>
-			<h2>Front-end Developer &amp; Webdesigner</h2>
-			<img src="img/wam-lolo4.png">
+			<h3>My name is Remy, I am a Web Lover and I focus myself on Front-end Development and Webdesign.</h3>
+
+			<p>I started coding after some deep thinkings when I got 21 and my bachelor in Marketing. Those concerns where all about creativity which I have been able to fully rediscover when I entered the web. I followed a huge learning hunger which kept myself motivated through a long and sometimes complicated journey. As a self-taught, I must thank various brilliant and essential platforms : </br>
+			<a href="https://openclassrooms.com" target="_blank">OpenClassrooms.com</a>, <a href="https://freecodecamp.com" target="_blank">FreeCodecamp</a> and <a href="https://codecademy.com" target="_blank">CodeCademy</a>.</p>
+
+			<p>My self-teaching journey coming to its final goal of mastering main front-end languages and technologies, I am now looking for first major professional challenges. I create mainly with the usual trio <span>HTML</span> - <span>CSS</span> - <span>JS</span>, but I also use powerful tools such as <span>Bootstrap</span> and <span>jQuery</span>.</p> 
+
+			<p>I invite you to check different projects I realised for a better overview of my skills in the <a href="#creations">Creations</a> section.<br>
+			If you have any question, comment or want to see my resume, feel free to reach the <a href="#contact">Contact</a> section.</p>
 		</div>
-	</section>
-	
-	<!--About section; small presentation-->
-	<section id="about">
+	</div>
+</section>
+
+
+<!--SKILLS SECTION; progress bars ? abandonned-->
+<!--
+<section id="skills">
+	<div>
+
+		<h1><i class="fa fa-puzzle-piece"></i> Skills</h1>
+		
+	</div>
+</section>
+-->
+
+
+<!--CREATIONS SECTION; works done presented sorted by skills used-->
+<section id="creations">
+	<div>
+		<!--Dark banner-->
+		<h1><i class="fa fa-laptop"></i> Creations</h1>
+		
 		<div>
-			<h1><i class="fa fa-quote-left"></i> About</h1>
-			<!--Powerful/effective text presentation, small story-->
-			<div>
-				<h3>My name is Remy, I am a Web Lover and I focus myself on Front-end Development and Webdesign.</h3>
+			<!--Selection of filters-->
+			<div id="lang">
+				<span id="html"><i class="devicon-html5-plain colored"></i> Html</span>
+				<span id="css"><i class="devicon-css3-plain colored"></i> Css</span>
+				<span id="js"><i class="devicon-javascript-plain colored"></i> Javascript</span>
+				<span id="bs"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+				<span id="jq"><i class="devicon-jquery-plain colored"></i> jQuery</span>
+			</div>
 
-				<p>I started coding after some deep thinkings when I got 21 and my bachelor in Marketing. Those concerns where all about creativity which I have been able to fully rediscover when I entered the web. I followed a huge learning hunger which kept myself motivated through a long and sometimes complicated journey. As a self-taught, I must thank various brilliant and essential platforms : </br>
-				<a href="https://openclassrooms.com" target="_blank">OpenClassrooms.com</a>, <a href="https://freecodecamp.com" target="_blank">FreeCodecamp</a> and <a href="https://codecademy.com" target="_blank">CodeCademy</a>.</p>
+			<!--Miniatures-->
+			<figure class="">
+				<a href="http://codepen.io/beumsk/full/bgeBgQ/" target="_blank"><img class="creas" src="img/shifumi-screen.jpg" alt="creation">
+				<figcaption>Shi Fu Mi<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
+				</figcaption></a>
+			</figure>
 
-				<p>My self-teaching journey coming to its final goal of mastering main front-end languages and technologies, I am now looking for first major professional challenges. I create mainly with the usual trio <span>HTML</span> - <span>CSS</span> - <span>JS</span>, but I also use powerful tools such as <span>Bootstrap</span> and <span>jQuery</span>.</p> 
+			<figure class="">
+				<a href="http://codepen.io/beumsk/full/xgGzdJ/" target="_blank"><img class="creas" src="img/quote-screen.jpg" alt="creation">
+				<figcaption>Random Quotes<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
+				</figcaption></a>
+			</figure>
 
-				<p>I invite you to check different projects I realised for a better overview of my skills in the <a href="#creations">Creations</a> section.<br>
-				If you have any question, comment or want to see my resume, feel free to reach the <a href="#contact">Contact</a> section.</p>
+			<figure class="">
+				<a href="http://codepen.io/beumsk/full/QpyMmy/" target="_blank"><img class="creas" src="img/links-screen.jpg" alt="creation">
+				<figcaption>Sharing Links<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i>
+				</figcaption></a>
+			</figure>
+
+			<figure class="">
+				<a href="http://codepen.io/beumsk/full/Xpbyxv/" target="_blank"><img class="creas" src="img/weather-screen.jpg" alt="creation">
+				<figcaption>Local Weather<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
+				</figcaption></a>
+			</figure>
+
+			<figure class="">
+				<a href="http://codepen.io/beumsk/full/YZKvgJ/" target="_blank"><img class="creas" src="img/github-screen.jpg" alt="creation">
+				<figcaption>Github Profile<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i>
+				</figcaption></a>
+			</figure>
+
+			<figure class="">
+				<a href="http://codepen.io/beumsk/full/rjBWWR/" target="_blank"><img class="creas" src="img/pokemon-screen.jpg" alt="creation">
+				<figcaption>Pokemon<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
+				</figcaption></a>
+			</figure>
+
+			<!--Load 1-->
+			<figure class="load1">
+				<a href="http://codepen.io/beumsk/full/LxOKqX/" target="_blank"><img class="creas" src="img/webapp-screen.jpg" alt="creation">
+				<figcaption>Web App<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
+				</figcaption></a>
+			</figure>
+
+			<figure class="load1">
+				<a href="http://codepen.io/beumsk/full/jybBYj/" target="_blank"><img class="creas" src="img/wiki-screen.jpg" alt="creation">
+				<figcaption>Wiki Viewer<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
+				</figcaption></a>
+			</figure>
+
+			<figure class="load1">
+				<a href="http://codepen.io/beumsk/full/ygOWoL/" target="_blank"><img class="creas" src="img/twitch-screen.jpg" alt="creation">
+				<figcaption>Twitch Check<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
+				</figcaption></a>
+			</figure>
+
+			<!--Load 2-->
+			<figure class="load2">
+				<a href="http://codepen.io/beumsk/full/WpbQEQ/" target="_blank"><img class="creas" src="img/carousel-screen.jpg" alt="creation">
+				<figcaption>Carousel<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i>
+				</figcaption></a>
+			</figure>
+
+			<figure class="load2">
+				<a href="http://codepen.io/beumsk/full/NdydVq/" target="_blank"><img class="creas" src="img/material-screen.jpg" alt="creation">
+				<figcaption>Material Design<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i>
+				</figcaption></a>
+			</figure>
+
+			<figure class="load2">
+				<a href="http://codepen.io/beumsk/full/aJJaNR/" target="_blank"><img class="creas" src="img/loader-screen.jpg" alt="creation">
+				<figcaption>Loader<br>
+					<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i>
+				</figcaption></a>
+			</figure>
+			
+			<!--More creations-->
+			<div id="more">
+				<span>More creations</span>
 			</div>
 		</div>
-	</section>
-	
-	<!--Skills section; progress bars ? abandonned-->
-	<!--
-	<section id="skills">
-		<div>
-			<h1><i class="fa fa-puzzle-piece"></i> Skills</h1>
-			
-		</div>
-	</section>
-	-->
-	
-	<!--Creations section; works done presented sorted by skills used-->
-	<section id="creations">
-		<div>
-			<h1><i class="fa fa-laptop"></i> Creations</h1>
-			<!--creation gallery-->
-			<div>
-				<!--Selection of filters-->
-				<div id="lang">
-					<span id="html"><i class="devicon-html5-plain colored"></i> Html</span>
-					<span id="css"><i class="devicon-css3-plain colored"></i> Css</span>
-					<span id="js"><i class="devicon-javascript-plain colored"></i> Javascript</span>
-					<span id="bs"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
-					<span id="jq"><i class="devicon-jquery-plain colored"></i> jQuery</span>
-				</div>
-				<!--Images-->
-				<figure class="">
-					<a href="http://codepen.io/beumsk/full/bgeBgQ/" target="_blank"><img class="creas" src="img/shifumi-screen.jpg" alt="creation">
-					<figcaption>Shi Fu Mi<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				<figure class="">
-					<a href="http://codepen.io/beumsk/full/xgGzdJ/" target="_blank"><img class="creas" src="img/quote-screen.jpg" alt="creation">
-					<figcaption>Random Quotes<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				<figure class="">
-					<a href="http://codepen.io/beumsk/full/QpyMmy/" target="_blank"><img class="creas" src="img/links-screen.jpg" alt="creation">
-					<figcaption>Sharing Links<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				<figure class="">
-					<a href="http://codepen.io/beumsk/full/Xpbyxv/" target="_blank"><img class="creas" src="img/weather-screen.jpg" alt="creation">
-					<figcaption>Local Weather<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				<figure class="">
-					<a href="http://codepen.io/beumsk/full/YZKvgJ/" target="_blank"><img class="creas" src="img/github-screen.jpg" alt="creation">
-					<figcaption>Github Profile<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				<figure class="">
-					<a href="http://codepen.io/beumsk/full/rjBWWR/" target="_blank"><img class="creas" src="img/pokemon-screen.jpg" alt="creation">
-					<figcaption>Pokemon<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				<!-- to load-->
-				<figure class="load1">
-					<a href="http://codepen.io/beumsk/full/LxOKqX/" target="_blank"><img class="creas" src="img/webapp-screen.jpg" alt="creation">
-					<figcaption>Web App<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				<figure class="load1">
-					<a href="http://codepen.io/beumsk/full/jybBYj/" target="_blank"><img class="creas" src="img/wiki-screen.jpg" alt="creation">
-					<figcaption>Wiki Viewer<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				<figure class="load1">
-					<a href="http://codepen.io/beumsk/full/ygOWoL/" target="_blank"><img class="creas" src="img/twitch-screen.jpg" alt="creation">
-					<figcaption>Twitch Check<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i class="devicon-bootstrap-plain colored"></i> <i class="devicon-jquery-plain colored"></i>
-					</figcaption></a>
-				</figure>
+	</div>
+</section>
 
-				<figure class="load2">
-					<a href="http://codepen.io/beumsk/full/WpbQEQ/" target="_blank"><img class="creas" src="img/carousel-screen.jpg" alt="creation">
-					<figcaption>Carousel<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i> <i class="devicon-javascript-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				<figure class="load2">
-					<a href="http://codepen.io/beumsk/full/NdydVq/" target="_blank"><img class="creas" src="img/material-screen.jpg" alt="creation">
-					<figcaption>Material Design<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				<figure class="load2">
-					<a href="http://codepen.io/beumsk/full/aJJaNR/" target="_blank"><img class="creas" src="img/loader-screen.jpg" alt="creation">
-					<figcaption>Loader<br>
-						<i class="devicon-html5-plain colored"></i> <i class="devicon-css3-plain colored"></i>
-					</figcaption></a>
-				</figure>
-				
-				<!--More creations-->
-				<div id="more">
-					<span>More creations</span>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!--Contact section; form, contact info and CV to download-->
-	<section id="contact">
-		<div>
-			<h1><i class="fa fa-vcard"></i> Contact</h1>
-			
-			<div>
-				<div id="contactForm">
-					<form>
-						<legend>Contact Form</legend>
-						<div>
-							<label for="name">Name</label>
-							<input id="name" type="text" name="name" placeholder="Type your full name" minlength="2" required>
-						</div>
-						<div>
-							<label for="mail">Email</label>
-							<input id="mail" type="email" name="mail" placeholder="Type your email address" required>
-						</div>
-						<div>
-							<label for="message">Message</label>
-							<textarea id="message" type="text" name="message" rows="1" placeholder="Type your message" minlength="2" required></textarea>
-						</div>
-						<div>
-							<input id="button" type="submit" name="" value="Send">
-						</div>
-					</form>
-				</div>
 
-				<div id="contactInfo">
-					<img src="img/wam-poly-.jpg">
-					<h3>Remy Beumier</h3>
-					<p>Brussels, Belgium</p>
-					<p>remy.beumier@gmail.com</p>
+<!--CONTACT SECTION; form, contact info and CV to download-->
+<section id="contact">
+	<div>
+		<!--Dark banner-->
+		<h1><i class="fa fa-vcard"></i> Contact</h1>
+		
+		<div>
+			<!--Contact form-->
+			<div id="contactForm">
+				<form>
+					<legend>Contact Form</legend>
 					<div>
-						<a href="http://codepen.io/beumsk/" target="_blank"><i class="fa fa-codepen"></i></a>
-						<a href="https://github.com/beumsk" target="_blank"><i class="fa fa-github"></i></a>
-						<a href="https://www.linkedin.com/in/remybeumier/" target="_blank"><i class="fa fa-linkedin"></i></a>
-						<a href="https://twitter.com/beumsk" target="_blank"><i class="fa fa-twitter"></i></a>
+						<label for="name">Name</label>
+						<input id="name" type="text" name="name" placeholder="Type your full name" minlength="2" required>
 					</div>
-				</div>
+					<div>
+						<label for="mail">Email</label>
+						<input id="mail" type="email" name="mail" placeholder="Type your email address" required>
+					</div>
+					<div>
+						<label for="message">Message</label>
+						<textarea id="message" type="text" name="message" rows="1" placeholder="Type your message" minlength="2" required></textarea>
+					</div>
+					<div>
+						<input id="button" type="submit" name="" value="Send">
+					</div>
+				</form>
 			</div>
 
-			<p id="resume">Check my resume <a href="CV_Remy_Beumier_Web.pdf" target="_blank">online</a> or download it <a href="CV_Remy_Beumier_Web.pdf" target="_blank" download="">here</a>.</p>
+			<!--Contact info-->
+			<div id="contactInfo">
+				<img src="img/wam-poly-.jpg">
+				<h3>Remy Beumier</h3>
+				<p>Brussels, Belgium</p>
+				<p>remy.beumier@gmail.com</p>
+				<div>
+					<a href="http://codepen.io/beumsk/" target="_blank"><i class="fa fa-codepen"></i></a>
+					<a href="https://github.com/beumsk" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/remybeumier/" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://twitter.com/beumsk" target="_blank"><i class="fa fa-twitter"></i></a>
+				</div>
+			</div>
 		</div>
-	</section>
 
-	<footer>
-		<p>&copy; 2017 - Remy Beumier - <img src="img/wam-lolo2.png"></p>
-	</footer>
+		<!--Resume-->
+		<p id="resume">Check my resume <a href="CV_Remy_Beumier_Web.pdf" target="_blank">online</a> or download it <a href="CV_Remy_Beumier_Web.pdf" target="_blank" download="">here</a>.</p>
+	</div>
+</section>
+
+<!--FOOTER-->
+<footer>
+	<p>&copy; 2017 - Remy Beumier - <img src="img/wam-lolo2.png"></p>
+</footer>
 	
-</div>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--jQuery library; always before js files-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><!--IU jQuery for better animations-->
-	<script type="text/javascript" src="script.js"></script><!--personnal js-->
+<!--Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--jQuery library; always before js files-->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><!--IU jQuery for better animations-->
+<script type="text/javascript" src="script.js"></script><!--personnal js-->
+
 </body>
 </html>

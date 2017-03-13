@@ -9,7 +9,7 @@ body {
 }
 
 
-/* Header; navigation bar */
+/* HEADER; navigation bar */
 header {
 	background: #009688;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
@@ -77,8 +77,7 @@ section {
 	min-height: 100vh;
 }
 
-
-/* sections h1 */
+/* sections h1; dark banners */
 #about h1, #creations h1, #contact h1 {
 	color: whitesmoke;
 	text-align: right;
@@ -92,7 +91,7 @@ section {
 
 
 
-/* Home section; name, function and logo */
+/* HOME SECTION; name, function and logo */
 #home {
 	background: url("img/office.jpg");
 	background-size: cover;
@@ -130,7 +129,7 @@ section {
 
 
 
-/* About section; presentation text */
+/* ABOUT SECTION; presentation text */
 #about {
 	background: url("img/road.jpg");
 	background-size: cover;
@@ -176,7 +175,11 @@ section {
 
 
 
-/* Creations section; miniatures and links */
+/* SKILLS SECTION; progress bar abandonned*/
+
+
+
+/* CREATIONS SECTION; miniatures and links */
 #creations {
 	text-align: center;
 	background: url("img/layout.jpg");
@@ -245,9 +248,6 @@ section {
 	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.23), 0 0px 10px rgba(0, 0, 0, 0.16);
 	font-size: 18px;
 }
-#creations .creas:hover + figcaption {
-	display: block;
-}
 
 #creations a {
 	color: #333;
@@ -275,7 +275,7 @@ section {
 
 
 
-/* Contact section; form, info and resume */
+/* CONTACT SECTION; form, info and resume */
 #contact {
 	position: relative;
 	text-align: center;
@@ -409,7 +409,7 @@ section {
 
 
 
-/* Footer section; fixed at bottom */
+/* FOOTER SECTION; at bottom */
 footer {
 	background: #009688;
 	text-align: center;
@@ -431,7 +431,7 @@ footer img {
 
 
 
-/* over 768px ! */
+/* OVER 768px ! */
 @media only screen and (min-width: 767px) {
 
 	#mainHeader {
@@ -557,10 +557,10 @@ footer img {
 	#creations figcaption {
 		display: none;
 	}
-	#creations figure:hover > figcaption {
+	#creations figcaption:hover {
 		display: block;
 	}
-	#creations figcaption:hover {
+	#creations .creas:hover + figcaption {
 		display: block;
 	}
 
