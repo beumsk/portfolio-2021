@@ -4,9 +4,26 @@
 	<meta charset="utf-8"/> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 	
 	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-	<meta name="description" content="Remy Beumier's portfolio website"/> <!--Website description-->
-	<meta name="keywords" content="remy, beumier, portfolio, beumsk"/> <!--keywords = for SEO-->
-	<meta name="author" content="remy beumier"/> <!--Page author-->
+
+	<meta name="description" content="Remy Beumier's portfolio website. Presentation, Creations and Contact."/> <!--Website description-->
+	<meta name="keywords" content="remy, beumier, front-end, webdesign, brussels, portfolio, beumsk"/> <!--keywords = for SEO-->
+	<meta name="author" content="Remy Beumier"/> <!--Page author-->
+
+	<meta property="og:title" content="Remy Beumier, Front-end Dev & Design."/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://remybeumier.be"/>
+	<meta property="og:image" content="img/wam-poly-.jpg"/>
+	<meta property="og:description" content="Remy Beumier's portfolio website. Presentation, Creations and Contact."/>
+	<meta property="og:site_name" content="Remy Beumier" />
+	<meta property="fb:admins" content="" />
+
+	<meta name="twitter:card" content="summary" /><!-- Twitter Card data -->
+	<meta name="twitter:site" content="Remy Beumier" />
+	<meta name="twitter:title" content="Remy Beumier, Front-end Dev & Design." />
+	<meta name="twitter:description" content="Remy Beumier's portfolio website. Presentation, Creations and Contact." />
+	<meta name="twitter:creator" content="@Beumsk" />
+	<meta name="twitter:image" content="img/wam-poly-.jpg" />
+	<meta name="twitter:image:alt" content="Remy Beumier" />
 	
 	<link rel="stylesheet" href="main.css"/> <!--link to CSS file-->
 	<link rel="icon" type="image/png" href="img/wam-lolo4.png" /> <!--tab icon-->
@@ -208,7 +225,7 @@
 		<div>
 			<!--Contact form-->
 			<div id="contactForm">
-				<form>
+				<form id="myform" action="" method="" name="contactform">
 					<legend>Contact Form</legend>
 					<div>
 						<label for="name">Name</label>
@@ -254,6 +271,13 @@
 </footer>
 	
 <!--Scripts-->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script><!--MailJS-->
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_z6OXM5nDIkjUNllax5fZH");
+   })();
+</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--jQuery library; always before js files-->
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><!--IU jQuery for better animations-->
 <script type="text/javascript" src="script.js"></script><!--personnal js-->
