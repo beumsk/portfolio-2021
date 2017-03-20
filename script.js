@@ -80,6 +80,28 @@ myform.submit(function(event){
 });
 
 
+// progress bars 
+$("#html").on("click", function () {
+	$("#htmlProg").slideToggle();
+	$("#css, #js, #bs, #jq").toggle();
+});
+$("#css").on("click", function () {
+	$("#cssProg").slideToggle();
+	$("#html, #js, #bs, #jq").toggle();
+});
+$("#js").on("click", function () {
+	$("#jsProg").slideToggle();
+	$("#css, #html, #bs, #jq").toggle();
+});
+$("#bs").on("click", function () {
+	$("#bsProg").slideToggle();
+	$("#css, #js, #html, #jq").toggle();
+});
+$("#jq").on("click", function () {
+	$("#jqProg").slideToggle();
+	$("#css, #js, #bs, #html").toggle();
+});
+
 
 
 

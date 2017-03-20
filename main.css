@@ -195,13 +195,14 @@ section {
 	margin-top: 20px;
 }
 
-#creations #lang span {
+#creations #lang div {
 	padding: 5px 10px;
 	border: solid 1px #607D8B;
 	border-radius: 2.5px;
 	margin: 5px 0px;
 	display: inline-block;
 	background: whitesmoke;
+	cursor: pointer;
 }
 #creations #html {
 	color: #E44D26;
@@ -217,6 +218,30 @@ section {
 }
 #creations #jq {
 	color: #144E9A;
+}
+
+#creations #lang .progress {
+	display: none;
+	border-radius: 5px;
+	width: 300px;
+	height: 20px;
+	color: whitesmoke;
+	padding-top: 0;
+}
+#creations div #htmlProg {
+	background: #E44D26;
+}
+#creations div #cssProg {
+	background: #0765A3;
+}
+#creations div #jsProg {
+	background: #F1E05A;
+}
+#creations div #bsProg {
+	background: #4E3773;
+}
+#creations div #jqProg {
+	background: #144E9A;
 }
 
 #creations .creas {
@@ -470,7 +495,7 @@ footer img {
 		letter-spacing: 0.07em;
 	}
 
-	#creations #lang span {
+	#creations #lang div {
 		margin: 10px;
 	}
 
