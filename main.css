@@ -195,7 +195,7 @@ section {
 	margin-top: 20px;
 }
 
-#creations #lang div {
+#creations #lang > div {
 	padding: 5px 10px;
 	border: solid 1px #607D8B;
 	border-radius: 2.5px;
@@ -203,6 +203,11 @@ section {
 	display: inline-block;
 	background: whitesmoke;
 	cursor: pointer;
+	transition: box-shadow 0.7s ease, background 0.7s ease;
+}
+#creations #lang > div:hover {
+	box-shadow: 2.5px 2.5px 5px 1.5px rgba(0, 0, 0, 0.6);
+	background: white;
 }
 #creations #html {
 	color: #E44D26;
@@ -223,7 +228,8 @@ section {
 #creations #lang .progress {
 	display: none;
 	border-radius: 5px;
-	width: 300px;
+	width: 60vw;
+	max-width: 300px;
 	height: 20px;
 	color: whitesmoke;
 	padding-top: 0;
@@ -284,12 +290,11 @@ section {
 }
 
 #creations #more span {
-	width: 90%;
 	background: #009688;
 	color: whitesmoke;
 	padding: 10px 20px;
 	border-radius: 5px;
-	transition: background 1s ease, box-shadow 1s ease;
+	transition: background 0.7s ease, box-shadow 0.7s ease;
 }
 
 #creations #more span:hover {
@@ -352,7 +357,7 @@ section {
     border-radius: 5px;
     box-sizing: border-box;
     resize: none;
-    transition: box-shadow 1s ease;
+    transition: box-shadow 0.7s ease;
 }
 
 #contactForm label {
@@ -380,7 +385,7 @@ section {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-    transition: background 1s ease, box-shadow 1s ease;
+    transition: background 0.7s ease, box-shadow 0.7s ease;
     box-shadow: none !important;
 }
 #contactForm [type="submit"]:hover {
@@ -410,9 +415,11 @@ section {
 #contactInfo a {
 	color: #009688;
 	padding: 0 5px;
+	transition: color 0.7s ease;
 }
 #contactInfo a:hover {
 	color: #00796B;
+	border-bottom: solid 2px #00796B;
 }
 
 #contactInfo > * {
@@ -430,6 +437,7 @@ section {
 }
 #resume a:hover {
 	color: #00796B;
+	border-bottom: solid 2px #00796B;
 }
 
 
@@ -497,6 +505,10 @@ footer img {
 
 	#creations #lang div {
 		margin: 10px;
+	}
+
+	#creations #lang .progress {
+		max-width: none;
 	}
 
 	#creations figure {

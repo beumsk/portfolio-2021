@@ -41,7 +41,7 @@ $("a[href^='#']").on("click", function() {
 // Manage #more (more transforms into codepen when all loaded)
 $(".load1, .load2").hide();
 var load = 0;
-$("#more").on("click", function () {
+$("#more > span").on("click", function () {
 	load++;
 	switch (load) {
 		case 1:
