@@ -80,26 +80,26 @@ myform.submit(function(event){
 });
 
 
-// progress bars 
+// progress bars
 $("#html").on("click", function () {
-	$("#htmlProg").slideToggle();
-	$("#css, #js, #bs, #jq").toggle();
+	$("#htmlProg").slideToggle(1000, "linear");
+	$("#css, #js, #bs, #jq").toggle(1000, "linear");
 });
 $("#css").on("click", function () {
-	$("#cssProg").slideToggle();
-	$("#html, #js, #bs, #jq").toggle();
+	$("#cssProg").slideToggle(1000, "linear");
+	$("#html, #js, #bs, #jq").toggle(1000, "linear");
 });
 $("#js").on("click", function () {
-	$("#jsProg").slideToggle();
-	$("#css, #html, #bs, #jq").toggle();
+	$("#jsProg").slideToggle(1000, "linear");
+	$("#css, #html, #bs, #jq").toggle(1000, "linear");
 });
 $("#bs").on("click", function () {
-	$("#bsProg").slideToggle();
-	$("#css, #js, #html, #jq").toggle();
+	$("#bsProg").slideToggle(1000, "linear");
+	$("#css, #js, #html, #jq").toggle(1000, "linear");
 });
 $("#jq").on("click", function () {
-	$("#jqProg").slideToggle();
-	$("#css, #js, #bs, #html").toggle();
+	$("#jqProg").slideToggle(1000, "linear");
+	$("#css, #js, #bs, #html").toggle(1000, "linear");
 });
 
 
