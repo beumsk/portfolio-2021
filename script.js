@@ -84,22 +84,52 @@ myform.submit(function(event){
 $("#html").on("click", function () {
 	$("#htmlProg").slideToggle(1000, "linear");
 	$("#css, #js, #bs, #jq").toggle(1000, "linear");
+	if ($(this).attr("title")) {
+		$(this).removeAttr("title");
+	}
+	else {
+		$(this).attr("title", "Click for Level");
+	}
 });
 $("#css").on("click", function () {
 	$("#cssProg").slideToggle(1000, "linear");
 	$("#html, #js, #bs, #jq").toggle(1000, "linear");
+	if ($(this).attr("title")) {
+		$(this).removeAttr("title");
+	}
+	else {
+		$(this).attr("title", "Click for Level");
+	}
 });
 $("#js").on("click", function () {
 	$("#jsProg").slideToggle(1000, "linear");
 	$("#css, #html, #bs, #jq").toggle(1000, "linear");
+	if ($(this).attr("title")) {
+		$(this).removeAttr("title");
+	}
+	else {
+		$(this).attr("title", "Click for Level");
+	}
 });
 $("#bs").on("click", function () {
 	$("#bsProg").slideToggle(1000, "linear");
 	$("#css, #js, #html, #jq").toggle(1000, "linear");
+	if ($(this).attr("title")) {
+		$(this).removeAttr("title");
+	}
+	else {
+		$(this).attr("title", "Click for Level");
+	}
 });
 $("#jq").on("click", function () {
 	$("#jqProg").slideToggle(1000, "linear");
 	$("#css, #js, #bs, #html").toggle(1000, "linear");
+	if ($(this).attr("title")) {
+		$(this).removeAttr("title");
+	}
+	else {
+		$(this).attr("title", "Click for Level");
+	}
 });
 
 
