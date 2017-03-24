@@ -225,14 +225,27 @@ section {
 	color: #144E9A;
 }
 
-#creations #lang .progress {
-	display: none;
-	width: 60vw;
-	max-width: 300px;
-	height: 20px;
-	color: whitesmoke;
-	padding-top: 0;
+#creations #lang span {
+	float: left;
 }
+
+#creations #lang .progress {
+	display: inline-block;
+	width: 0;
+	opacity: 0;
+	border-radius: 2.5px;
+	height: 19px;
+	color: whitesmoke;
+	float: right;
+	transition: width 1.5s ease, opacity 0.5s ease;
+}
+#creations #lang > div:hover > .progress {
+	max-width: none;
+	margin-left: 10px;
+	opacity: 1;
+	width: 20vw;
+}
+
 #creations div #htmlProg {
 	background: #E44D26;
 }
@@ -502,12 +515,8 @@ footer img {
 		letter-spacing: 0.07em;
 	}
 
-	#creations #lang div {
+	#creations #lang > div {
 		margin: 10px;
-	}
-
-	#creations #lang .progress {
-		max-width: none;
 	}
 
 	#creations figure {
@@ -580,6 +589,10 @@ footer img {
 
 	#about h1 {
 		margin-bottom: 20px;
+	}
+
+	#creations #lang > div {
+		margin: 20px;
 	}
 
 	#creations figure {

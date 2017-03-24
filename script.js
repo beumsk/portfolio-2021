@@ -45,10 +45,10 @@ $("#more > span").on("click", function () {
 	load++;
 	switch (load) {
 		case 1:
-			$(".load1").show();
+			$(".load1").fadeIn(1000, "linear");
 			break;
 		case 2:
-			$(".load2").show();
+			$(".load2").fadeIn(1000, "linear");
 			$("#more").html("<a href='http://codepen.io/beumsk/pens/public/' target='_blank'><span>More creations on Codepen.io</span></a>");
 			$("#more a").css("text-decoration", "none");
 			break;
@@ -78,60 +78,6 @@ myform.submit(function(event){
     });
   return false;
 });
-
-
-// progress bars
-$("#html").on("click", function () {
-	$("#htmlProg").slideToggle(1000, "linear");
-	$("#css, #js, #bs, #jq").toggle(1000, "linear");
-	if ($(this).attr("title")) {
-		$(this).removeAttr("title");
-	}
-	else {
-		$(this).attr("title", "Click for Level");
-	}
-});
-$("#css").on("click", function () {
-	$("#cssProg").slideToggle(1000, "linear");
-	$("#html, #js, #bs, #jq").toggle(1000, "linear");
-	if ($(this).attr("title")) {
-		$(this).removeAttr("title");
-	}
-	else {
-		$(this).attr("title", "Click for Level");
-	}
-});
-$("#js").on("click", function () {
-	$("#jsProg").slideToggle(1000, "linear");
-	$("#css, #html, #bs, #jq").toggle(1000, "linear");
-	if ($(this).attr("title")) {
-		$(this).removeAttr("title");
-	}
-	else {
-		$(this).attr("title", "Click for Level");
-	}
-});
-$("#bs").on("click", function () {
-	$("#bsProg").slideToggle(1000, "linear");
-	$("#css, #js, #html, #jq").toggle(1000, "linear");
-	if ($(this).attr("title")) {
-		$(this).removeAttr("title");
-	}
-	else {
-		$(this).attr("title", "Click for Level");
-	}
-});
-$("#jq").on("click", function () {
-	$("#jqProg").slideToggle(1000, "linear");
-	$("#css, #js, #bs, #html").toggle(1000, "linear");
-	if ($(this).attr("title")) {
-		$(this).removeAttr("title");
-	}
-	else {
-		$(this).attr("title", "Click for Level");
-	}
-});
-
 
 
 
