@@ -428,6 +428,7 @@ section {
 	color: #009688;
 	padding: 0 5px;
 	transition: color 0.7s ease;
+	border-bottom: solid 2px rgba(256, 256, 256, 0);
 }
 #contactInfo a:hover {
 	color: #00796B;

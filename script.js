@@ -70,7 +70,7 @@ myform.submit(function(event){
   $("#button").attr("value", "Sending...");
   emailjs.sendForm(service_id,template_id,"myform")
   	.then(function(){ 
-    	alert("Sent!");
+    	alert("Thank you for your message !");
        $("#button").attr("value", "Send");
     }, function(err) {
        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
