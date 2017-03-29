@@ -39,7 +39,7 @@ $("a[href^='#']").on("click", function() {
 
 
 // Manage #more (more transforms into codepen when all loaded)
-$(".load1, .load2").hide();
+$(".load1, .load2, .load3").hide();
 var load = 0;
 $("#more > span").on("click", function () {
 	load++;
@@ -49,6 +49,9 @@ $("#more > span").on("click", function () {
 			break;
 		case 2:
 			$(".load2").fadeIn(1000, "linear");
+			break;
+		case 3:
+			$(".load3").fadeIn(1000, "linear");
 			$("#more").html("<a href='http://codepen.io/beumsk/pens/public/' target='_blank'><span>More creations on Codepen.io</span></a>");
 			$("#more a").css("text-decoration", "none");
 			break;
