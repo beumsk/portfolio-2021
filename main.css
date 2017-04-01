@@ -123,7 +123,7 @@ section {
 }
 
 #home img {
-	padding-top: 20px;
+	padding: 20px auto;
 	width: 20%;
 }
 
@@ -172,10 +172,6 @@ section {
 	background: #00796B;
 	box-shadow: 2.5px 2.5px 5px 1.5px rgba(0, 0, 0, 0.6);
 }
-
-
-
-/* SKILLS SECTION; progress bar abandonned*/
 
 
 
