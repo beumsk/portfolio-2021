@@ -38,8 +38,23 @@ $("a[href^='#']").on("click", function() {
 });
 
 
+// Manage projects hover
+
+$("figure").on("mouseover", function() {
+	if ($(window).width() >= 1024) {
+		$(this).find("figcaption").slideDown();
+	}
+});
+$("figure").on("mouseleave", function() {
+	if ($(window).width() >= 1024) {
+		$(this).find("figcaption").slideUp();
+	}
+});
+
+
+
 // Manage #more (more transforms into codepen when all loaded)
-$(".load1, .load2, .load3").hide();
+$(".load1, .load2, .load3, .load4").hide();
 var load = 0;
 $("#more > span").on("click", function () {
 	load++;
@@ -50,12 +65,14 @@ $("#more > span").on("click", function () {
 		case 2:
 			$(".load2").fadeIn(1000, "linear");
 			break;
-		case 3:
+		case 3: 
 			$(".load3").fadeIn(1000, "linear");
+		case 4:
+			$(".load4").fadeIn(1000, "linear");
 			$("#more").html("<a href='http://codepen.io/beumsk/pens/public/' target='_blank'><span>More creations on Codepen.io</span></a>");
 			$("#more a").css("text-decoration", "none");
 			break;
-		default:
+		
 			
 	}
 });

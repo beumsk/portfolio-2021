@@ -9,6 +9,8 @@ body {
 }
 
 
+
+
 /* HEADER; navigation bar */
 header {
 	background: #009688;
@@ -113,6 +115,9 @@ section {
 	text-align: center;
 	letter-spacing: 0.2em;
 	color: #00796B;
+	background: linear-gradient(#333, #009688);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 #home h2 {
@@ -160,17 +165,18 @@ section {
 }
 
 #about a {
-	color: whitesmoke;
+	color: #009688;
 	padding: 0 5px;
 	margin: 0 5px;
-	border-radius: 2.5px;
-	background: #009688;
+	border: solid 1px #009688;
+	border-radius: 2px;
+	background: ;
 	text-decoration: none;
-	transition: background 1s ease, box-shadow 1s ease;
+	transition: background 1s ease, color 1s ease;
 }
 #about a:hover {
-	background: #00796B;
-	box-shadow: 2.5px 2.5px 5px 1.5px rgba(0, 0, 0, 0.6);
+	background: #009688;
+	color: whitesmoke;
 }
 
 
@@ -194,7 +200,7 @@ section {
 #creations #lang > div {
 	padding: 5px 10px;
 	border: solid 1px #607D8B;
-	border-radius: 2.5px;
+	border-radius: 2px;
 	margin: 5px 0px;
 	display: inline-block;
 	background: whitesmoke;
@@ -229,7 +235,7 @@ section {
 	display: inline-block;
 	width: 0;
 	opacity: 0;
-	border-radius: 2.5px;
+	border-radius: 2px;
 	height: 19px;
 	color: whitesmoke;
 	float: right;
@@ -261,7 +267,7 @@ section {
 #creations .creas {
 	width: 100%;
 	display: block;
-	border-radius: 5px;
+	border-radius: 2px;
 }
 
 #creations figure {
@@ -270,7 +276,7 @@ section {
 	max-width: 90%;
 	display: inline-block;
 	transition: box-shadow 0.5s ease;
-	border-radius: 5px;
+	border-radius: 2px;
 }
 #creations figure:hover {
 	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.6);
@@ -298,17 +304,18 @@ section {
 }
 
 #creations #more span {
-	background: #009688;
-	color: whitesmoke;
+	background: whitesmoke;
+ 	color: #009688;
 	padding: 10px 20px;
-	border-radius: 5px;
-	transition: background 0.7s ease, box-shadow 0.7s ease;
+	border: 2px #009688 solid;
+	border-radius: 2px;
+	transition: background 0.7s ease, color 0.7s ease;
 }
 
 #creations #more span:hover {
- 	background: #00796B;
+ 	background: #009688;
+	color: whitesmoke;
  	cursor: pointer;
- 	box-shadow: 2.5px 2.5px 5px 1.5px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -335,7 +342,7 @@ section {
 	background: rgba(256, 256, 256, 0.9);
 	padding: 10px;
 	display: flex;
-	border-radius: 5px;
+	border-radius: 2px;
 }
 
 #contactForm form{
@@ -362,7 +369,7 @@ section {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 2px;
     box-sizing: border-box;
     resize: none;
     transition: box-shadow 0.7s ease;
@@ -385,20 +392,21 @@ section {
 
 #contactForm [type="submit"] {
 	width: 100%;
-    background-color: #009688;
-    color: white;
+    background: whitesmoke;
+	color: #009688;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 5px;
+    border: 2px solid #009688;
+    border-radius: 2px;
     cursor: pointer;
     font-size: 18px;
-    transition: background 0.7s ease, box-shadow 0.7s ease;
+    transition: background 0.7s ease, color 0.7s ease;
     box-shadow: none !important;
 }
 #contactForm [type="submit"]:hover {
-	background: #00796B;
-	box-shadow: 2.5px 2.5px 5px 1.5px rgba(0, 0, 0, 0.6) !important;
+	background: #009688;
+	color: whitesmoke;
 }
 
 #contact #contactInfo {
@@ -408,7 +416,7 @@ section {
 	background: rgba(256, 256, 256, 0.8);
 	padding: 10px;
 	color: #009688;
-	border-radius: 5px;
+	border-radius: 2px;
 }
 
 #contactInfo p {
@@ -417,7 +425,7 @@ section {
 
 #contactInfo img {
 	width: 20%;
-	border-radius: 5px;
+	border-radius: 2px;
 }
 
 #contactInfo a {
@@ -603,12 +611,14 @@ footer img {
 	#creations figcaption {
 		display: none;
 	}
+	/* no more needed because of the use of slideDown/Up in jquery
 	#creations figcaption:hover {
 		display: block;
 	}
 	#creations .creas:hover + figcaption {
 		display: block;
 	}
+	*/
 
 	#contact h1 {
 		margin-bottom: 20px;
