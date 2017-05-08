@@ -115,7 +115,7 @@ section {
 	text-align: center;
 	letter-spacing: 0.2em;
 	color: #00796B;
-	background: linear-gradient(#333, #009688);
+	background: -webkit-linear-gradient(#333, #009688);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -565,7 +565,6 @@ footer img {
 		align-items: center;
 		display: flex;
 		width: 30%;
-		min-height: 50vh;
 		margin: 20px 20px;
 	}
 
