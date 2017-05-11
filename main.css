@@ -170,7 +170,6 @@ section {
 	margin: 0 5px;
 	border: solid 1px #009688;
 	border-radius: 2px;
-	background: ;
 	text-decoration: none;
 	transition: background 1s ease, color 1s ease;
 }
@@ -341,14 +340,11 @@ section {
 	margin: 20px auto;
 	background: rgba(256, 256, 256, 0.9);
 	padding: 10px;
-	display: flex;
 	border-radius: 2px;
 }
 
 #contactForm form{
 	width: 100%;
-	display: flex;
-	flex-direction: column;
 }
 
 #contact form legend {
@@ -358,16 +354,12 @@ section {
 }
 
 #contactForm form div {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
 }
 
 #contactForm input, #contactForm textarea {
 	width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
     border-radius: 2px;
     box-sizing: border-box;
@@ -536,9 +528,9 @@ footer img {
 	}
 
 	#contact #contactForm {
+		display: flex;
 		flex-direction: column;
 		width: 60%;
-		min-height: 50vh;
 		margin: 20px 20px;
 	}
 
@@ -560,10 +552,10 @@ footer img {
 	}
 
 	#contact #contactInfo {
+		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		display: flex;
 		width: 30%;
 		margin: 20px 20px;
 	}
