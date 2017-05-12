@@ -566,6 +566,7 @@ footer img {
 
 	#contactInfo img {
 		width: 40%;
+		min-height: 50px;
 	}
 
 	#contactInfo div {
