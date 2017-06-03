@@ -64,11 +64,6 @@ $("#more > span").on("click", function () {
 			break;
 		case 2:
 			$(".load2").fadeIn(1000, "linear");
-			break;
-		case 3: 
-			$(".load3").fadeIn(1000, "linear");
-		case 4:
-			$(".load4").fadeIn(1000, "linear");
 			$("#more").html("<a href='http://codepen.io/beumsk/pens/public/' target='_blank'><span>More creations on Codepen.io</span></a>");
 			$("#more a").css("text-decoration", "none");
 			break;
