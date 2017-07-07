@@ -1,28 +1,16 @@
-// Manage navbar 
-if ($(window).width() < 748) {
-	// hide cross and menu
-	$("#menu").hide();
-	$("#cross").hide();
-	$("#menu").removeClass("hidden");
-	$("#cross").removeClass("hidden");
+// show menu on burgerclick
+$("#burger").on("click", function() {
+  $("#menu").removeClass("hidden");
+  $("#burger").addClass("hidden");
+  $("#cross").removeClass("hidden");
+});
 
-	// show hamburger menu
-	$("#burger").on("click", function() {
-		$("#menu").slideToggle(function() {
-			$("#burger").hide();
-			$("#cross").show();
-		});
-
-	});
-
-	// hide burger menu on cross
-	$("#cross").on("click", function() {
-		$("#menu").slideToggle(function() {
-			$("#cross").hide();
-			$("#burger").show();
-		});
-	});
-}
+// hide menu on crossclick
+$("#cross").on("click", function() {
+  $("#menu").addClass("hidden");
+  $("#cross").addClass("hidden");
+  $("#burger").removeClass("hidden");
+});
 
 
 // Manage scroll
