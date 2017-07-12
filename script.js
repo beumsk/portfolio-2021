@@ -26,21 +26,6 @@ $("a[href^='#']").on("click", function() {
 });
 
 
-// Manage projects hover
-
-$("figure").on("mouseover", function() {
-	if ($(window).width() >= 1024) {
-		$(this).find("figcaption").slideDown();
-	}
-});
-$("figure").on("mouseleave", function() {
-	if ($(window).width() >= 1024) {
-		$(this).find("figcaption").slideUp();
-	}
-});
-
-
-
 // Manage #more (more transforms into codepen when all loaded)
 $(".load1, .load2, .load3, .load4").hide();
 var load = 0;
