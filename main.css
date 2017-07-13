@@ -207,10 +207,9 @@ section {
   display: inline-block;
   background: whitesmoke;
   cursor: pointer;
-  transition: box-shadow .7s ease, background .7s ease;
+  transition: background .7s ease;
 }
 #creations #lang > div:hover {
-  box-shadow: 2.5px 2.5px 5px 1.5px rgba(0, 0, 0, .6);
   background: white;
 }
 #creations #html {
@@ -277,22 +276,25 @@ section {
   margin: 10px 0;
   max-width: 90%;
   display: inline-block;
-  transition: box-shadow .5s ease;
+  transition: transform .5s ease;
   border-radius: 2px;
 }
 #creations figure:hover {
-  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, .6);
+  transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  overflow: hidden;
 }
 
 #creations figcaption {
   position: absolute;
-  bottom: 10px;
-  margin: 10px 0;
+  bottom: 0;
+  margin: 0;
   text-align: center;
   width: 100%;
-  background: rgba(256, 256, 256, .7);
+  color: whitesmoke;
+  background: rgba(0, 0, 0, .6);
   line-height: 24px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .23), 0 0px 10px rgba(0, 0, 0, .16);
   font-size: 18px;
 }
 
@@ -598,6 +600,13 @@ footer img {
     margin-bottom: 20px;
   }
 
+  #about p, 
+  #about h3 {
+    padding: 20px 120px;
+    line-height: 24px;
+    letter-spacing: .07em;
+  }
+
   #creations #lang > div {
     margin: 20px;
   }
@@ -609,12 +618,10 @@ footer img {
     width: 28%;
     margin: 10px 20px;
   }
-
+  /*
   #creations figcaption {
     display: none;
   }
-
-  /* no more needed because of the use of slideDown/Up in jquery
   #creations figcaption:hover {
     display: block;
   }
@@ -622,6 +629,9 @@ footer img {
     display: block;
   }
   */
+  #creations #more {
+    padding-top: 40px;
+  }
 
   #contact h1 {
     margin-bottom: 20px;
