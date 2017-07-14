@@ -12,7 +12,7 @@ body {
 
 /* HEADER; navigation bar */
 header {
-  background: #009688;
+  background-image: linear-gradient(to left, #1C3230, #009688);
   box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .16);
   position: fixed; 
   width: 100%;
@@ -30,7 +30,6 @@ header {
 }
 
 #mainHeader {
-  background: #00796B;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -67,10 +66,14 @@ ul {
 }
 
 #menu a {
-  transition: background 1.5s ease;
+  /*transition: box-shadow 1s ease, color 1s ease;*/
+  transition: transform 1s ease;
+  cursor: pointer;
 }
 #menu a:hover {
-  background: #00796b;
+  /*box-shadow: inset 10em 0 rgba(256, 256, 256, 0.5);
+  color: #00796b;*/
+  transform: scale(1.2);
 }
 
 
@@ -86,7 +89,7 @@ section {
   color: whitesmoke;
   text-align: right;
   padding-right: 14px;
-  background: #333;
+  background-image: linear-gradient(to left, #333, #111);
   line-height: 50px;
   font-size: 40px;
   letter-spacing: .1em;
@@ -174,10 +177,11 @@ section {
   border: solid 1px #009688;
   border-radius: 2px;
   text-decoration: none;
-  transition: background 1s ease, color 1s ease;
+  transition: box-shadow 1s ease, color 1s ease;
+  cursor: pointer;
 }
 #about a:hover {
-  background: #009688;
+  box-shadow: inset 0 0 0 1em #009688;
   color: whitesmoke;
 }
 
@@ -300,6 +304,7 @@ section {
 
 #creations a {
   color: #333;
+  cursor: pointer;
 }
 
 #more {
@@ -313,11 +318,11 @@ section {
   padding: 10px 20px;
   border: 2px #009688 solid;
   border-radius: 2px;
-  transition: background .7s ease, color .7s ease;
+  transition: box-shadow 1s ease, color 1s ease;
 }
 
 #creations #more span:hover {
-  background: #009688;
+  box-shadow: inset 0 0 0 2em #009688;
   color: whitesmoke;
   cursor: pointer;
 }
@@ -402,11 +407,11 @@ section {
   border-radius: 2px;
   cursor: pointer;
   font-size: 18px;
-  transition: background .7s ease, color .7s ease;
-  box-shadow: none !important;
+  transition: box-shadow 1s ease, color 1s ease;
+  box-shadow: none;
 }
 #contactForm [type="submit"]:hover {
-  background: #009688;
+  box-shadow: inset 0 0 0 2em #009688;
   color: whitesmoke;
 }
 
@@ -434,6 +439,7 @@ section {
   padding: 0 5px;
   transition: color .7s ease;
   border-bottom: solid 2px transparent;
+  cursor: pointer;
 }
 #contactInfo a:hover {
   color: #00796b;
@@ -452,6 +458,7 @@ section {
 #resume a {
   color: #009688;
   text-decoration: none;
+  cursor: pointer;
 }
 #resume a:hover {
   color: #00796b;
@@ -462,7 +469,7 @@ section {
 
 /* FOOTER SECTION; at bottom */
 footer {
-  background: #009688;
+  background-image: linear-gradient(to left, #1C3230, #009688);
   text-align: center;
   color: whitesmoke;
   box-shadow: 0 -3px 10px rgba(0, 0, 0, .23), 0 -3px 10px rgba(0, 0, 0, .16);
@@ -487,7 +494,7 @@ footer img {
 
   #mainHeader {
     float: left;
-    border-right: solid #009688;
+    border-right: solid whitesmoke;
   }
 
   #menu {
@@ -513,7 +520,7 @@ footer img {
 
   #titleHeader {
     display: block;
-    background: #00796b;
+    background: transparent;
   }
 
   #about p, 
