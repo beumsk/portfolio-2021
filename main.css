@@ -66,14 +66,16 @@ ul {
 }
 
 #menu a {
-  /*transition: box-shadow 1s ease, color 1s ease;*/
-  transition: transform 1s ease;
+  transition: background 1s ease, color .5s ease;
   cursor: pointer;
 }
 #menu a:hover {
-  /*box-shadow: inset 10em 0 rgba(256, 256, 256, 0.5);
-  color: #00796b;*/
-  transform: scale(1.2);
+  background: rgba(256, 256, 256, 0.5);
+  color: #00796b;
+}
+
+#burger, #cross {
+  cursor: pointer;
 }
 
 
@@ -208,7 +210,7 @@ section {
   border: solid 1px #607D8B;
   border-radius: 2px;
   margin: 5px 0;
-  display: inline-block;
+  display: none;
   background: whitesmoke;
   cursor: pointer;
   transition: background .7s ease;
@@ -237,7 +239,6 @@ section {
 }
 
 #creations #lang .progress {
-  display: inline-block;
   width: 0;
   opacity: 0;
   border-radius: 2px;
@@ -250,7 +251,7 @@ section {
   max-width: none;
   margin-left: 10px;
   opacity: 1;
-  width: 20vw;
+  width: 10vw;
 }
 
 #creations div #htmlProg {
@@ -418,7 +419,7 @@ section {
 #contact #contactInfo {
   width: 90%;
   min-height: 25vh;
-  margin: 20px auto;
+  margin: 20px auto 10px;
   background: rgba(256, 256, 256, .8);
   padding: 10px;
   color: #009688;
@@ -451,7 +452,8 @@ section {
 }
 
 #contact #resume {
-  margin-top: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
   color: #333;
   text-shadow: 0 0 1px whitesmoke;
 }
@@ -490,7 +492,7 @@ footer img {
 
 
 /* OVER 768px ! */
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 
   #mainHeader {
     float: left;
@@ -499,6 +501,16 @@ footer img {
 
   #menu {
     display: block;
+  }
+
+  #menu a {
+    transition: transform 1s ease;
+    cursor: pointer;
+  }
+  #menu a:hover {
+    transform: scale(1.2);
+    background: transparent;
+    color: whitesmoke;
   }
 
   .hidden {
@@ -532,6 +544,7 @@ footer img {
 
   #creations #lang > div {
     margin: 10px;
+    display: inline-block;
   }
 
   #creations figure {
@@ -549,7 +562,8 @@ footer img {
     display: flex;
     flex-direction: column;
     width: 60%;
-    margin: 20px 20px;
+    margin: 20px 10px 20px 20px;
+    padding: 10px 15px;
   }
 
   #contact form legend {
@@ -576,7 +590,7 @@ footer img {
     justify-content: flex-start;
     align-items: center;
     width: 30%;
-    margin: 20px 20px;
+    margin: 20px 20px 20px 10px;
   }
 
   #contactInfo > * {
@@ -591,6 +605,11 @@ footer img {
   #contactInfo div {
     display: flex;
     flex-direction: row;
+  }
+
+  #contact #resume {
+    margin-top: 0;
+    padding-bottom: 10px;
   }
 }
 
@@ -616,6 +635,10 @@ footer img {
 
   #creations #lang > div {
     margin: 20px;
+  }
+
+  #creations #lang > div:hover > .progress {
+    width: 20vw;
   }
 
   #creations figure {
@@ -644,7 +667,17 @@ footer img {
     margin-bottom: 20px;
   }
 
-  #resume {
+  #contact #contactForm {
+    margin: 20px 20px 20px 80px;
+    padding: 10px 20px;
+  }
+
+  #contact #contactInfo {
+    margin: 20px 80px 20px 20px;
+  }
+
+  #contact #resume {
+    padding-bottom: 20px;
     font-size: 20px;
   }
 }
