@@ -9,7 +9,6 @@ body {
 }
 
 
-
 /* HEADER; navigation bar */
 header {
   background: #009688;
@@ -30,9 +29,29 @@ header {
   display: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .hidden {
+    display: block;
+  }
+}
+
 #mainHeader {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) { 
+  #mainHeader {
+    float: left;
+    border-right: solid #f5f5f5;
+  } 
+}
+
+@media only screen and (min-width: 768px) {
+  #titleHeader {
+    display: block;
+    background: transparent;
+  }
 }
 
 #mainHeader span {
@@ -50,12 +69,36 @@ header {
   float: left;
 }
 
+@media only screen and (min-width: 768px) {
+  .extLinks {
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .intLinks {
+    float: left;
+  }
+}
+
 .intLinks i {
   display: none;
 }
 
+@media only screen and (min-width: 1024px) {
+  .intLinks i {
+    display: inline;
+  }
+}
+
 ul {
   list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #menu {
+    display: block;
+  }
 }
 
 #menu a, 
@@ -70,18 +113,44 @@ ul {
   transition: background 1s ease, color .5s ease;
   cursor: pointer;
 }
+
+@media only screen and (min-width: 768px) {
+  #menu a {
+    transition: transform 1s ease;
+    cursor: pointer;
+  }
+}
+
 #menu a:hover {
   background: rgba(256, 256, 256, 0.5);
   color: #00796b;
 }
 
-#burger, #cross {
+@media only screen and (min-width: 768px) {
+  #menu a:hover {
+    transform: scale(1.2);
+    background: transparent;
+    color: #f5f5f5;
+  }
+}
+
+#burger, 
+#cross {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  #burger, 
+  #cross {
+    display: none;
+  }
 }
 
 
 /* Sections are the different menu links */
-section {
+#home, 
+#about, 
+#creations {
   min-height: 100vh;
 }
 
@@ -156,6 +225,12 @@ section {
   min-height: 100vh;
 }
 
+@media only screen and (min-width: 1024px) {
+  #about h1 {
+    margin-bottom: 20px;
+  }
+}
+
 #about h3 {
   color: #00796b;
   text-shadow: 0 0 1px #f5f5f5;
@@ -167,6 +242,24 @@ section {
   text-align: justify;
   line-height: 22px;
   letter-spacing: .06em;
+}
+
+@media only screen and (min-width: 768px) {
+  #about p, 
+  #about h3 {
+    padding: 20px 40px;
+    line-height: 24px;
+    letter-spacing: .07em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #about p, 
+  #about h3 {
+    padding: 20px 120px;
+    line-height: 24px;
+    letter-spacing: .07em;
+  }
 }
 
 #about span {
@@ -184,6 +277,7 @@ section {
   transition: box-shadow 1s ease, color 1s ease;
   cursor: pointer;
 }
+
 #about a:hover {
   box-shadow: inset 0 0 0 1em #009688;
   color: #f5f5f5;
@@ -217,24 +311,33 @@ section {
   cursor: pointer;
   transition: background .7s ease;
 }
+
+@media only screen and (min-width: 768px) {
+  #creations #lang > div {
+    margin: 10px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #creations #lang > div {
+    margin: 20px;
+  }
+}
+
 #creations #lang > div:hover {
   background: #fff;
 }
-#creations #html {
-  color: #e44d26;
-}
-#creations #css {
-  color: #0765a3;
-}
-#creations #js {
-  color: #f1e05a;
-}
-#creations #bs {
-  color: #4e3773;
-}
-#creations #jq {
-  color: #144e9a;
-}
+
+#creations #html {color: #e44d26;}
+
+#creations #css {color: #0765a3;}
+
+#creations #js {color: #f1e05a;}
+
+#creations #bs {color: #4e3773;}
+
+#creations #jq {color: #144e9a;}
 
 #creations #lang span {
   float: left;
@@ -249,6 +352,7 @@ section {
   float: right;
   transition: width 1.5s ease, opacity .5s ease;
 }
+
 #creations #lang > div:hover > .progress {
   max-width: none;
   margin-left: 10px;
@@ -256,21 +360,21 @@ section {
   width: 10vw;
 }
 
-#creations div #htmlProg {
-  background: #e44d26;
+@media only screen and (min-width: 1024px) {
+  #creations #lang > div:hover > .progress {
+    width: 20vw;
+  }
 }
-#creations div #cssProg {
-  background: #0765a3;
-}
-#creations div #jsProg {
-  background: #f1e05a;
-}
-#creations div #bsProg {
-  background: #4e3773;
-}
-#creations div #jqProg {
-  background: #144e9a;
-}
+
+#creations div #htmlProg {background: #e44d26;}
+
+#creations div #cssProg {background: #0765a3;}
+
+#creations div #jsProg {background: #f1e05a;}
+
+#creations div #bsProg {background: #4e3773;}
+
+#creations div #jqProg {background: #144e9a;}
 
 #creations .creas {
   width: 100%;
@@ -286,6 +390,22 @@ section {
   transition: transform .5s ease;
   border-radius: 2px;
 }
+
+@media only screen and (min-width: 768px) {
+  #creations figure {
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #creations figure {
+    display: inline-block;
+    width: 28%;
+    margin: 10px 20px;
+  }
+}
+
 #creations figure:hover {
   transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
@@ -310,9 +430,15 @@ section {
   cursor: pointer;
 }
 
-#more {
+#creations #more {
   padding-top: 20px;
   padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
+  #creations #more {
+    padding-top: 40px;
+  }
 }
 
 #creations #more span {
@@ -344,7 +470,21 @@ section {
 
 #contact > div {
   background: rgba(256, 256, 256, .6);
-  min-height: 100vh;
+  min-height: calc(100vh - 75px);
+}
+
+@media only screen and (min-width: 1024px) {
+  #contact h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #contact div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 #contact #contactForm {
@@ -354,6 +494,23 @@ section {
   background: rgba(256, 256, 256, .9);
   padding: 10px;
   border-radius: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  #contact #contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 20px 10px 20px 20px;
+    padding: 10px 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #contact #contactForm {
+    margin: 20px 20px 20px 80px;
+    padding: 10px 20px;
+  }
 }
 
 #contactForm form{
@@ -366,7 +523,19 @@ section {
   font-weight: bold;
 }
 
-#contactForm form div {
+@media only screen and (min-width: 768px) {
+  #contact form legend {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+#contactForm form div {}
+
+@media only screen and (min-width: 768px) {
+  #contactForm form div {
+    flex-direction: column;
+  }
 }
 
 #contactForm input, 
@@ -381,19 +550,34 @@ section {
   transition: box-shadow .7s ease;
 }
 
+@media only screen and (min-width: 768px) {
+  #contactForm input, 
+  #contactForm textarea {
+    width: 100%;
+  }
+}
+
 #contactForm label {
   display: none;
   color: #333;
+}
+
+@media only screen and (min-width: 768px) {
+  #contactForm label {
+    display: flex;
+  }
 }
 
 #contactForm input:invalid:focus, 
 #contactForm textarea:invalid:focus {
   box-shadow: #d32f2f 1px 1px 4px;
 }
+
 #contactForm input:valid:focus, 
 #contactForm textarea:valid:focus {
   box-shadow: #388e3c 1px 1px 4px;
 }
+
 #contactForm input:focus, 
 #contactForm textarea:focus {
   outline: none !important;
@@ -413,6 +597,7 @@ section {
   transition: box-shadow 1s ease, color 1s ease;
   box-shadow: none;
 }
+
 #contactForm [type="submit"]:hover {
   box-shadow: inset 0 0 0 2em #009688;
   color: #f5f5f5;
@@ -428,6 +613,30 @@ section {
   border-radius: 2px;
 }
 
+@media only screen and (min-width: 768px) {
+  #contact #contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    margin: 20px 20px 20px 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #contact #contactInfo {
+    margin: 20px 80px 20px 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #contactInfo div {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 #contactInfo p {
   color: #333;
 }
@@ -437,6 +646,13 @@ section {
   border-radius: 2px;
 }
 
+@media only screen and (min-width: 768px) {
+  #contactInfo img {
+    width: 40%;
+    min-height: 50px; /*for ie img size bug*/
+  }
+}
+
 #contactInfo a {
   color: #009688;
   padding: 0 5px;
@@ -444,6 +660,7 @@ section {
   border-bottom: solid 2px transparent;
   cursor: pointer;
 }
+
 #contactInfo a:hover {
   color: #00796b;
   border-bottom: solid 2px #00796b;
@@ -453,17 +670,39 @@ section {
   margin: 5px 0;
 }
 
+@media only screen and (min-width: 768px) {
+  #contactInfo > * {
+    margin: 15px 0;
+  }
+}
+
 #contact #resume {
   margin-top: 10px;
   padding-bottom: 10px;
   color: #333;
   text-shadow: 0 0 1px #f5f5f5;
 }
+
+@media only screen and (min-width: 768px) {
+  #contact #resume {
+    margin-top: 0;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #contact #resume {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
 #resume a {
   color: #009688;
   text-decoration: none;
   cursor: pointer;
 }
+
 #resume a:hover {
   color: #00796b;
   border-bottom: solid 2px #00796b;
@@ -490,197 +729,4 @@ footer p {
 footer img {
   vertical-align: middle;
   height: 16px;
-}
-
-
-
-/* OVER 768px ! */
-@media only screen and (min-width: 768px) {
-
-  #mainHeader {
-    float: left;
-    border-right: solid #f5f5f5;
-  }
-
-  #menu {
-    display: block;
-  }
-
-  #menu a {
-    transition: transform 1s ease;
-    cursor: pointer;
-  }
-  #menu a:hover {
-    transform: scale(1.2);
-    background: transparent;
-    color: #f5f5f5;
-  }
-
-  .hidden {
-    display: block;
-  }
-
-  .intLinks {
-    float: left;
-  }
-
-  #burger, 
-  #cross {
-    display: none;
-  }
-
-  .extLinks {
-    float: right;
-  }
-
-  #titleHeader {
-    display: block;
-    background: transparent;
-  }
-
-  #about p, 
-  #about h3 {
-    padding: 20px 40px;
-    line-height: 24px;
-    letter-spacing: .07em;
-  }
-
-  #creations #lang > div {
-    margin: 10px;
-    display: inline-block;
-  }
-
-  #creations figure {
-    width: 40%;
-    margin: 20px;
-  }
-
-  #contact div div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  #contact #contactForm {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 20px 10px 20px 20px;
-    padding: 10px 15px;
-  }
-
-  #contact form legend {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  #contactForm form div {
-    flex-direction: column;
-  }
-
-  #contactForm input, 
-  #contactForm textarea {
-    width: 100%;
-  }
-
-  #contactForm label {
-    display: flex;
-  }
-
-  #contact #contactInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 30%;
-    margin: 20px 20px 20px 10px;
-  }
-
-  #contactInfo > * {
-    margin: 15px 0;
-  }
-
-  #contactInfo img {
-    width: 40%;
-    min-height: 50px; /*for ie img size bug*/
-  }
-
-  #contactInfo div {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #contact #resume {
-    margin-top: 0;
-    padding-bottom: 10px;
-  }
-}
-
-
-
-/* Over 1024px */
-@media only screen and (min-width: 1024px) {
-
-  .intLinks i {
-    display: inline;
-  }
-
-  #about h1 {
-    margin-bottom: 20px;
-  }
-
-  #about p, 
-  #about h3 {
-    padding: 20px 120px;
-    line-height: 24px;
-    letter-spacing: .07em;
-  }
-
-  #creations #lang > div {
-    margin: 20px;
-  }
-
-  #creations #lang > div:hover > .progress {
-    width: 20vw;
-  }
-
-  #creations figure {
-    display: inline-block;
-  }
-  #creations figure {
-    width: 28%;
-    margin: 10px 20px;
-  }
-  /*
-  #creations figcaption {
-    display: none;
-  }
-  #creations figcaption:hover {
-    display: block;
-  }
-  #creations .creas:hover + figcaption {
-    display: block;
-  }
-  */
-  #creations #more {
-    padding-top: 40px;
-  }
-
-  #contact h1 {
-    margin-bottom: 20px;
-  }
-
-  #contact #contactForm {
-    margin: 20px 20px 20px 80px;
-    padding: 10px 20px;
-  }
-
-  #contact #contactInfo {
-    margin: 20px 80px 20px 20px;
-  }
-
-  #contact #resume {
-    padding-bottom: 20px;
-    font-size: 20px;
-  }
 }
