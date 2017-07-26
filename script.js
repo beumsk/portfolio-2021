@@ -40,8 +40,6 @@ $("#more > span").on("click", function () {
       $("#more").html("<a href='http://codepen.io/beumsk/pens/public/' target='_blank'><span>More creations on Codepen.io</span></a>");
       $("#more a").css("text-decoration", "none");
       break;
-    
-      
   }
 });
 
@@ -66,33 +64,3 @@ myform.submit(function(event){
     });
   return false;
 });
-
-
-
-
-// highlight current section
-// highlight on hover does not work after scroll !!!
-/*$(document).on("scroll", function() {
-  if ($(document).scrollTop() < $("#about").offset().top) {
-    $(".intLinks").css("background", "#009688");
-  }
-  else if ($(document).scrollTop() < $("#skills").offset().top && $(document).scrollTop() >= $("#about").offset().top) {
-    $(".intLinks").css("background", "#009688");
-    $("[href='#about']").css("background", "#00796B");
-  }
-  else if ($(document).scrollTop() < $("#creations").offset().top && $(document).scrollTop() >= $("#skills").offset().top) {
-    $(".intLinks").css("background", "#009688");
-    $("[href='#skills']").css("background", "#00796B");
-  }
-  else if ($(document).scrollTop() < $("#contact").offset().top && $(document).scrollTop() >= $("#creations").offset().top) {
-    $(".intLinks").css("background", "#009688");
-    $("[href='#creations']").css("background", "#00796B");
-  }
-  else if ($(document).scrollTop() < $("footer").offset().top && $(document).scrollTop() >= $("#contact").offset().top) {
-    $(".intLinks").css("background", "#009688");
-    $("[href='#contact']").css("background", "#00796B");
-  }
-});*/
-
-
-
