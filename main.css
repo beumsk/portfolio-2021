@@ -121,6 +121,7 @@ ul {
   transition: background 1s ease, color .5s ease;
   cursor: pointer;
 	position: relative;
+	opacity: .67;
 }
 
 @media only screen and (min-width: 768px) {
@@ -133,6 +134,7 @@ ul {
 #menu a:hover {
   background: rgba(256, 256, 256, 0.5);
   color: #00796b;
+	opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {
