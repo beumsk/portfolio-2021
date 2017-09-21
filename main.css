@@ -37,7 +37,7 @@ header {
 
 #mainHeader {
   font-weight: bold;
-  text-transform: uppercase;
+  font-size: 14px;
 }
 
 @media only screen and (min-width: 768px) { 
@@ -121,20 +121,19 @@ ul {
   transition: background 1s ease, color .5s ease;
   cursor: pointer;
 	position: relative;
+	font-size: small;
 }
 
 @media only screen and (min-width: 768px) {
   #menu a {
     transition: transform 1s ease;
     cursor: pointer;
-		opacity: .67;
   }
 }
 
 #menu a:hover {
   background: rgba(256, 256, 256, 0.5);
   color: #00796b;
-	opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -160,6 +159,7 @@ ul {
 #burger, 
 #cross {
   cursor: pointer;
+  background: rgba(0, 0, 0, .5);
 }
 
 @media only screen and (min-width: 768px) {
@@ -214,6 +214,7 @@ ul {
 #home h1 {
   font-size: 8vh;
   text-align: center;
+	text-transform: uppercase;
   letter-spacing: .2em;
   color: #00796b;
   background: -webkit-linear-gradient(#333, #009688);
