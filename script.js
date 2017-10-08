@@ -36,7 +36,7 @@ $links.on("click", function() {
 // Manage #more (more transforms into codepen when all loaded)
 var $loads = $(".load1, .load2, .load3");
 var $load1 = $(".load1"), $load2 = $(".load2"), $load3 = $(".load3");
-var $moreSpan = $("#more > span"), $more = $("#more"), $moreA = $("#more a");
+var $moreSpan = $("#more > span"), $more = $("#more");
 
 $loads.hide();
 var load = 0;
@@ -48,11 +48,7 @@ $moreSpan.on("click", function () {
       break;
     case 2:
       $load2.fadeIn(1000, "linear");
-      break;
-    case 3:
-      $load3.fadeIn(1000, "linear");
-      $more.html("<a href='http://codepen.io/beumsk/pens/public/' target='_blank'><span>More creations on Codepen.io</span></a>");
-      $moreA.css("text-decoration", "none");
+      $more.html("<a href='http://codepen.io/beumsk/pens/public/' target='_blank' style='text-decoration: none;'><span>More creations on Codepen.io</span></a>");
       break;
   }
 });

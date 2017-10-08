@@ -262,7 +262,9 @@ ul {
 
 #about p, 
 #about h3 {
-  padding: 20px 10px;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
   text-align: justify;
   line-height: 22px;
   letter-spacing: .06em;
@@ -572,6 +574,7 @@ ul {
   box-sizing: border-box;
   resize: none;
   transition: box-shadow .7s ease;
+  font-family: "Roboto", sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
