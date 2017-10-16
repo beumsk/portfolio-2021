@@ -212,6 +212,8 @@ ul {
 }
 
 #home h1 {
+  width: 90%;
+  margin: auto;
   font-size: 8vh;
   text-align: center;
 	text-transform: uppercase;
@@ -223,6 +225,8 @@ ul {
 }
 
 #home h2 {
+  width: 90%;
+  margin: auto;
   font-size: 4vh;
   text-align: center;
   letter-spacing: .1em;
@@ -230,7 +234,7 @@ ul {
 }
 
 #home img {
-  padding: 20px auto;
+  padding: 20px 0;
   width: 20%;
 }
 
@@ -273,7 +277,8 @@ ul {
 @media only screen and (min-width: 768px) {
   #about p, 
   #about h3 {
-    padding: 20px 40px;
+    width: 80%;
+    padding: 20px 0;
     line-height: 24px;
     letter-spacing: .07em;
   }
@@ -282,7 +287,8 @@ ul {
 @media only screen and (min-width: 1024px) {
   #about p, 
   #about h3 {
-    padding: 20px 120px;
+    width: 70%;
+    padding: 20px 0;
     line-height: 24px;
     letter-spacing: .07em;
   }
@@ -324,14 +330,20 @@ ul {
 }
 
 #creations > div > div {
-  margin-top: 20px;
+  margin: 20px auto 0;
+  width: 90%;
+}
+
+#creations #lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #creations #lang > div {
   padding: 5px 10px;
   border: solid 1px #607D8B;
   border-radius: 2px;
-  margin: 5px 0;
   display: none;
   background: #f5f5f5;
   cursor: pointer;
@@ -340,14 +352,14 @@ ul {
 
 @media only screen and (min-width: 768px) {
   #creations #lang > div {
-    margin: 10px;
+    margin: 10px 0;
     display: inline-block;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   #creations #lang > div {
-    margin: 20px;
+    margin: 20px 0;
   }
 }
 
@@ -402,33 +414,28 @@ ul {
 
 #creations div #jqProg {background: #144e9a;}
 
-#creations .creas {
-  width: 100%;
-  display: block;
-  border-radius: 2px;
+#creations #miniatures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 #creations figure {
   position: relative;
   margin: 10px 0;
-  max-width: 90%;
-  display: inline-block;
   transition: transform .5s ease;
   border-radius: 2px;
 }
 
 @media only screen and (min-width: 768px) {
   #creations figure {
-    width: 40%;
-    margin: 20px;
+    width: 48%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   #creations figure {
-    display: inline-block;
-    width: 28%;
-    margin: 10px 20px;
+    width: 31%;
   }
 }
 
@@ -438,6 +445,13 @@ ul {
   -webkit-transform: scale(1.1, 1.1);
   overflow: hidden;
 }
+
+#creations .creas {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+}
+
 
 #creations figcaption {
   position: absolute;
@@ -505,18 +519,30 @@ ul {
   }
 }
 
+#contact > div > div {
+  width: 90%;
+  margin: auto;
+}
+
 @media only screen and (min-width: 768px) {
-  #contact div div {
+  #contact > div > div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #contact > div > div {
+    width: 70%;
   }
 }
 
 #contact #contactForm {
-  width: 90%;
+  width: 100%;
   min-height: 25vh;
-  margin: 20px auto;
+  margin: 20px 0;
   background: rgba(256, 256, 256, .9);
   padding: 10px;
   border-radius: 2px;
@@ -527,19 +553,19 @@ ul {
     display: flex;
     flex-direction: column;
     width: 60%;
-    margin: 20px 10px 20px 20px;
+    /*margin: 20px 10px 20px 20px;*/
     padding: 10px 15px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   #contact #contactForm {
-    margin: 20px 20px 20px 80px;
+    /*margin: 20px 20px 20px 80px;*/
     padding: 10px 20px;
   }
 }
 
-#contactForm form{
+#contactForm form {
   width: 100%;
 }
 
@@ -631,9 +657,9 @@ ul {
 }
 
 #contact #contactInfo {
-  width: 90%;
+  width: 100%;
   min-height: 25vh;
-  margin: 20px auto 10px;
+  margin: 20px 0;
   background: rgba(256, 256, 256, .8);
   padding: 10px;
   color: #009688;
@@ -646,14 +672,14 @@ ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 30%;
-    margin: 20px 20px 20px 10px;
+    width: 35%;
+    /*margin: 20px 20px 20px 10px;*/
   }
 }
 
 @media only screen and (min-width: 1024px) {
   #contact #contactInfo {
-    margin: 20px 80px 20px 20px;
+    /*margin: 20px 80px 20px 20px;*/
   }
 }
 
