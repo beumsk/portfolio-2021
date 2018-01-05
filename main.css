@@ -192,6 +192,7 @@ ul {
   width: 100%;
   line-height: 100px;
   opacity: 0.4;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .nextLinks:hover {
   background: rgba(256, 256, 256, 0.3);
