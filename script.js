@@ -18,7 +18,7 @@ $cross.on("click", function() {
 
 
 // Manage scroll
-var $links = $(".intLinks, .extLinks, #titleHeader, .nextLinks a");
+var $links = $(".intLinks, .extLinks, #titleHeader, .nextLinks>a");
 var $htmlBody = $("html, body");
 
 $links.on("click", function() {
@@ -75,4 +75,3 @@ $myForm.submit(function(event){
     });
   return false;
 });
-
