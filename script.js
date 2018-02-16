@@ -48,7 +48,7 @@ $moreSpan.on("click", function () {
       break;
     case 2:
       $load2.fadeIn(1000, "linear");
-      $more.html("<a href='http://codepen.io/beumsk/pens/public/' target='_blank' style='text-decoration: none;'><span>More creations on Codepen.io</span></a>");
+      $more.html("<a href='https://codepen.io/beumsk/pens/public/' target='_blank' style='text-decoration: none;'><span>More creations on Codepen.io</span></a>");
       break;
   }
 });
