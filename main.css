@@ -176,7 +176,7 @@ ul {
   text-align: right;
   padding-right: 14px;
   background-color: #333;
-  background-image: linear-gradient(to left, #333, #111);
+  background-image: linear-gradient(to right, #333, #111);
   line-height: 50px;
   font-size: 40px;
   letter-spacing: .1em;
@@ -203,7 +203,7 @@ ul {
   background-color: #f5f5f5;
   color: #009688;
   padding: 10px 20px;
-  border: 2px #009688 solid;
+  border: 1px #009688 solid;
   border-radius: 2px;
   transition: box-shadow 1s ease, color 1s ease;
 }
@@ -466,8 +466,7 @@ ul {
   margin: 10px 0;
   transition: transform .5s ease, box-shadow 0.5s ease;
   border-radius: 2px;
-  /*border: solid 1px rgba(0,0,0,0.3);*/
-  box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+  border: solid 1px rgba(0,0,0,0.2);
 }
 
 @media only screen and (min-width: 768px) {
@@ -487,7 +486,6 @@ ul {
   -ms-transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
   overflow: hidden;
-  box-shadow: 0 0 6px 3px rgba(0,0,0,0.3);
 }
 
 #creations .creas {
@@ -498,7 +496,7 @@ ul {
 
 
 #creations figcaption {
-  border-top: solid 1px rgba(0,0,0,0.3);
+  border-top: solid 1px rgba(0,0,0,0.2);
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -508,6 +506,7 @@ ul {
   background-color: rgba(256,256,256,0.9);
   line-height: 24px;
   font-size: 18px;
+  border-radius: 0 0 2px 2px;
 }
 
 #creations a {
@@ -528,11 +527,11 @@ ul {
 
 #creations #more span {
   background-color: #f5f5f5;
+  position: relative;
   color: #009688;
   padding: 10px 20px;
-  border: 2px #009688 solid;
+  border: 1px #009688 solid;
   border-radius: 2px;
-  transition: box-shadow 1s ease, color 1s ease;
 }
 
 #creations #more span:hover {
@@ -594,6 +593,7 @@ ul {
   padding: 10px;
   border-radius: 2px;
   margin-bottom: 20px;
+  border: solid 1px rgba(0,0,0,0.2);
 }
 
 @media only screen and (min-width: 768px) {
@@ -685,12 +685,12 @@ ul {
 
 #contactForm input[type="submit"] {
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: white;
   color: #009688;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border: 2px solid #009688;
+  border: 1px solid #009688;
   border-radius: 2px;
   cursor: pointer;
   font-size: 18px;
@@ -710,6 +710,7 @@ ul {
   padding: 10px;
   color: #009688;
   border-radius: 2px;
+  border: solid 1px rgba(0,0,0,0.2);
 }
 
 @media only screen and (min-width: 768px) {
