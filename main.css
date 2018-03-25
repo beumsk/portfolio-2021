@@ -467,6 +467,7 @@ ul {
   transition: transform .5s ease, box-shadow 0.5s ease;
   border-radius: 2px;
   border: solid 1px rgba(0,0,0,0.2);
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -481,11 +482,14 @@ ul {
   }
 }
 
-#creations figure:hover {
+/*#creations figure:hover {
   transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
-  overflow: hidden;
+}*/
+
+#creations figure:hover figcaption {
+  bottom: 0;
 }
 
 #creations .creas {
@@ -498,15 +502,16 @@ ul {
 #creations figcaption {
   border-top: solid 1px rgba(0,0,0,0.2);
   position: absolute;
-  bottom: 0;
+  bottom: -26px;
   margin: 0;
   text-align: center;
   width: 100%;
   color: #333;
   background-color: rgba(256,256,256,0.9);
-  line-height: 24px;
-  font-size: 18px;
+  line-height: 26px;
+  font-size: 20px;
   border-radius: 0 0 2px 2px;
+  transition: bottom 0.5s ease;
 }
 
 #creations a {
@@ -532,6 +537,7 @@ ul {
   padding: 10px 20px;
   border: 1px #009688 solid;
   border-radius: 2px;
+  transition: box-shadow 1s ease, color 1s ease;
 }
 
 #creations #more span:hover {
