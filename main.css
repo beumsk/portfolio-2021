@@ -709,6 +709,12 @@ ul {
   color: #f5f5f5;
 }
 
+@media only screen and (min-width: 768px) {
+  #contactForm input[type="submit"] {
+    margin-top: 16px;
+  }
+}
+
 #contact #contactInfo {
   width: 100%;
   min-height: 25vh;
