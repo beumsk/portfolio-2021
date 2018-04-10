@@ -324,7 +324,7 @@ ul {
 #about .text h3 {
   width: 90%;
   margin: auto;
-  text-align: justify;
+  text-align: left;
   line-height: 150%;
   letter-spacing: 0.06em;
 }
@@ -553,7 +553,7 @@ ul {
 
 
 
-/* CONTACT SECTION; form, info and resume */
+/* CONTACT SECTION; form, info */
 #contact {
   position: relative;
   text-align: center;
@@ -579,6 +579,7 @@ ul {
 #contact > div > div {
   width: 90%;
   margin: 20px auto 0;
+  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -594,6 +595,7 @@ ul {
   #contact > div > div {
     width: 70%;
     margin-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -791,36 +793,6 @@ ul {
   #contactInfo > * {
     margin: 15px 0;
   }
-}
-
-#contact #resume {
-  margin-top: 10px;
-  padding-bottom: 10px;
-  color: #333;
-  text-shadow: 0 0 1px #f5f5f5;
-}
-
-@media only screen and (min-width: 768px) {
-  #contact #resume {
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  #contact #resume {
-    font-size: 18px;
-  }
-}
-
-#resume a {
-  color: #009688;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#resume a:hover {
-  color: #00796b;
-  border-bottom: solid 2px #00796b;
 }
 
 
