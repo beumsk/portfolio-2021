@@ -239,11 +239,10 @@ ul {
 #home h1 {
   width: 90%;
   margin: auto;
-  font-size: 8vh;
+  font-size: 10vh;
   text-align: center;
   font-weight: 600;
-	text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   color: #00796b;
   background-image: -webkit-linear-gradient(#333, #009688); /* use of webkit to prevent IE to have undesired background*/
   -webkit-background-clip: text;
