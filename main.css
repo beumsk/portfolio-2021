@@ -35,6 +35,10 @@ header {
   }
 }
 
+#menu {
+  list-style-type: none;
+}
+
 @media only screen and (min-width: 768px) {
   #menu {
     display: block;
@@ -162,10 +166,6 @@ header {
   #menu .intLinks i {
     display: inline;
   }
-}
-
-ul {
-  list-style-type: none;
 }
 
 #mainHeader #burger, 
