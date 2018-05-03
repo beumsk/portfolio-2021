@@ -21,7 +21,7 @@ header {
   font-family: "Josefin Sans", Arial, sans-serif;
 }
 
-#menu li a {
+.menu li a {
   display: block;
 }
 
@@ -35,18 +35,18 @@ header {
   }
 }
 
-#menu {
+.menu {
   list-style-type: none;
 }
 
 @media only screen and (min-width: 768px) {
-  #menu {
+  .menu {
     display: block;
   }
 }
 
-#menu a, 
-#mainHeader a {
+.menu a, 
+.mainHeader a {
   text-decoration: none;
   color: #f5f5f5;
   padding: 0 10px;
@@ -54,14 +54,14 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #menu a, 
-  #mainHeader a {
+  .menu a, 
+  .mainHeader a {
     padding: 0;
     margin: auto 10px;
   }
 }
 
-#menu a {
+.menu a {
   transition: background 1s ease, color 0.5s ease;
   cursor: pointer;
   position: relative;
@@ -69,7 +69,7 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #menu a {
+  .menu a {
     transition: -webkit-transform 1s ease;
     transition: transform 1s ease;
     transition: transform 1s ease, -webkit-transform 1s ease;
@@ -77,17 +77,17 @@ header {
   }
 }
 
-#menu a:hover {
+.menu a:hover {
   background-color: rgba(256, 256, 256, 0.5);
   color: #00796b;
 }
 
 @media only screen and (min-width: 768px) {
-  #menu a:hover {
+  .menu a:hover {
     background-color: transparent;
     color: #f5f5f5;
   }
-  #menu a:before {
+  .menu a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -100,50 +100,50 @@ header {
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   }
-  #menu a:hover:before {
+  .menu a:hover:before {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
 }
 
-#mainHeader {
+.mainHeader {
   font-size: 18px;
   line-height: 50px;
   height: 50px;
 }
 
 @media only screen and (min-width: 768px) { 
-  #mainHeader {
+  .mainHeader {
     float: left;
     border-right: solid #f5f5f5 4px;
   } 
 }
 
 @media only screen and (min-width: 768px) {
-  #titleHeader {
+  .titleHeader {
     display: block;
     background-color: transparent;
   }
 }
 
-#mainHeader span {
+.mainHeader span {
   padding-left: 16px;
   padding-right: 6px;
 }
 
-#mainHeader img {
+.mainHeader img {
   vertical-align: middle;
   height: 40px;
   padding-right: 10px;
   border-right: solid #f5f5f5 2px;
 }
 
-#menu .extLinks {
+.menu .extLinks {
   float: left;
 }
 
 @media only screen and (min-width: 768px) {
-  #menu .extLinks {
+  .menu .extLinks {
     float: right;
     margin: 0;
     margin-right: 20px;
@@ -151,25 +151,25 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #menu .intLinks {
+  .menu .intLinks {
     float: left;
     margin: 0;
     margin-left: 20px;
   }
 }
 
-#menu .intLinks i {
+.menu .intLinks i {
   display: none;
 }
 
 @media only screen and (min-width: 1024px) {
-  #menu .intLinks i {
+  .menu .intLinks i {
     display: inline;
   }
 }
 
-#mainHeader #burger, 
-#mainHeader #cross {
+#mainHeader .burger, 
+#mainHeader .cross {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
@@ -177,8 +177,8 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #burger, 
-  #cross {
+  .burger, 
+  .cross {
     display: none;
   }
 }
@@ -471,7 +471,7 @@ header {
 
 #creations div #jqProg {background-color: #144e9a;}
 
-#creations #miniatures {
+#creations .miniatures {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -542,18 +542,18 @@ header {
   cursor: pointer;
 }
 
-#creations #more {
+#creations .more {
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 1024px) {
-  #creations #more {
+  #creations .more {
     padding-top: 40px;
   }
 }
 
-#creations #more span {
+#creations .more span {
   background-color: #f5f5f5;
   position: relative;
   color: #009688;
@@ -563,7 +563,7 @@ header {
   transition: box-shadow 1s ease, color 1s ease;
 }
 
-#creations #more span:hover {
+#creations .more span:hover {
   box-shadow: inset 0 0 0 2em #009688;
   color: #f5f5f5;
   cursor: pointer;
@@ -617,7 +617,7 @@ header {
   }
 }
 
-#contact #contactForm {
+#contact .contactForm {
   width: 100%;
   min-height: 25vh;
   background-color: rgba(256, 256, 256, 0.9);
@@ -628,7 +628,7 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #contact #contactForm {
+  #contact .contactForm {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -638,12 +638,12 @@ header {
 }
 
 @media only screen and (min-width: 1024px) {
-  #contact #contactForm {
+  #contact .contactForm {
     padding: 20px;
   }
 }
 
-#contactForm form {
+.contactForm form {
   width: 100%;
 }
 
@@ -659,16 +659,16 @@ header {
   }
 }
 
-#contactForm form div {}
+.contactForm form div {}
 
 @media only screen and (min-width: 768px) {
-  #contactForm form div {
+  .contactForm form div {
     flex-direction: column;
   }
 }
 
-#contactForm input, 
-#contactForm textarea {
+.contactForm input, 
+.contactForm textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -681,39 +681,39 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #contactForm input, 
-  #contactForm textarea {
+  .contactForm input, 
+  .contactForm textarea {
     width: 100%;
   }
 }
 
-#contactForm label {
+.contactForm label {
   display: none;
   color: #333;
 }
 
 @media only screen and (min-width: 768px) {
-  #contactForm label {
+  .contactForm label {
     display: flex;
   }
 }
 
-#contactForm input:invalid:focus, 
-#contactForm textarea:invalid:focus {
+.contactForm input:invalid:focus, 
+.contactForm textarea:invalid:focus {
   box-shadow: #d32f2f 1px 1px 4px;
 }
 
-#contactForm input:valid:focus, 
-#contactForm textarea:valid:focus {
+.contactForm input:valid:focus, 
+.contactForm textarea:valid:focus {
   box-shadow: #388e3c 1px 1px 4px;
 }
 
-#contactForm input:focus, 
-#contactForm textarea:focus {
+.contactForm input:focus, 
+.contactForm textarea:focus {
   outline: none !important;
 }
 
-#contactForm input[type="submit"] {
+.contactForm input[type="submit"] {
   width: 100%;
   background-color: white;
   color: #009688;
@@ -728,18 +728,18 @@ header {
   box-shadow: none;
 }
 
-#contactForm input[type="submit"]:hover {
+.contactForm input[type="submit"]:hover {
   box-shadow: inset 0 0 0 3em #009688;
   color: #f5f5f5;
 }
 
 @media only screen and (min-width: 768px) {
-  #contactForm input[type="submit"] {
+  .contactForm input[type="submit"] {
     margin-top: 16px;
   }
 }
 
-#contact #contactInfo {
+#contact .contactInfo {
   width: 100%;
   min-height: 25vh;
   background-color: rgba(256, 256, 256, 0.8);
@@ -750,7 +750,7 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #contact #contactInfo {
+  #contact .contactInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -761,39 +761,39 @@ header {
 }
 
 @media only screen and (min-width: 1024px) {
-  #contact #contactInfo {
+  #contact .contactInfo {
     padding: 20px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  #contactInfo div {
+  .contactInfo div {
     display: flex;
     flex-direction: row;
   }
 }
 
-#contactInfo h3 {
+.contactInfo h3 {
   font-weight: 400;
 }
 
-#contactInfo p {
+.contactInfo p {
   color: #333;
 }
 
-#contactInfo img {
+.contactInfo img {
   width: 20%;
   border-radius: 2px;
 }
 
 @media only screen and (min-width: 768px) {
-  #contactInfo img {
+  .contactInfo img {
     width: 40%;
     min-height: 50px; /*for ie img size bug*/
   }
 }
 
-#contactInfo a {
+.contactInfo a {
   color: #009688;
   padding: 0 5px;
   transition: color 0.7s ease;
@@ -801,17 +801,17 @@ header {
   cursor: pointer;
 }
 
-#contactInfo a:hover {
+.contactInfo a:hover {
   color: #00796b;
   border-bottom: solid 2px #00796b;
 }
 
-#contactInfo > * {
+.contactInfo > * {
   margin: 5px 0;
 }
 
 @media only screen and (min-width: 768px) {
-  #contactInfo > * {
+  .contactInfo > * {
     margin: 15px 0;
   }
 }

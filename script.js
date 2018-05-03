@@ -1,6 +1,6 @@
-var $burger = $("#burger");
-var $cross = $("#cross");
-var $menu = $("#menu");
+var $burger = $(".burger");
+var $cross = $(".cross");
+var $menu = $(".menu");
 
 // show menu on burgerclick
 $burger.on("click", function() {
@@ -18,7 +18,7 @@ $cross.on("click", function() {
 
 
 // Manage scroll
-var $links = $(".intLinks, .extLinks, #titleHeader, .nextLinks>a");
+var $links = $(".intLinks, .extLinks, .titleHeader, .nextLinks>a");
 var $htmlBody = $("html, body");
 
 $links.on("click", function() {
@@ -33,10 +33,10 @@ $links.on("click", function() {
 });
 
 
-// Manage #more (more transforms into codepen when all loaded)
+// Manage .more (more transforms into codepen when all loaded)
 var $loads = $(".load1, .load2, .load3");
 var $load1 = $(".load1"), $load2 = $(".load2"), $load3 = $(".load3");
-var $moreSpan = $("#more > span"), $more = $("#more");
+var $moreSpan = $(".more > span"), $more = $(".more");
 
 $loads.hide();
 var load = 0;
@@ -55,7 +55,7 @@ $moreSpan.on("click", function () {
 
 
 // Send email
-var $myForm = $("form#myform");
+var $myForm = $("form.myform");
 var $button = $("#button");
 $myForm.submit(function(event){
   event.preventDefault();
