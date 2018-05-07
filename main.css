@@ -168,8 +168,8 @@ header {
   }
 }
 
-#mainHeader .burger, 
-#mainHeader .cross {
+.mainHeader .burger, 
+.mainHeader .cross {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
@@ -177,8 +177,8 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  .burger, 
-  .cross {
+  .mainHeader .burger, 
+  .mainHeader .cross {
     display: none;
   }
 }
