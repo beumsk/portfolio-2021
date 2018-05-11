@@ -296,7 +296,7 @@ header {
 }
 
 @media only screen and (min-width: 1024px) {
-  #about h1 {
+  #about .dark-banner {
     margin-bottom: 20px;
   }
 }
@@ -379,16 +379,10 @@ header {
 }
 
 #creations > div > .main-content {
-  padding: 10px 0;
+  padding: 20px 0;
   padding-bottom: 100px;
   margin: auto;
   width: 90%;
-}
-
-@media only screen and (min-width: 768px) {
-  #creations > div > .main-content {
-    padding-top: 20px;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -479,7 +473,7 @@ header {
 }
 #creations figure {
   position: relative;
-  margin: 10px 0;
+  margin-bottom: 20px;
   transition: box-shadow 0.5s, -webkit-transform 0.5s, -webkit-filter 0.5s;
   transition: transform 0.5s, box-shadow 0.5s, filter 0.5s;
   transition: transform 0.5s, box-shadow 0.5s, filter 0.5s, -webkit-transform 0.5s, -webkit-filter 0.5s;
@@ -586,12 +580,6 @@ header {
   background-color: rgba(256, 256, 256, 0.6);
   min-height: calc(100vh - 75px);
   position: relative;
-}
-
-@media only screen and (min-width: 1024px) {
-  #contact h1 {
-    margin-bottom: 20px;
-  }
 }
 
 #contact > div > div {
@@ -717,7 +705,7 @@ header {
   width: 100%;
   background-color: white;
   color: #009688;
-  padding: 14px 20px;
+  padding: 9px 20px;
   margin: 8px 0;
   border: none;
   border: 1px solid #009688;
@@ -735,7 +723,7 @@ header {
 
 @media only screen and (min-width: 768px) {
   .contactForm input[type="submit"] {
-    margin-top: 16px;
+    margin-top: 24px;
   }
 }
 
