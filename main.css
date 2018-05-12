@@ -647,8 +647,6 @@ header {
   }
 }
 
-.contactForm form div {}
-
 @media only screen and (min-width: 768px) {
   .contactForm form div {
     flex-direction: column;
@@ -754,6 +752,16 @@ header {
   }
 }
 
+.contactInfo > * {
+  margin: 5px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .contactInfo > * {
+    margin: 15px 0;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .contactInfo div {
     display: flex;
@@ -792,16 +800,6 @@ header {
 .contactInfo a:hover {
   color: #00796b;
   border-bottom: solid 2px #00796b;
-}
-
-.contactInfo > * {
-  margin: 5px 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .contactInfo > * {
-    margin: 15px 0;
-  }
 }
 
 
