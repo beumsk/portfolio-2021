@@ -391,86 +391,13 @@ header {
   }
 }
 
-#creations #lang {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-#creations #lang > div {
-  padding: 5px 10px;
-  margin-bottom: 10px;
-  border: solid 1px #607D8B;
-  border-radius: 2px;
-  display: none;
-  background: #f5f5f5;
-  cursor: pointer;
-  transition: background 0.7s ease;
-}
-
-@media only screen and (min-width: 768px) {
-  #creations #lang > div {
-    display: inline-block;
-  }
-}
-
-#creations #lang > div:hover {
-  background-color: #fff;
-}
-
-#creations #html {color: #e44d26;}
-
-#creations #css {color: #0765a3;}
-
-#creations #js {color: #f1e05a;}
-
-#creations #bs {color: #4e3773;}
-
-#creations #jq {color: #144e9a;}
-
-#creations #lang span {
-  float: left;
-}
-
-#creations #lang .progress {
-  width: 0;
-  opacity: 0;
-  border-radius: 2px;
-  height: 19px;
-  color: #f5f5f5;
-  float: right;
-  transition: width 1.5s ease, opacity 0.5s ease;
-}
-
-#creations #lang > div:hover > .progress {
-  max-width: none;
-  margin-left: 10px;
-  opacity: 1;
-  width: 10vw;
-}
-
-@media only screen and (min-width: 1024px) {
-  #creations #lang > div:hover > .progress {
-    width: 20vw;
-  }
-}
-
-#creations div #htmlProg {background-color: #e44d26;}
-
-#creations div #cssProg {background-color: #0765a3;}
-
-#creations div #jsProg {background-color: #f1e05a;}
-
-#creations div #bsProg {background-color: #4e3773;}
-
-#creations div #jqProg {background-color: #144e9a;}
-
 #creations .miniatures {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 #creations figure {
   position: relative;
   margin-bottom: 20px;
