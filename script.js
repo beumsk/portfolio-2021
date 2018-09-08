@@ -18,7 +18,7 @@ $cross.on("click", function() {
 
 
 // Manage scroll
-var $links = $(".intLinks, .extLinks, .titleHeader, .nextLinks>a");
+var $links = $(".int-links, .ext-links, .title-header, .next-links>a");
 var $htmlBody = $("html, body");
 
 $links.on("click", function() {
@@ -34,8 +34,8 @@ $links.on("click", function() {
 
 
 // Manage .more (more transforms into codepen when all loaded)
-var $loads = $(".load1, .load2, .load3");
-var $load1 = $(".load1"), $load2 = $(".load2"), $load3 = $(".load3");
+var $loads = $(".load-1, .load-2, .load-3");
+var $load1 = $(".load-1"), $load2 = $(".load-2"), $load3 = $(".load-3");
 var $moreSpan = $(".more > span"), $more = $(".more");
 
 $loads.hide();
@@ -48,7 +48,7 @@ $moreSpan.on("click", function () {
       break;
     case 2:
       $load2.fadeIn(1000, "linear");
-      $more.html("<a href='https://codepen.io/beumsk/pens/public/' target='_blank' style='text-decoration: none;'><span>More creations on Codepen.io</span></a>");
+      $more.html("<a href='https://codepen.io/beumsk/pens/public/' target='_blank' style='text-decoration: none;'><span>More creations on Codepen</span></a>");
       break;
   }
 });

@@ -46,7 +46,7 @@ header {
 }
 
 .menu a, 
-.mainHeader a {
+.main-header a {
   text-decoration: none;
   color: #f5f5f5;
   padding: 0 10px;
@@ -55,7 +55,7 @@ header {
 
 @media only screen and (min-width: 768px) {
   .menu a, 
-  .mainHeader a {
+  .main-header a {
     padding: 0;
     margin: auto 10px;
   }
@@ -106,44 +106,44 @@ header {
   }
 }
 
-.mainHeader {
+.main-header {
   font-size: 18px;
   line-height: 50px;
   height: 50px;
 }
 
 @media only screen and (min-width: 768px) { 
-  .mainHeader {
+  .main-header {
     float: left;
     border-right: solid #f5f5f5 4px;
   } 
 }
 
 @media only screen and (min-width: 768px) {
-  .titleHeader {
+  .title-header {
     display: block;
     background-color: transparent;
   }
 }
 
-.mainHeader span {
+.main-header span {
   padding-left: 16px;
   padding-right: 6px;
 }
 
-.mainHeader img {
+.main-header img {
   vertical-align: middle;
   height: 40px;
   padding-right: 10px;
   border-right: solid #f5f5f5 2px;
 }
 
-.menu .extLinks {
+.menu .ext-links {
   float: left;
 }
 
 @media only screen and (min-width: 768px) {
-  .menu .extLinks {
+  .menu .ext-links {
     float: right;
     margin: 0;
     margin-right: 20px;
@@ -151,25 +151,25 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  .menu .intLinks {
+  .menu .int-links {
     float: left;
     margin: 0;
     margin-left: 20px;
   }
 }
 
-.menu .intLinks i {
+.menu .int-links i {
   display: none;
 }
 
 @media only screen and (min-width: 1024px) {
-  .menu .intLinks i {
+  .menu .int-links i {
     display: inline;
   }
 }
 
-.mainHeader .burger, 
-.mainHeader .cross {
+.main-header .burger, 
+.main-header .cross {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
@@ -177,8 +177,8 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  .mainHeader .burger, 
-  .mainHeader .cross {
+  .main-header .burger, 
+  .main-header .cross {
     display: none;
   }
 }
@@ -200,7 +200,7 @@ header {
 
 
 /* styles for next sections banners */
-.nextLinks {
+.next-links {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -209,12 +209,12 @@ header {
   opacity: 0.4;
   font-family: "Josefin Sans", Arial, sans-serif;
 }
-.nextLinks:hover {
+.next-links:hover {
   background-color: rgba(256, 256, 256, 0.3);
   opacity: 1;
 }
 
-.nextLinks span {
+.next-links span {
   background-color: #f5f5f5;
   color: #009688;
   padding: 10px 20px;
@@ -222,12 +222,12 @@ header {
   border-radius: 2px;
   transition: box-shadow 1s ease, color 1s ease;
 }
-.nextLinks span:hover {
+.next-links span:hover {
   box-shadow: inset 0 0 0 2em #009688;
   color: #f5f5f5;
   cursor: pointer;
 }
-.nextLinks a {
+.next-links a {
   text-decoration: none;
 }
 
@@ -526,7 +526,7 @@ header {
   }
 }
 
-#contact .contactForm {
+#contact .contact-form {
   width: 100%;
   min-height: 25vh;
   background-color: rgba(256, 256, 256, 0.9);
@@ -537,7 +537,7 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #contact .contactForm {
+  #contact .contact-form {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -547,12 +547,12 @@ header {
 }
 
 @media only screen and (min-width: 1024px) {
-  #contact .contactForm {
+  #contact .contact-form {
     padding: 20px;
   }
 }
 
-.contactForm form {
+.contact-form form {
   width: 100%;
 }
 
@@ -569,13 +569,13 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  .contactForm form div {
+  .contact-form form div {
     flex-direction: column;
   }
 }
 
-.contactForm input, 
-.contactForm textarea {
+.contact-form input, 
+.contact-form textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -588,39 +588,39 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  .contactForm input, 
-  .contactForm textarea {
+  .contact-form input, 
+  .contact-form textarea {
     width: 100%;
   }
 }
 
-.contactForm label {
+.contact-form label {
   display: none;
   color: #333;
 }
 
 @media only screen and (min-width: 768px) {
-  .contactForm label {
+  .contact-form label {
     display: flex;
   }
 }
 
-.contactForm input:invalid:focus, 
-.contactForm textarea:invalid:focus {
+.contact-form input:invalid:focus, 
+.contact-form textarea:invalid:focus {
   box-shadow: #d32f2f 1px 1px 4px;
 }
 
-.contactForm input:valid:focus, 
-.contactForm textarea:valid:focus {
+.contact-form input:valid:focus, 
+.contact-form textarea:valid:focus {
   box-shadow: #388e3c 1px 1px 4px;
 }
 
-.contactForm input:focus, 
-.contactForm textarea:focus {
+.contact-form input:focus, 
+.contact-form textarea:focus {
   outline: none !important;
 }
 
-.contactForm input[type="submit"] {
+.contact-form input[type="submit"] {
   width: 100%;
   background-color: white;
   color: #009688;
@@ -635,18 +635,18 @@ header {
   box-shadow: none;
 }
 
-.contactForm input[type="submit"]:hover {
+.contact-form input[type="submit"]:hover {
   box-shadow: inset 0 0 0 3em #009688;
   color: #f5f5f5;
 }
 
 @media only screen and (min-width: 768px) {
-  .contactForm input[type="submit"] {
+  .contact-form input[type="submit"] {
     margin-top: 24px;
   }
 }
 
-#contact .contactInfo {
+#contact .contact-info {
   width: 100%;
   min-height: 25vh;
   background-color: rgba(256, 256, 256, 0.8);
@@ -657,7 +657,7 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #contact .contactInfo {
+  #contact .contact-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -668,49 +668,49 @@ header {
 }
 
 @media only screen and (min-width: 1024px) {
-  #contact .contactInfo {
+  #contact .contact-info {
     padding: 20px;
   }
 }
 
-.contactInfo > * {
+.contact-info > * {
   margin: 5px 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .contactInfo > * {
+  .contact-info > * {
     margin: 15px 0;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .contactInfo div {
+  .contact-info div {
     display: flex;
     flex-direction: row;
   }
 }
 
-.contactInfo h3 {
+.contact-info h3 {
   font-weight: 400;
 }
 
-.contactInfo p {
+.contact-info p {
   color: #333;
 }
 
-.contactInfo img {
+.contact-info img {
   width: 20%;
   border-radius: 2px;
 }
 
 @media only screen and (min-width: 768px) {
-  .contactInfo img {
+  .contact-info img {
     width: 40%;
     min-height: 50px; /*for ie img size bug*/
   }
 }
 
-.contactInfo a {
+.contact-info a {
   color: #009688;
   padding: 0 5px;
   transition: color 0.7s ease;
@@ -718,7 +718,7 @@ header {
   cursor: pointer;
 }
 
-.contactInfo a:hover {
+.contact-info a:hover {
   color: #00796b;
   border-bottom: solid 2px #00796b;
 }
