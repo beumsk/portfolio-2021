@@ -262,7 +262,7 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
-#home h2 {
+#home .subtitle {
   width: 90%;
   margin: auto;
   font-size: 4vh;
@@ -305,11 +305,11 @@ header {
   padding-bottom: 120px;
 }
 
-#about .text h3 {
+#about .text .lead {
   color: #00796b;
   padding: 20px 0;
   text-shadow: 0 0 1px #f5f5f5;
-  font-weight: 400;
+  font-size: 18px;
 }
 
 #about .text p {
@@ -317,7 +317,7 @@ header {
 }
 
 #about .text p, 
-#about .text h3 {
+#about .text .lead {
   width: 90%;
   margin: auto;
   text-align: left;
@@ -327,7 +327,7 @@ header {
 
 @media only screen and (min-width: 768px) {
   #about .text p, 
-  #about .text h3 {
+  #about .text .lead {
     width: 80%;
     letter-spacing: 0.07em;
   }
@@ -335,7 +335,7 @@ header {
 
 @media only screen and (min-width: 1024px) {
   #about .text p, 
-  #about .text h3 {
+  #about .text .lead {
     width: 70%;
     letter-spacing: 0.07em;
   }
@@ -690,8 +690,10 @@ header {
   }
 }
 
-.contact-info h3 {
-  font-weight: 400;
+.contact-info .lead {
+  color: #00796b;
+  text-shadow: 0 0 1px #f5f5f5;
+  font-size: 18px;
 }
 
 .contact-info p {
