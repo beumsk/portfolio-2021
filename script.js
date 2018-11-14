@@ -55,23 +55,24 @@ $moreSpan.on("click", function () {
 
 
 // Send email
-var $myForm = $("#myform");
-var $button = $("#button");
-$myForm.submit(function(event){
+var myForm = document.getElementById("myform");
+var button = document.getElementById("button");
+
+myForm.addEventListener("submit", function(event) {
   event.preventDefault();
 
   // Change to your service ID, or keep using the default service
   var service_id = "default_service";
   var template_id = "template_cIcSxyuR";
 
-  $button.attr("value", "Sending...");
-  emailjs.sendForm(service_id,template_id,"$myForm")
+  button.setAttribute("value", "Sending...");
+  emailjs.sendForm(service_id, template_id, this)
     .then(function(){ 
       alert("Thank you for your message !");
-       $button.attr("value", "Send");
+       button.setAttribute("value", "Send");
     }, function(err) {
        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-       $button.attr("value", "Send");
+       button.setAttribute("value", "Send");
     });
   return false;
 });

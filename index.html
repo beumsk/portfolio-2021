@@ -48,6 +48,13 @@
   <link rel="stylesheet" href="main.css"/>
   
   <title>Rémy Beumier | Front-end Dev &amp; Webdesigner</title>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("user_z6OXM5nDIkjUNllax5fZH");
+     })();
+  </script>
 </head>
 
 
@@ -317,11 +324,11 @@
             <legend>Contact Form</legend>
             <div>
               <label for="name">Name</label>
-              <input id="name" type="text" name="name" placeholder="Type your full name" minlength="2" required>
+              <input id="name" type="text" name="name" placeholder="Type your full name" minlength="2" required value="test">
             </div>
             <div>
               <label for="mail">Email</label>
-              <input id="mail" type="email" name="mail" placeholder="Type your email address" required>
+              <input id="mail" type="email" name="mail" placeholder="Type your email address" required value="test@test.com">
             </div>
             <div>
               <label for="message">Message</label>
@@ -358,13 +365,6 @@
 </footer>
     
 <!-- JS Scripts -->
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function(){
-    emailjs.init("user_z6OXM5nDIkjUNllax5fZH");
-  })();
-</script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 
