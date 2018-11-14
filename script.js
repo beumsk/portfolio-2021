@@ -65,7 +65,7 @@ $myForm.submit(function(event){
   var template_id = "template_cIcSxyuR";
 
   $button.attr("value", "Sending...");
-  emailjs.sendForm(service_id,template_id,".myform")
+  emailjs.sendForm(service_id,template_id,"$myform")
     .then(function(){ 
       alert("Thank you for your message !");
        $button.attr("value", "Send");
