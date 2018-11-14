@@ -55,7 +55,7 @@ $moreSpan.on("click", function () {
 
 
 // Send email
-var $myForm = $("form.myform");
+var $myForm = $("#myform");
 var $button = $("#button");
 $myForm.submit(function(event){
   event.preventDefault();
