@@ -594,6 +594,10 @@ header {
   }
 }
 
+.contact-form textarea {
+  height: 84px;
+}
+
 .contact-form label {
   display: none;
   color: #333;
