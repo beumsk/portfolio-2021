@@ -232,12 +232,21 @@ header {
 }
 
 
+/* Section background image behavior */
+.back-fixed {
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (min-width: 768px) {
+  .back-fixed {
+    background-attachment: fixed;
+  }
+}
+
+
 /* HOME SECTION; name, function and logo */
 #home {
   background-image: url("img/office.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
 }
 
 #home > div {
@@ -283,9 +292,6 @@ header {
 /* ABOUT SECTION; presentation text */
 #about {
   background-image: url("img/road.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
 }
 
 #about > div {
@@ -367,9 +373,6 @@ header {
 #creations {
   text-align: center;
   background-image: url("img/layout.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
 }
 
 #creations > div {
@@ -490,11 +493,7 @@ header {
 #contact {
   position: relative;
   text-align: center;
-  background-color: black;
   background-image: url("img/phone.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
 }
 
 #contact > div {
