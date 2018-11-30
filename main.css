@@ -237,7 +237,7 @@ header {
   background-image: url("img/office.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 #home > div {
@@ -285,7 +285,7 @@ header {
   background-image: url("img/road.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 #about > div {
@@ -369,7 +369,7 @@ header {
   background-image: url("img/layout.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 #creations > div {
@@ -494,7 +494,7 @@ header {
   background-image: url("img/phone.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 #contact > div {
