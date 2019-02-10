@@ -20,14 +20,14 @@ function closeMenu() {
 
 
 
-// Manage scroll
+// Manage smooth scrolling
 var $links = $(".int-links, .ext-links, .title-header, .next-links>a");
 var $htmlBody = $("html, body");
 
 $links.on("click", function() {
   if ($(window).width() < 748) closeMenu();
   var $Id = $(this).attr("href");
-  $htmlBody.animate({scrollTop:($($Id).offset().top)-50}, "slow");
+  $htmlBody.animate({scrollTop:($($Id).offset().top)-48}, "slow");
   return false;
 });
 
@@ -43,6 +43,28 @@ $links.on("click", function() {
 //   window.scrollTo({ top: ypos, behavior: "smooth" });
 //   closeMenu();
 // }
+
+
+
+// Manage scrollspy
+var section = document.querySelectorAll("section");
+var sections = {};
+
+Array.prototype.forEach.call(section, function(e) {
+  sections[e.id] = e.offsetTop - 50;
+});
+
+window.onscroll = function() {
+  var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+  for (var i in sections) {
+    if (sections[i] <= scrollPosition) {
+      if (document.querySelector('.active')) {
+        document.querySelector('.active').classList.remove("active");
+      }
+      document.querySelector('a[href*=' + i + ']').classList.add("active");
+    }
+  }
+};
 
 
 
