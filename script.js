@@ -50,11 +50,10 @@ $links.on("click", function() {
 var section = document.querySelectorAll("section");
 var sections = {};
 
-Array.prototype.forEach.call(section, function(e) {
-  sections[e.id] = e.offsetTop - 50;
-});
-
 window.onscroll = function() {
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop - 50;
+  });
   var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
   for (var i in sections) {
     if (sections[i] <= scrollPosition) {
