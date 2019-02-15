@@ -242,14 +242,20 @@ header {
     background-attachment: fixed;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .back-fixed {
+    background-attachment: local;
+  }
+}
 
 section {
-  border-top: solid #666 1px;
+  border-top: solid #aaa 1px;
 }
 
 section > div {
   position: relative;
   text-align: center;
+  background-color: rgba(256, 256, 256, 0.8);
 }
 
 
@@ -268,6 +274,7 @@ section > div {
 #home h1 {
   width: 90%;
   margin: auto;
+  padding-bottom: 10px;
   font-size: 48px;
   text-align: center;
   font-weight: 400;
@@ -327,7 +334,7 @@ section > div {
 }
 
 #about > div {
-  background-color: rgba(256, 256, 256, 0.4);
+  /*background-color: rgba(256, 256, 256, 0.6);*/
   min-height: calc(100vh - 50px);
 }
 
@@ -500,7 +507,7 @@ section > div {
 }
 
 #creations .more span {
-  background-color: #f5f5f5;
+  background-color: white;
   position: relative;
   color: #009688;
   padding: 10px 20px;
@@ -525,7 +532,7 @@ section > div {
 }
 
 #contact > div {
-  background-color: rgba(256, 256, 256, 0.6);
+  /*background-color: rgba(256, 256, 256, 0.6);*/
   min-height: calc(100vh - 75px);
 }
 
@@ -556,7 +563,7 @@ section > div {
 #contact .contact-form {
   width: 100%;
   min-height: 25vh;
-  background-color: rgba(256, 256, 256, 0.9);
+  background-color: rgba(256, 256, 256, 0.8);
   padding: 10px;
   border-radius: 2px;
   margin-bottom: 20px;
@@ -586,6 +593,7 @@ section > div {
 #contact form legend {
   color: #009688;
   font-size: 18px;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -691,7 +699,7 @@ section > div {
   #contact .contact-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 35%;
     padding: 15px;
@@ -705,12 +713,12 @@ section > div {
 }
 
 .contact-info > * {
-  margin: 5px 0;
+  padding: 5px 0;
 }
 
 @media only screen and (min-width: 768px) {
   .contact-info > * {
-    margin: 15px 0;
+    padding: 10px 0;
   }
 }
 
