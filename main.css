@@ -184,18 +184,68 @@ header {
 }
 
 
-/* sections h1; dark banners */
-.dark-banner {
-  color: #f5f5f5;
-  text-align: right;
-  padding-right: 14px;
-  background-color: #333;
-  background-image: linear-gradient(to right, #333, #111);
+/* sections h2 titles */
+.section-title {
+  color: #333;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
   line-height: 50px;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
   letter-spacing: 0.1em;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title {
+    padding-top: 40px;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .section-title {
+    padding-top: 60px;
+  }
+}
+
+.section-title span {
+  padding: 0 10px 0 16px;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  bottom: 21px;
+  width: 20px;
+  position: absolute;
+  border-bottom: solid #009688 2px;
+}
+
+#about .section-title::before { left: calc(50% - 95px); }
+#about .section-title::after { right: calc(50% - 95px); }
+
+#creations .section-title::before { left: calc(50% - 125px); }
+#creations .section-title::after { right: calc(50% - 125px); }
+
+#contact .section-title::before { left: calc(50% - 110px); }
+#contact .section-title::after { right: calc(50% - 110px); }
+
+@media only screen and (min-width: 768px) {
+  .section-title::before,
+  .section-title::after {
+    width: 40px;
+  }
+
+  #about .section-title::before { left: calc(50% - 130px); }
+  #about .section-title::after { right: calc(50% - 130px); }
+
+  #creations .section-title::before { left: calc(50% - 165px); }
+  #creations .section-title::after { right: calc(50% - 165px); }
+
+  #contact .section-title::before { left: calc(50% - 150px); }
+  #contact .section-title::after { right: calc(50% - 150px); }
 }
 
 
