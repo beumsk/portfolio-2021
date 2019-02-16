@@ -258,6 +258,7 @@ header {
   line-height: 100px;
   opacity: 0.4;
   font-family: "Josefin Sans", Arial, sans-serif;
+  display: none;
 }
 .next-links:hover {
   background-color: rgba(256, 256, 256, 0.3);
@@ -370,7 +371,7 @@ section > div {
 
 #home img {
   padding: 20px 0;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
   width: 20%;
   min-width: 120px;
   max-width: 280px;
@@ -389,7 +390,7 @@ section > div {
 }
 
 #about .text {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 #about .text .lead {
@@ -468,7 +469,7 @@ section > div {
 
 #creations > div > .main-content {
   padding: 20px 0;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   margin: auto;
   width: 90%;
 }
@@ -547,7 +548,7 @@ section > div {
 
 #creations .more {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 1024px) {
