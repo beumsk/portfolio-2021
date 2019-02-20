@@ -68,13 +68,12 @@ window.onscroll = function() {
 
 
 // Manage .more creation button (button transforms into codepen link when all loaded)
-var $loads = $(".load-1, .load-2, .load-3");
-var $load1 = $(".load-1"), $load2 = $(".load-2"), $load3 = $(".load-3");
-var $moreSpan = $(".more > span"), $more = $(".more");
-
-$loads.hide();
+var $load1 = $(".load-1");
+var $load2 = $(".load-2");
+var $more = $(".more > button");
 var load = 0;
-$moreSpan.on("click", function () {
+
+$more.on("click", function () {
   load++;
   switch (load) {
     case 1:
@@ -82,7 +81,7 @@ $moreSpan.on("click", function () {
       break;
     case 2:
       $load2.fadeIn(1000, "linear");
-      $more.html("<a href='https://codepen.io/beumsk/pens/public/' target='_blank' style='text-decoration: none;'><span>More creations on Codepen</span></a>");
+      $more.parent().html("<a href='https://codepen.io/beumsk/pens/public/' target='_blank' rel='noreferrer noopener' style='text-decoration: none;'>More creations on Codepen</a>");
       break;
   }
 });
@@ -90,7 +89,7 @@ $moreSpan.on("click", function () {
 // smoother way to make creation appear
 // var load1 = document.querySelectorAll(".load-1");
 // var load2 = document.querySelectorAll(".load-2");
-// var moreButton = document.querySelector(".more > span");
+// var moreButton = document.querySelector(".more > button");
 // var load = 0;
 
 // moreButton.addEventListener("click", function() {
@@ -100,7 +99,7 @@ $moreSpan.on("click", function () {
 //   }
 //   else if (load === 2) {
 //     for (var k=0; k<load2.length; k++) { load2[k].classList.remove("hidden"); }
-//     moreButton.parentNode.innerHTML = "<a href='https://codepen.io/beumsk/pens/public/' target='_blank' rel='noreferrer noopener' style='text-decoration: none;'><span>More creations on Codepen</span></a>";
+//     moreButton.parentNode.innerHTML = "<a href='https://codepen.io/beumsk/pens/public/' target='_blank' rel='noreferrer noopener' style='text-decoration: none;'>More creations on Codepen</a>";
 //   }
 // });
 
