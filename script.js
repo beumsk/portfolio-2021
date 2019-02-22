@@ -20,28 +20,30 @@ function closeMenu() {
 
 
 
-// Manage smooth scrolling
-var $links = $(".int-links, .ext-links, .title-header, .next-links>a");
-var $htmlBody = $("html, body");
+// Manage smooth scrolling by zenscroll
 
-$links.on("click", function() {
-  if ($(window).width() < 748) closeMenu();
-  var $Id = $(this).attr("href");
-  $htmlBody.animate({scrollTop:($($Id).offset().top)-48}, "slow");
-  return false;
-});
+
+// var $links = $(".scroll");
+// var $htmlBody = $("html, body");
+
+// $links.on("click", function() {
+//   closeMenu();
+//   var $Id = $(this).attr("href");
+//   $htmlBody.animate({scrollTop:($($Id).offset().top)-48}, "slow");
+//   return false;
+// });
 
 // Manage scroll !IE & Edge & Safari --> if to implement, add scroll class into html
-// var scrollLinks = document.querySelectorAll(".scroll");
-// for (var i=0; i<scrollLinks.length; i++) {
-//   scrollLinks[i].addEventListener("click", myScroll);
-// }
+var scrollLinks = document.querySelectorAll(".title-header, .int-links, .ext-links");
+for (var i=0; i<scrollLinks.length; i++) {
+  scrollLinks[i].addEventListener("click", closeMenu);
+}
 
-// function myScroll(elt) {
-//   elt.preventDefault();
-//   var ypos = document.querySelector(elt.target.getAttribute("href")).offsetTop - 50;
-//   window.scrollTo({ top: ypos, behavior: "smooth" });
+// function myScroll(e) {
+//   e.preventDefault();
 //   closeMenu();
+//   var ypos = document.querySelector(e.target.getAttribute("href")).offsetTop - 50;
+//   window.scrollTo({ top: ypos, behavior: "smooth" });
 // }
 
 
