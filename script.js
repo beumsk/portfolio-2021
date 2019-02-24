@@ -20,31 +20,11 @@ function closeMenu() {
 
 
 
-// Manage smooth scrolling by zenscroll
-
-
-// var $links = $(".scroll");
-// var $htmlBody = $("html, body");
-
-// $links.on("click", function() {
-//   closeMenu();
-//   var $Id = $(this).attr("href");
-//   $htmlBody.animate({scrollTop:($($Id).offset().top)-48}, "slow");
-//   return false;
-// });
-
-// Manage scroll !IE & Edge & Safari --> if to implement, add scroll class into html
+// Manage links to close small device menu; smooth scrolling is handled by zenscroll script
 var scrollLinks = document.querySelectorAll(".title-header, .int-links, .ext-links");
 for (var i=0; i<scrollLinks.length; i++) {
   scrollLinks[i].addEventListener("click", closeMenu);
 }
-
-// function myScroll(e) {
-//   e.preventDefault();
-//   closeMenu();
-//   var ypos = document.querySelector(e.target.getAttribute("href")).offsetTop - 50;
-//   window.scrollTo({ top: ypos, behavior: "smooth" });
-// }
 
 
 
@@ -72,24 +52,6 @@ window.onscroll = function() {
 
 
 // Manage .more creation button (button transforms into codepen link when all loaded)
-// var $load1 = $(".load-1");
-// var $load2 = $(".load-2");
-// var $more = $(".more > button");
-// var load = 0;
-
-// $more.on("click", function () {
-//   load++;
-//   switch (load) {
-//     case 1:
-//       $load1.fadeIn(1000, "linear");
-//       break;
-//     case 2:
-//       $load2.fadeIn(1000, "linear");
-//       $more.parent().html("<a href='https://codepen.io/beumsk/pens/public/' target='_blank' rel='noreferrer noopener' style='text-decoration: none;'>More creations on Codepen</a>");
-//       break;
-//   }
-// });
-
 var load1 = document.querySelectorAll(".load-1");
 var load2 = document.querySelectorAll(".load-2");
 var moreButton = document.querySelector(".more > button");
