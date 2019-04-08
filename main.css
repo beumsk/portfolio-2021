@@ -283,6 +283,38 @@ section > div {
 
 
 
+/* Next section link */
+.next-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+}
+
+.next-section a {
+  display: block;
+  border: solid 1px #009688;
+  border-radius: 100%;
+  margin: auto;
+  color: #009688;
+  height: 50px;
+  transition: box-shadow 1s ease, color 1s ease;
+  width: 50px;
+}
+
+.next-section a:hover {
+  color: #ffffff;
+  box-shadow: inset 0 0 0 2em #009688;
+}
+
+.next-section a i {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+
+
 /* HOME SECTION; name, function and logo */
 #home {
   background-image: url("img/office.jpg");
@@ -344,7 +376,7 @@ section > div {
 
 #home img {
   padding: 20px 0;
-  padding-bottom: 60px;
+  padding-bottom: 130px;
   width: 20%;
   min-width: 120px;
   max-width: 280px;
@@ -363,7 +395,7 @@ section > div {
 }
 
 #about .text {
-  padding-bottom: 60px;
+  padding-bottom: 130px;
 }
 
 #about .text .lead {
@@ -443,7 +475,7 @@ section > div {
 
 #creations > div > .main-content {
   padding: 20px 0;
-  padding-bottom: 60px;
+  padding-bottom: 130px;
   margin: auto;
   width: 90%;
 }
@@ -544,6 +576,7 @@ section > div {
   position: relative;
   color: #009688;
   padding: 10px 20px;
+  display: inline-block;
   border: 1px #009688 solid;
   border-radius: 2px;
   transition: box-shadow 1s ease, color 1s ease;
