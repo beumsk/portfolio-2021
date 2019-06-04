@@ -139,6 +139,7 @@ header {
   vertical-align: middle;
   height: 40px;
   padding-right: 10px;
+  border: none;
   border-right: solid #f5f5f5 2px;
 }
 
@@ -539,6 +540,7 @@ section > div {
 #creations .creas {
   width: 100%;
   display: block;
+  border: none;
   border-radius: 2px;
   transition: -webkit-filter 0.5s;
   transition: filter 0.5s;
