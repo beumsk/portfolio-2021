@@ -30,7 +30,6 @@ header {
 .hidden {
   display: none;
 }
-
 @media only screen and (min-width: 768px) {
   header .hidden {
     display: block;
@@ -40,7 +39,6 @@ header {
 .menu {
   list-style-type: none;
 }
-
 @media only screen and (min-width: 768px) {
   .menu {
     display: block;
@@ -54,7 +52,6 @@ header {
   padding: 0 10px;
   line-height: 50px;
 }
-
 @media only screen and (min-width: 768px) {
   .menu a, 
   .main-header a {
@@ -69,7 +66,6 @@ header {
   position: relative;
   font-size: 14px;
 }
-
 @media only screen and (min-width: 768px) {
   .menu a.active:before {
     -webkit-transform: scaleX(1);
@@ -82,7 +78,6 @@ header {
   background-color: rgba(256, 256, 256, 0.5);
   color: #00796b;
 }
-
 @media only screen and (min-width: 768px) {
   .menu a:hover,
   .menu a:focus {
@@ -115,14 +110,12 @@ header {
   line-height: 50px;
   height: 50px;
 }
-
 @media only screen and (min-width: 768px) { 
   .main-header {
     float: left;
     border-right: solid #f5f5f5 4px;
   } 
 }
-
 @media only screen and (min-width: 768px) {
   .title-header {
     display: block;
@@ -139,6 +132,7 @@ header {
   vertical-align: middle;
   height: 40px;
   padding-right: 10px;
+  border: none;
   border-right: solid #f5f5f5 2px;
 }
 
@@ -146,14 +140,12 @@ header {
   float: left;
   padding: 0 18px;
 }
-
 @media only screen and (min-width: 768px) {
   .menu .ext-links {
     float: right;
     margin: 0;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .menu .int-links {
     float: left;
@@ -165,7 +157,6 @@ header {
 .menu .int-links i {
   display: none;
 }
-
 @media only screen and (min-width: 1024px) {
   .menu .int-links i {
     display: inline;
@@ -179,7 +170,6 @@ header {
   font-size: 14px;
   padding: 0 16px;
 }
-
 @media only screen and (min-width: 768px) {
   .main-header .burger, 
   .main-header .cross {
@@ -193,25 +183,17 @@ header {
 .section-title {
   color: #333;
   text-align: center;
-  padding-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   line-height: 50px;
   font-size: 28px;
   font-weight: 400;
   letter-spacing: 0.1em;
   position: relative;
 }
-
 @media only screen and (min-width: 768px) {
   .section-title {
-    padding-top: 40px;
+    margin: 40px 0;
     font-size: 32px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .section-title {
-    padding-top: 60px;
   }
 }
 
@@ -275,7 +257,7 @@ section {
   border-top: solid #aaa 1px;
 }
 
-section > div {
+section > .layer {
   position: relative;
   text-align: center;
   background-color: rgba(256, 256, 256, 0.8);
@@ -315,12 +297,18 @@ section > div {
 
 
 
+main {
+  overflow-x: hidden;
+}
+
+
+
 /* HOME SECTION; name, function and logo */
 #home {
   background-image: url("img/office.jpg");
 }
 
-#home > div {
+#home > .layer {
   background-color: rgba(256, 256, 256, 0.6);
   padding-top: 26vh;
   min-height: 100vh;
@@ -340,13 +328,11 @@ section > div {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 @media only screen and (min-width: 768px) {
   #home h1 {
     font-size: 64px;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   #home h1 {
     font-size: 78px;
@@ -361,13 +347,11 @@ section > div {
   letter-spacing: 0.1em;
   color: #333;
 }
-
 @media only screen and (min-width: 768px) {
   #home .subtitle {
     font-size: 32px;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   #home .subtitle {
     font-size: 36px;
@@ -389,7 +373,7 @@ section > div {
   background-image: url("img/road.jpg");
 }
 
-#about > div {
+#about > .layer {
   /*background-color: rgba(256, 256, 256, 0.6);*/
   min-height: calc(100vh - 50px);
 }
@@ -400,15 +384,8 @@ section > div {
 
 #about .text .lead {
   color: #00796b;
-  padding: 20px 0;
   text-shadow: 0 0 1px #f5f5f5;
   font-size: 20px;
-}
-
-@media only screen and (min-width: 1024px) {
-  #about .text .lead {
-    padding-top: 40px;
-  }
 }
 
 #about .text p {
@@ -417,27 +394,10 @@ section > div {
 
 #about .text p, 
 #about .text .lead {
-  width: 90%;
   margin: auto;
   text-align: left;
   line-height: 150%;
   letter-spacing: 0.06em;
-}
-
-@media only screen and (min-width: 768px) {
-  #about .text p, 
-  #about .text .lead {
-    width: 80%;
-    letter-spacing: 0.07em;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  #about .text p, 
-  #about .text .lead {
-    width: 70%;
-    letter-spacing: 0.07em;
-  }
 }
 
 #about .text span {
@@ -469,28 +429,8 @@ section > div {
   background-image: url("img/layout.jpg");
 }
 
-#creations > div {
+#creations > .layer {
   min-height: calc(100vh - 50px);
-}
-
-#creations > div > .main-content {
-  padding: 20px 0;
-  padding-bottom: 130px;
-  margin: auto;
-  width: 90%;
-}
-
-@media only screen and (min-width: 1024px) {
-  #creations > div > .main-content {
-    padding-top: 40px;
-  }
-}
-
-#creations .miniatures {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 #creations figure {
@@ -505,23 +445,12 @@ section > div {
   opacity: 1;
 }
 
-@media only screen and (min-width: 768px) {
-  #creations figure {
-    width: 48%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  #creations figure {
-    width: 31%;
-  }
-}
-
 /* manges fadeIn effect like */
 #creations figure.hidden {
   opacity: 0;
   height: 0;
   margin-bottom: 0;
+  border: none;
   display: block;
 }
 
@@ -539,6 +468,7 @@ section > div {
 #creations .creas {
   width: 100%;
   display: block;
+  border: none;
   border-radius: 2px;
   transition: -webkit-filter 0.5s;
   transition: filter 0.5s;
@@ -560,13 +490,12 @@ section > div {
 }
 
 #creations .more {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 130px;
 }
-
 @media only screen and (min-width: 1024px) {
   #creations .more {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 }
 
@@ -601,33 +530,9 @@ section > div {
   background-image: url("img/phone.jpg");
 }
 
-#contact > div {
+#contact > .layer {
   /*background-color: rgba(256, 256, 256, 0.6);*/
   min-height: calc(100vh - 75px);
-}
-
-#contact > div > div {
-  width: 90%;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  #contact > div > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  #contact > div > div {
-    width: 70%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
 }
 
 #contact .contact-form {
@@ -635,21 +540,17 @@ section > div {
   min-height: 25vh;
   background-color: rgba(256, 256, 256, 0.8);
   padding: 10px;
-  border-radius: 2px;
   margin-bottom: 20px;
+  border-radius: 2px;
   border: solid 1px rgba(0,0,0,0.2);
 }
-
 @media only screen and (min-width: 768px) {
   #contact .contact-form {
     display: flex;
     flex-direction: column;
-    width: 60%;
     padding: 15px;
-    margin-bottom: 0;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   #contact .contact-form {
     padding: 20px;
@@ -665,17 +566,10 @@ section > div {
   font-size: 20px;
   display: none;
 }
-
 @media only screen and (min-width: 768px) {
   #contact form legend {
     font-size: 24px;
     margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .contact-form form div {
-    flex-direction: column;
   }
 }
 
@@ -691,7 +585,6 @@ section > div {
   transition: box-shadow 0.7s ease;
   font-family: "Roboto", Helvetica, sans-serif;
 }
-
 @media only screen and (min-width: 768px) {
   .contact-form input, 
   .contact-form textarea {
@@ -707,7 +600,6 @@ section > div {
   display: none;
   color: #333;
 }
-
 @media only screen and (min-width: 768px) {
   .contact-form label {
     display: flex;
@@ -758,25 +650,24 @@ section > div {
 
 #contact .contact-info {
   width: 100%;
+  height: 100%;
   min-height: 25vh;
   background-color: rgba(256, 256, 256, 0.8);
   padding: 10px;
+  margin-bottom: 20px;
   color: #009688;
   border-radius: 2px;
   border: solid 1px rgba(0,0,0,0.2);
 }
-
 @media only screen and (min-width: 768px) {
   #contact .contact-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35%;
     padding: 15px;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   #contact .contact-info {
     padding: 20px;
@@ -786,7 +677,6 @@ section > div {
 .contact-info > * {
   padding: 5px 0;
 }
-
 @media only screen and (min-width: 768px) {
   .contact-info > * {
     padding: 10px 0;
@@ -794,16 +684,8 @@ section > div {
 }
 
 .contact-info img {
-  width: 20%;
-  min-width: 80px;
+  width: 120px;
   border-radius: 2px;
-}
-
-@media only screen and (min-width: 768px) {
-  .contact-info img {
-    width: 40%;
-    min-height: 50px; /*for ie img size bug*/
-  }
 }
 
 .contact-info .lead {
@@ -819,7 +701,6 @@ section > div {
 .contact-info div {
   padding: 10px 0;
 }
-
 @media only screen and (min-width: 768px) {
   .contact-info div {
     display: flex;
