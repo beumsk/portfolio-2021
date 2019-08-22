@@ -296,6 +296,24 @@ section > .layer {
   line-height: 50px;
 }
 
+.next-section .visible-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.next-section a:focus .visible-hidden {
+    clip: auto;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    width: auto;
+    color: transparent;
+}
+
 
 
 main {
@@ -381,6 +399,7 @@ main {
 
 #about .text {
   padding-bottom: 130px;
+  text-shadow: 0 0 5px white;
 }
 
 #about .text .lead {
@@ -403,6 +422,7 @@ main {
 
 #about .text strong {
   color: #009688;
+  text-shadow: none;
 }
 
 #about .text a {
@@ -412,6 +432,7 @@ main {
   border: solid 1px #009688;
   border-radius: 2px;
   text-decoration: none;
+  text-shadow: none;
   transition: box-shadow 1s ease, color 1s ease;
   cursor: pointer;
 }
