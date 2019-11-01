@@ -467,7 +467,7 @@ main {
   opacity: 1;
 }
 
-/* manges fadeIn effect like */
+/* handles fadeIn like effect */
 #creations figure.hidden {
   opacity: 0;
   height: 0;
@@ -482,33 +482,46 @@ main {
           filter: brightness(110%);
 }
 
-#creations figure a:hover figcaption,
-#creations figure a:focus figcaption {
-  bottom: 0;
-}
-
 #creations .creas {
   width: 100%;
   display: block;
   border: none;
   border-radius: 2px;
   transition: -webkit-filter 0.5s;
-  transition: filter 0.5s;
+  transition: filter 1s;
 }
 
 #creations figcaption {
   border-top: solid 1px rgba(0,0,0,0.2);
   position: absolute;
-  bottom: -30px;
+  bottom: 0px;
   margin: 0;
+  padding: 0 10px;
   text-align: center;
   width: 100%;
   color: #333;
   background-color: rgba(256,256,256,0.9);
-  line-height: 30px;
-  font-size: 20px;
+  height: 40px;
   border-radius: 0 0 2px 2px;
-  transition: bottom 0.5s ease;
+  transition: all 0.5s ease-in-out;
+  /*overflow-y: auto;*/
+}
+
+#creations figure a:hover figcaption,
+#creations figure a:focus figcaption {
+  height: 100%;
+}
+
+#creations figcaption p {
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+#creations figcaption .lead {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  border-bottom: solid 1px;
 }
 
 #creations .more {
