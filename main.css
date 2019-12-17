@@ -476,8 +476,8 @@ main {
   display: block;
 }
 
-#creations figure a:hover img,
-#creations figure a:focus img {
+#creations a:hover figure img,
+#creations a:focus figure img {
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
 }
@@ -507,8 +507,8 @@ main {
   /*overflow-y: auto;*/
 }
 
-#creations figure a:hover figcaption,
-#creations figure a:focus figcaption {
+#creations a:hover figure figcaption,
+#creations a:focus figure figcaption {
   height: 100%;
 }
 
