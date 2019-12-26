@@ -64,16 +64,17 @@
 
 <!-- HEADER; navigation bar -->
 <header>
-  <!-- header for small screens -->
+  <!-- title and logo -->
   <div class="main-header">
-    <a class="title-header" href="#home" title="Go back Home"><img src="img/logo-white.png" alt="Rémy Beumier's logo"><span>Rémy Beumier</span></a>
-    <a class="burger" style="float: right"><i class="fa fa-bars"></i></a>
-    <a class="cross hidden" style="float: right"><i class="fa fa-times"></i></a>
+    <a class="title-header" href="#home" title="Go back Home">
+      <img src="img/logo-white.png" alt="Rémy Beumier's logo">
+      <span>Rémy Beumier</span>
+    </a>
   </div>
   
   <!-- expandable menu on small screen or menu on bigger ones -->
-  <nav>
-    <ul class="menu hidden">
+  <nav class="menu hidden">
+    <ul>
       <li><a href="#about" class="int-links" title="Learn a bit about me"><i class="fa fa-quote-left"></i> About</a></li>
       <li><a href="#creations" class="int-links" title="Check my projects"><i class="fa fa-laptop"></i> Creations</a></li>
       <li><a href="#contact" class="int-links" title="Find my contact info"><i class="fa fa-vcard"></i> Contact</a></li>
@@ -586,6 +587,16 @@
     </div>
   </section>
 </main>
+
+<!-- BOTTOM NAV; mobile nav at bottom -->
+<nav class="bottom-nav">
+  <ul>
+    <li><a href="#home" title="Go back home"><i class="fa fa-home"></i> <span class="sr-only">Home</span></a></li>
+    <li><a href="#about" title="Learn a bit about me"><i class="fa fa-quote-left"></i> <span class="sr-only">About</span></a></li>
+    <li><a href="#creations" title="Check my projects"><i class="fa fa-laptop"></i> <span class="sr-only">Creations</span></a></li>
+    <li><a href="#contact" title="Find my contact info"><i class="fa fa-vcard"></i> <span class="sr-only">Contact</span></a></li>
+  </ul>
+</nav>
 
 <!-- FOOTER -->
 <footer>

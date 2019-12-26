@@ -1,52 +1,25 @@
-// manage small device menu
-var burger = document.querySelector(".burger");
-var cross = document.querySelector(".cross");
-var menu = document.querySelector(".menu");
-
-burger.addEventListener("click", openMenu);
-cross.addEventListener("click", closeMenu);
-
-function openMenu() {
-  menu.classList.remove("hidden");
-  burger.classList.add("hidden");
-  cross.classList.remove("hidden");
-};
-
-function closeMenu() {
-  menu.classList.add("hidden");
-  burger.classList.remove("hidden");
-  cross.classList.add("hidden");
-};
-
-
-
-// Manage links to close small device menu; smooth scrolling is handled by zenscroll script
-var scrollLinks = document.querySelectorAll(".title-header, .int-links, .ext-links");
-for (var i=0; i<scrollLinks.length; i++) {
-  scrollLinks[i].addEventListener("click", closeMenu);
-}
-
-
-
 // Manage scrollspy
 var section = document.querySelectorAll("section");
 var sections = {};
 
 window.onscroll = function() {
-  if (window.matchMedia("(min-width: 768px)").matches) {
     Array.prototype.forEach.call(section, function(e) {
       sections[e.id] = e.offsetTop - 50;
     });
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
     for (var i in sections) {
       if (sections[i] <= scrollPosition) {
-        if (document.querySelector('.active')) {
-          document.querySelector('.active').classList.remove("active");
+        if (document.querySelector(".active")) {
+          document.querySelector(".active").classList.remove("active");
         }
-        document.querySelector('a[href*=' + i + ']').classList.add("active");
+        if (window.matchMedia("(min-width: 768px)").matches) {
+          document.querySelector("header a[href*=" + i + "]").classList.add("active");
+        }
+        else {
+          document.querySelector(".bottom-nav a[href*=" + i + "]").classList.add("active");
+        }
       }
     }
-  }
 };
 
 
