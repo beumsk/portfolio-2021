@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+  <meta charset="UTF-8">
+  <title>Rémy Beumier Resume</title>
+
+  <style>
+    /* other font for titles? */
+    /* #009688 */
+    /* #00796b */
+
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica;
+      background: #087B70;
+      background: linear-gradient(135deg, #087B70 50%, #009688 50%);
+      background-attachment: fixed;
+      color: white;
+      line-height: 1.3;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, li {
+      margin: 5px 0;
+    }
+    @media (min-width: 480px) {
+      h1, h2, h3, h4, h5, h6, p, li {
+        margin: 10px 0;
+      }
+    }
+
+    .emoji {
+      font-size: 80%;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .list-no {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .list-block {
+      padding-left: 0;
+      list-style-type: none;
+    }
+    .list-block li {
+      display: inline-block;
+      border: solid 1px;
+      padding: 5px;
+      margin: 5px 0;
+    }
+
+    @media (min-width: 768px) {
+      .list-block li {
+        display: block;
+      }
+    }
+
+    .item:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+
+    section {
+      /*box-shadow: 0 0 4px 0px white; */
+      /*background: rgba(0,0,0,0.1);*/
+      margin: 10px;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 2em;
+      letter-spacing: 0.1em;
+      /*color: #00796b;*/
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.7em;
+      border-bottom: solid 1px lightgrey;
+      border-top: solid 1px lightgrey;
+      padding: 5px 0;
+    }
+
+    h3 {
+      font-size: 1.2em;
+    }
+
+    a {
+      color: white;
+    }
+    a:hover {
+      color: lightgrey;
+    }
+
+    .resume {
+      min-width: 260px;
+    }
+
+    @media (min-width: 480px) {
+      .resume {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 2fr minmax(100px, 200px);
+        grid-template-columns: 2fr minmax(100px, 200px);
+        -ms-grid-rows: auto-fill 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto-fill 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+          "name photo"
+          "about about"
+          "experience experience"
+          "projects projects"
+          "articles articles"
+          "skills skills"
+          "languages languages"
+          "contact contact";
+      }
+    }
+
+    @media (min-width: 768px) {
+      .resume {
+        -ms-grid-columns: 2fr minmax(100px, 260px);
+        grid-template-columns: 2fr minmax(100px, 260px);
+        grid-template-areas: 
+          "name photo"
+          "about photo"
+          "experience contact"
+          "experience skills"
+          "projects languages"
+          "articles articles";
+      }
+    }
+
+    .name {
+      grid-area: name;
+      font-size: 120%;
+    }
+    @media (min-width: 480px) {
+      .name {
+        text-align: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 130%;
+      }
+    }
+
+    .photo {
+      grid-area: photo;
+      overflow-x: hidden;
+    }
+
+    .photo img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      display: block;
+    }
+
+    .about {
+      grid-area: about;
+      font-size: 110%;
+    }
+
+    .experience {
+      grid-area: experience;
+    }
+
+    .experience .detail {
+      font-size: 90%;
+      font-style: italic;
+    }
+
+    .projects {
+      grid-area: projects;
+    }
+
+    .articles {
+      grid-area: articles;
+    }
+
+    .contact {
+      grid-area: contact;
+    }
+
+    .skills {
+      grid-area: skills;
+    }
+
+    .languages {
+      grid-area: languages;
+    }
+
+    @media (min-width: 480px) {
+      .name {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+      }
+      .photo {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+      }
+      .about {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+      }
+      .experience {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+      }
+      .projects {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+      }
+      .articles {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+      }
+      .contact {
+        -ms-grid-row: 8;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+      }
+      .skills {
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+      }
+      .languages {
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .name {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+      }
+      .photo {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 2;
+      }
+      .about {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+      }
+      .experience {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+      }
+      .projects {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+      }
+      .articles {
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+      }
+      .contact {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+      }
+      .skills {
+        -ms-grid-row: 4;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+      }
+      .languages {
+        -ms-grid-row: 5;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        color: #333;
+      }
+
+      a {
+        color: #333;
+      }
+
+      .resume {
+        display: block;
+      }
+    }
+
+    @media not print {
+      .cta {
+        margin: 15px 0;
+      }
+
+      .cta a {
+        background: white;
+        color: #333;
+        border: solid 1px white;
+        padding: 5px;
+        text-decoration: none;
+      }
+
+      .cta a:hover {
+        background: transparent;
+        color: white;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <article class="resume">
+    
+    <section class="name">
+      <h1>Rémy Beumier</h1>
+      <p class="subtitle">Front-end Developer</p>
+    </section>
+    
+    <section class="photo">
+      <img src="https://remybeumier.be/img/profile.jpg" alt="profile image Rémy Beumier">
+    </section>
+
+    <section class="about">
+      <!-- <h2>About me <span class="emoji">🌍</span></h2> -->
+      <p>I'm a web lover focused on front-end technologies.</p>
+      <p>I code everyday for a living and a hobby in Brussels always looking to improve myself by learning new technologies, tips and tricks.</p>
+    </section>
+
+    <section class="experience">
+      <h2>Experience <span class="emoji">💼</span></h2>
+      <div class="item">
+        <h3>Front-end Developer</h3>
+        <p class="detail">KPMG // May 2017 - Now</p>
+        <ul>  
+          <li>Umbraco CMS</li>
+          <li>Sharepoint</li>
+          <li>AEM</li>
+        </ul>
+      </div>
+      
+      <div class="item">
+        <h3>Front-end Developer</h3>
+        <p class="detail">FreeCodeCamp.org // May 2017 - Now</p>
+        <ul>  
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="projects">
+      <h2>Projects <span class="emoji">⚙️</span></h2>
+      <div class="item">
+        <h3>Games</h3>
+        <p>Collection of micro application games built with HTML, CSS and Javascript.</p>
+        <p class="link"><a href="https://codepen.io/collection/nZpVKb" target="_blank">See collection</a></p>
+      </div>
+      
+      <div class="item">
+        <h3>API</h3>
+        <p>Collection of micro applications based on API's</p>
+        <p class="link"><a href="https://codepen.io/collection/DZrGGj" target="_blank">See collection</a></p>
+      </div>
+      
+      <div class="item">
+        <h3>Tools</h3>
+        <p>Collection of micro application tools built with HTML, CSS and Javascript.</p>
+        <p class="link"><a href="https://codepen.io/collection/AZKOYW" target="_blank">See collection</a></p>
+      </div>
+    </section>
+    
+    <section class="articles">
+      <h2>Articles <span class="emoji">📰</span></h2>
+      <ul class="list-no">
+        <li>
+          <a href="https://24days.in/umbraco-cms/2019/responsive-hybrid-navigation/" target="_blank">
+            Create a Responsive and Hybrid Navigation in Umbraco 7
+          </a>
+        </li>
+        <li>
+          <a href="https://dev.to/beumsk/how-to-add-emoji-s-in-your-website-using-html-css-or-javascript-4g6g" target="_blank">
+            How to add Emoji's in your website, using HTML, CSS or JavaScript
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Skills <span class="emoji">💻</span></h2>
+      <ul class="list-block">
+        <li>HTML5</li>  
+        <li>CSS3</li>
+        <li>ES6</li>
+        <li>Git</li>
+        <li>Umbraco</li>
+      </ul>
+    </section>
+
+    <section class="languages">
+      <h2>Languages <span class="emoji">🌍</span></h2>
+      <ul class="list-block">
+        <li>French</li>  
+        <li>English</li>
+        <li>Dutch</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact <span class="emoji">📧</span></h2>
+      <p class="cta"><a href="mailto:remy.beumier@gmail.com" target="_blank">remy.beumier@gmail.com</a></p>
+      <p class="cta"><a href="https://remybeumier.be" target="_blank">remybeumier.be</a></p>
+    </section>
+    
+  </article>
+
+</body>
+</html>
