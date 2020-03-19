@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 16px;
   min-width: 280px;
 }
@@ -22,7 +22,7 @@ header {
   min-width: 280px;
   letter-spacing: 0.1em;
   z-index: 100;
-  font-family: "Josefin Sans", Arial, sans-serif;
+  font-family: "Share Tech Mono", Arial, sans-serif;
 }
 
 .menu li a {
@@ -127,12 +127,14 @@ header {
 }
 
 .main-header span {
-  padding-left: 16px;
+  padding-left: 6px;
   padding-right: 6px;
 }
 
 .main-header img {
   vertical-align: middle;
+  position: relative;
+  top: -2px;
   height: 40px;
   padding-right: 10px;
   border: none;
@@ -173,6 +175,7 @@ header {
   color: #333;
   text-align: center;
   margin: 20px 0;
+  font-family: "Share Tech Mono", Arial, sans-serif;
   line-height: 50px;
   font-size: 28px;
   font-weight: 400;
@@ -320,7 +323,7 @@ main {
   background-color: rgba(256, 256, 256, 0.6);
   padding-top: 26vh;
   min-height: 100vh;
-  font-family: "Josefin Sans", Arial, sans-serif;
+  font-family: "Share Tech Mono", Arial, sans-serif;
 }
 
 #home h1 {
@@ -612,7 +615,7 @@ main {
   box-sizing: border-box;
   resize: none;
   transition: box-shadow 0.7s ease;
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 @media only screen and (min-width: 768px) {
   .contact-form input, 
