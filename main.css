@@ -829,4 +829,33 @@ footer p {
 footer img {
   vertical-align: middle;
   height: 16px;
+  position: relative;
+  top: -1px;
+}
+
+@media print {
+  header,
+  .bottom-nav,
+  .next-section,
+  .more {
+    display: none;
+  }
+
+  #home h1 {
+    color: #00796b;
+    -webkit-text-fill-color: unset;
+  }
+
+  #creations .col-xs-12,
+  #creations .load-1.hidden, 
+  #creations .load-2.hidden {
+    width: 50%;
+    display: block;
+    height: auto;
+    opacity: 1;
+  }
+
+  footer {
+    color: #009688;
+  }
 }
