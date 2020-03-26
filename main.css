@@ -1,3 +1,14 @@
+
+/*
+theme:          009688
+theme darker:   00796b
+text:           333
+white:          f5f5f5
+red:            d32f2f
+green:          388e3c
+*/
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +18,7 @@
 body {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 16px;
+  color: #333;
   min-width: 280px;
 }
 
@@ -15,7 +27,7 @@ body {
 /* HEADER; navigation bar */
 header {
   background-color: #009688;
-  background-image: linear-gradient(to left, #1C3230, #009688);
+  background-image: linear-gradient(to left, #333, #009688);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
   position: fixed; 
   width: 100%;
@@ -284,7 +296,7 @@ section > .layer {
 
 .next-section a:hover,
 .next-section a:focus {
-  color: #ffffff;
+  color: #f5f5f5;
   box-shadow: inset 0 0 0 2em #009688;
 }
 
@@ -339,7 +351,7 @@ main {
   text-align: center;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: #00796b;
+  color: #009688;
   background-image: -webkit-linear-gradient(#333, #009688); /* use of webkit to prevent IE to have undesired background*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -390,7 +402,6 @@ main {
 }
 
 #about > .layer {
-  /*background-color: rgba(256, 256, 256, 0.6);*/
   min-height: calc(100vh - 50px);
 }
 
@@ -400,7 +411,7 @@ main {
 }
 
 #about .text .lead {
-  color: #00796b;
+  color: #009688;
   text-shadow: 0 0 1px #f5f5f5;
   font-size: 20px;
 }
@@ -573,7 +584,6 @@ main {
 }
 
 #contact > .layer {
-  /*background-color: rgba(256, 256, 256, 0.6);*/
   min-height: calc(100vh - 75px);
 }
 
@@ -731,7 +741,7 @@ main {
 }
 
 .contact-info .lead {
-  color: #00796b;
+  color: #009688;
   text-shadow: 0 0 1px #f5f5f5;
   font-size: 20px;
 }
@@ -775,7 +785,7 @@ main {
   right: 0;
   min-width: 280px;
   background-color: #009688;
-  background-image: linear-gradient(to left, #1C3230, #009688);
+  background-image: linear-gradient(to left, #333, #009688);
   color: #f5f5f5;
   font-size: 14px;
 }
@@ -811,7 +821,7 @@ main {
 /* FOOTER SECTION; at bottom */
 footer {
   background-color: #009688;
-  background-image: linear-gradient(to left, #1C3230, #009688);
+  background-image: linear-gradient(to left, #333, #009688);
   text-align: center;
   color: #f5f5f5;
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.23), 0 -3px 10px rgba(0, 0, 0, 0.16);
@@ -847,7 +857,7 @@ footer img {
   }
 
   #home h1 {
-    color: #00796b;
+    color: #009688;
     -webkit-text-fill-color: unset;
   }
 
