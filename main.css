@@ -1,11 +1,12 @@
 
 /*
-theme:          009688
-theme darker:   00796b
-text:           333
-white:          f5f5f5
-red:            d32f2f
-green:          388e3c
+theme:          #009688
+theme darker:   #004d40
+theme lighter:  #26a69a
+text:           #333
+white:          #f5f5f5
+red:            #d32f2f
+green:          #388e3c
 */
 
 
@@ -27,7 +28,7 @@ body {
 /* HEADER; navigation bar */
 header {
   background-color: #009688;
-  background-image: linear-gradient(to left, #333, #009688);
+  background-image: linear-gradient(135deg, #26a69a, #004d40);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
   position: fixed; 
   width: 100%;
@@ -91,7 +92,7 @@ header {
 .menu a:hover,
 .menu a:focus {
   background-color: rgba(256, 256, 256, 0.5);
-  color: #00796b;
+  color: #004d40;
 }
 @media only screen and (min-width: 768px) {
   .menu a:hover,
@@ -352,7 +353,7 @@ main {
   font-weight: 400;
   letter-spacing: 0.1em;
   color: #009688;
-  background-image: -webkit-linear-gradient(#333, #009688); /* use of webkit to prevent IE to have undesired background*/
+  background-image: -webkit-linear-gradient(135deg, #004d40, #26a69a); /* use of webkit to prevent IE to have undesired background*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -414,6 +415,7 @@ main {
   color: #009688;
   text-shadow: 0 0 1px #f5f5f5;
   font-size: 20px;
+  padding-top: 0;
 }
 
 #about .text p {
@@ -435,7 +437,7 @@ main {
 }
 
 #about .text a:hover {
-  color: #00796b;
+  color: #004d40;
 }
 
 #about .text a.cta {
@@ -771,8 +773,8 @@ main {
 
 .contact-info a:hover,
 .contact-info a:focus {
-  color: #00796b;
-  border-bottom: solid 2px #00796b;
+  color: #004d40;
+  border-bottom: solid 2px #004d40;
 }
 
 
@@ -780,12 +782,13 @@ main {
 /* BOTTOM NAV */
 .bottom-nav {
   position: fixed;
+  z-index: 100;
   bottom: 0;
   left: 0;
   right: 0;
   min-width: 280px;
   background-color: #009688;
-  background-image: linear-gradient(to left, #333, #009688);
+  background-image: linear-gradient(135deg, #26a69a, #004d40);
   color: #f5f5f5;
   font-size: 14px;
 }
@@ -821,7 +824,7 @@ main {
 /* FOOTER SECTION; at bottom */
 footer {
   background-color: #009688;
-  background-image: linear-gradient(to left, #333, #009688);
+  background-image: linear-gradient(135deg, #26a69a, #004d40);
   text-align: center;
   color: #f5f5f5;
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.23), 0 -3px 10px rgba(0, 0, 0, 0.16);
