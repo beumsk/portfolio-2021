@@ -577,7 +577,6 @@ main {
 /* CONTACT SECTION; form, info */
 #contact {
   position: relative;
-  text-align: center;
   background-image: url("img/phone.jpg");
 }
 
@@ -647,13 +646,9 @@ main {
 }
 
 .contact-form label {
-  display: none;
+  text-align: left;
+  display: block;
   color: #333;
-}
-@media only screen and (min-width: 768px) {
-  .contact-form label {
-    display: flex;
-  }
 }
 
 .contact-form input:invalid:focus, 
