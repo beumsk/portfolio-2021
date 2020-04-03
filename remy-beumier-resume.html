@@ -359,9 +359,26 @@
       .photo img {
         margin: 0;
       }
+
+      h1, h2 {
+        color: #009688;
+      }
+
+      .subtitle, .detail {
+        opacity: 1;
+        color: #666;
+      }
+
+      .print-url {
+        font-size: 90%;
+      }
     }
 
     @media not print {
+      .print-only {
+        display: none;
+      }
+
       .cta {
         margin: 0;
       }
@@ -432,19 +449,28 @@
       <div class="item">
         <h3>Games</h3>
         <p class="detail">Collection of micro application games built with HTML, CSS and Javascript.</p>
-        <p><a href="https://codepen.io/collection/nZpVKb" target="_blank">See games collection</a></p>
+        <p>
+          <a href="https://codepen.io/collection/nZpVKb" target="_blank">See games collection</a>
+          <span class="print-only"> (https://codepen.io/collection/nZpVKb)</span>
+        </p>
       </div>
       
       <div class="item">
         <h3>API</h3>
-        <p class="detail">Collection of micro applications based on API's</p>
-        <p><a href="https://codepen.io/collection/DZrGGj" target="_blank">See API collection</a></p>
+        <p class="detail">Collection of micro applications based on API's.</p>
+        <p>
+          <a href="https://codepen.io/collection/DZrGGj" target="_blank">See API collection</a>
+          <span class="print-only"> (https://codepen.io/collection/DZrGGj)</span>
+        </p>
       </div>
-      
+
       <div class="item">
         <h3>Tools</h3>
         <p class="detail">Collection of micro application tools built with HTML, CSS and Javascript.</p>
-        <p><a href="https://codepen.io/collection/AZKOYW" target="_blank">See tools collection</a></p>
+        <p>
+          <a href="https://codepen.io/collection/AZKOYW" target="_blank">See tools collection</a>
+          <span class="print-only"> (https://codepen.io/collection/AZKOYW)</span>
+        </p>
       </div>
     </section>
     
@@ -452,14 +478,12 @@
       <h2>Articles <span class="emoji">📰</span></h2>
       <ul class="list-no">
         <li>
-          <a href="https://24days.in/umbraco-cms/2019/responsive-hybrid-navigation/" target="_blank">
-            Create a Responsive and Hybrid Navigation in Umbraco 7
-          </a>
+          <a href="https://24days.in/umbraco-cms/2019/responsive-hybrid-navigation" target="_blank">Create a Responsive and Hybrid Navigation in Umbraco 7</a><br>
+          <span class="print-only"> (https://24days.in/umbraco-cms/2019/responsive-hybrid-navigation)</span>
         </li>
         <li>
-          <a href="https://dev.to/beumsk/how-to-add-emoji-s-in-your-website-using-html-css-or-javascript-4g6g" target="_blank">
-            How to add Emoji's in your website, using HTML, CSS or JavaScript
-          </a>
+          <a href="https://dev.to/beumsk/how-to-add-emoji-s-in-your-website-using-html-css-or-javascript-4g6g" target="_blank">How to add Emoji's in your website, using HTML, CSS or JavaScript</a><br>
+          <span class="print-only"> (https://dev.to/beumsk/how-to-add-emoji-s-in-your-website-using-html-css-or-javascript-4g6g)</span>
         </li>
       </ul>
     </section>
