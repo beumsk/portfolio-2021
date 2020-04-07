@@ -358,7 +358,7 @@ main {
     font-size: 64px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   #home h1 {
     font-size: 78px;
   }
@@ -367,7 +367,7 @@ main {
 #home .subtitle {
   width: 90%;
   margin: auto;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
   letter-spacing: 0.1em;
   color: #333;
@@ -379,16 +379,20 @@ main {
 }
 @media only screen and (min-width: 992px) {
   #home .subtitle {
-    font-size: 36px;
+    font-size: 39px;
   }
 }
 
 #home img {
-  padding: 20px 0;
-  padding-bottom: 130px;
-  width: 20%;
-  min-width: 120px;
-  max-width: 280px;
+  padding: 20px 0 100px 0;
+  width: 120px;
+}
+@media only screen and (min-width: 768px) {
+  #home img {
+    width: 20%;
+    min-width: 144px;
+    max-width: 188px;
+  }
 }
 
 
@@ -588,17 +592,12 @@ main {
   width: 100%;
   min-height: 25vh;
   background-color: rgba(256, 256, 256, 0.8);
-  padding: 10px;
   margin-bottom: 20px;
   border-radius: 2px;
   border: solid 1px rgba(0,0,0,0.2);
+  padding: 15px;
 }
-@media only screen and (min-width: 768px) {
-  #contact .contact-form {
-    padding: 15px;
-  }
-}
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   #contact .contact-form {
     padding: 20px;
   }
@@ -611,13 +610,6 @@ main {
 #contact form legend {
   color: #009688;
   font-size: 20px;
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  #contact form legend {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
 }
 
 .contact-form input, 
@@ -631,12 +623,6 @@ main {
   resize: none;
   transition: box-shadow 0.7s ease;
   font-family: "Open Sans", Helvetica, sans-serif;
-}
-@media only screen and (min-width: 768px) {
-  .contact-form input, 
-  .contact-form textarea {
-    width: 100%;
-  }
 }
 
 .contact-form textarea {
@@ -690,18 +676,13 @@ main {
   height: 100%;
   min-height: 25vh;
   background-color: rgba(256, 256, 256, 0.8);
-  padding: 10px;
   margin-bottom: 20px;
   color: #009688;
   border-radius: 2px;
   border: solid 1px rgba(0,0,0,0.2);
+  padding: 15px;
 }
-@media only screen and (min-width: 768px) {
-  #contact .contact-info {
-    padding: 15px;
-  }
-}
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   #contact .contact-info {
     padding: 20px;
   }
@@ -710,7 +691,7 @@ main {
 .contact-info > p {
   padding: 5px 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .contact-info > p {
     padding: 10px 0;
   }
