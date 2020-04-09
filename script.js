@@ -37,7 +37,7 @@ moreButton.addEventListener("click", function() {
   }
   else if (load === 2) {
     for (var k=0; k<load2.length; k++) { load2[k].classList.remove("hidden"); }
-    moreButton.parentNode.innerHTML = "<a href='https://codepen.io/beumsk/pens/public/' target='_blank' rel='noreferrer noopener' style='text-decoration: none;'>More creations on Codepen</a>";
+    moreButton.parentNode.innerHTML = "<a href='https://codepen.io/beumsk/pens/public/' target='_blank' rel='noreferrer noopener'>More creations on Codepen</a>";
   }
 });
 

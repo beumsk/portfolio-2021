@@ -182,7 +182,6 @@ header {
 /* sections h2 titles */
 .section-title {
   color: #333;
-  text-align: center;
   margin: 20px 0;
   font-family: "Share Tech Mono", Arial, sans-serif;
   line-height: 50px;
@@ -190,6 +189,7 @@ header {
   font-weight: 400;
   letter-spacing: 0.1em;
   position: relative;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .section-title {
@@ -265,7 +265,6 @@ section {
 
 section > .layer {
   position: relative;
-  text-align: center;
   background-color: rgba(256, 256, 256, 0.8);
 }
 
@@ -289,6 +288,7 @@ section > .layer {
   height: 40px;
   transition: box-shadow 1s ease, color 1s ease;
   width: 40px;
+  text-align: center;
 }
 
 .next-section a:hover,
@@ -345,9 +345,9 @@ main {
   margin: auto;
   padding-bottom: 10px;
   font-size: 48px;
-  text-align: center;
   font-weight: 400;
   letter-spacing: 0.1em;
+  text-align: center;
   color: #009688;
   background-image: -webkit-linear-gradient(135deg, #004d40, #26a69a); /* use of webkit to prevent IE to have undesired background*/
   -webkit-background-clip: text;
@@ -368,8 +368,8 @@ main {
   width: 90%;
   margin: auto;
   font-size: 24px;
-  text-align: center;
   letter-spacing: 0.1em;
+  text-align: center;
   color: #333;
 }
 @media only screen and (min-width: 768px) {
@@ -384,8 +384,10 @@ main {
 }
 
 #home img {
+  display: block;
   padding: 20px 0 100px 0;
   width: 120px;
+  margin: auto;
 }
 @media only screen and (min-width: 768px) {
   #home img {
@@ -425,7 +427,6 @@ main {
 #about .text p, 
 #about .text .lead {
   margin: auto;
-  text-align: left;
   line-height: 150%;
   letter-spacing: 0.06em;
 }
@@ -462,7 +463,6 @@ main {
 
 /* CREATIONS SECTION; miniatures and links */
 #creations {
-  text-align: center;
   background-image: url("img/layout.jpg");
 }
 
@@ -514,10 +514,10 @@ main {
 #creations figcaption {
   border-top: solid 1px rgba(0,0,0,0.2);
   position: absolute;
+  text-align: center;
   bottom: 0px;
   margin: 0;
   padding: 0 10px;
-  text-align: center;
   width: 100%;
   color: #333;
   background-color: rgba(256,256,256,0.9);
@@ -547,6 +547,7 @@ main {
 #creations .more {
   padding-top: 0;
   padding-bottom: 130px;
+  text-align: center;
 }
 @media only screen and (min-width: 992px) {
   #creations .more {
@@ -556,15 +557,16 @@ main {
 
 #creations .more button,
 #creations .more a {
+  margin: auto;
   background-color: white;
   position: relative;
   color: #009688;
   padding: 10px 20px;
-  display: inline-block;
   border: 1px #009688 solid;
   border-radius: 2px;
   transition: box-shadow 1s ease, color 1s ease;
   font-size: 16px;
+  text-decoration: none;
 }
 
 #creations .more button:hover,
@@ -630,7 +632,6 @@ main {
 }
 
 .contact-form label {
-  text-align: left;
   display: block;
   color: #333;
 }
@@ -681,6 +682,7 @@ main {
   border-radius: 2px;
   border: solid 1px rgba(0,0,0,0.2);
   padding: 15px;
+  text-align: center;
 }
 @media only screen and (min-width: 992px) {
   #contact .contact-info {
