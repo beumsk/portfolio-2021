@@ -36,19 +36,18 @@
 
   <style>
     * {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      transition: color 0.4s ease-out, background 0.4s ease-out;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
     }
 
     body {
-      min-height: 100vh; 
       min-width: 260px;
+      min-height: 100vh;
+      line-height: 1.3;
       font-family: Open Sans, Arial, Helvetica, sans-serif;
       font-size: 16px;
-      line-height: 1.3;
       color: white;
       background: #009688;
       /*background-image: linear-gradient(135deg, #00796b 50%, #009688 50%);*/
@@ -57,15 +56,13 @@
     }
 
     section {
-      /*box-shadow: 0 0 4px 0px white; */
-      /*background: rgba(0,0,0,0.1);*/
       margin: 10px;
       padding: 10px;
     }
 
     h1, h2, h3, h4, h5, h6 {
-      font-weight: 400;
       margin-bottom: 10px;
+      font-weight: 400;
     }
 
     p, li {
@@ -87,10 +84,10 @@
     }
 
     h2 {
-      font-size: 1.7em;
+      padding: 5px 0;
       border-bottom: solid 1px lightgrey;
       border-top: solid 1px lightgrey;
-      padding: 5px 0;
+      font-size: 1.7em;
     }
 
     .emoji {
@@ -103,19 +100,20 @@
 
     a {
       color: white;
+      transition: color 0.4s ease-out, background 0.4s ease-out;
     }
     a:hover {
       color: lightgrey;
     }
 
     ul {
-      list-style-type: square;
       padding-left: 20px;
+      list-style-type: square;
     }
 
     .list-no {
-      list-style-type: none;
       padding: 0;
+      list-style-type: none;
     }
 
     .list-block {
@@ -131,9 +129,9 @@
 
     .list-block li {
       display: inline-block;
-      border: solid 1px;
-      padding: 5px;
       margin: 5px 0;
+      padding: 5px;
+      border: solid 1px;
     }
 
     @media (min-width: 768px) {
@@ -195,7 +193,6 @@
     }
     @media (min-width: 480px) {
       .name {
-        text-align: left;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -206,6 +203,7 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+        text-align: left;
         font-size: 1.3em;
       }
     }
@@ -216,11 +214,11 @@
     }
 
     .photo img {
+      display: block;
       width: 100%;
       max-width: 220px;
       height: auto;
       margin: auto;
-      display: block;
     }
 
     .about {
@@ -348,8 +346,8 @@
 
     @media print {
       body {
-        background: white;
         color: #333;
+        background: white;
       }
 
       a {
@@ -365,8 +363,8 @@
       }
 
       .subtitle, .detail {
-        opacity: 1;
         color: #666;
+        opacity: 1;
       }
 
       .print-url {
@@ -384,18 +382,18 @@
       }
 
       .cta a {
-        background: white;
-        color: #333;
-        border: solid 1px white;
         display: inline-block;
         margin: 5px 0;
         padding: 5px;
+        border: solid 1px white;
         text-decoration: none;
+        color: #333;
+        background: white;
       }
 
       .cta a:hover {
-        background: transparent;
         color: white;
+        background: transparent;
       }
     }
   </style>
