@@ -46,6 +46,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <link rel="stylesheet" href="bootstrap-grid.css">
+  <link rel="stylesheet" href="aos.css">
   <link rel="stylesheet" href="main.css">
   
   <title>Rémy Beumier | Front-end Developer</title>
@@ -93,7 +94,7 @@
     <div class="layer">
       <div class="container">
 
-        <div class="row">
+        <div class="row" data-aos="fade-down">
           <div class="col-xs-12">
             <h1>Rémy Beumier</h1>
             <p class="subtitle">Front-end Developer</p>
@@ -122,7 +123,7 @@
           <span><i class="fa fa-quote-left"></i>About</span>
         </h2>
 
-        <div class="row">
+        <div class="row" data-aos="fade-right">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             <div class="text">
               <p class="lead">My name is Rémy, I am a Web Lover in Brussels and I focus myself on Front-end Development.</p>
@@ -173,7 +174,7 @@
         </h2>
 
         <!-- miniatures are 16:9 and screenshots taken at 1366x768 and resized to 683x384 in jpg 30% -->
-        <div class="row">
+        <div class="row" data-aos="fade-left">
           <!-- Load 0 -->
           <div class="col-xs-12 col-sm-6 col-md-4">
             <a href="https://beumsk.github.io/Projects/snake" target="_blank" title="Reach live project" rel="noreferrer noopener">
@@ -544,7 +545,7 @@
           <span><i class="fa fa-vcard"></i>Contact</span>
         </h2>
         
-        <div class="row is-flex">
+        <div class="row is-flex" data-aos="fade-right">
           <div class="col-xs-12 col-md-8">
             <div class="contact-form">
               <form id="myform" class="myform" name="contact-form">
@@ -606,6 +607,7 @@
 
 <!-- JS Scripts -->
 <script src="zenscroll-min.js"></script><!-- Manages smooth scrolling https://github.com/zengabor/zenscroll -->
+<script src="aos.js"></script><!-- Manages on scroll animation -->
 <script src="script.js"></script>
 
 </body>
