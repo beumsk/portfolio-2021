@@ -282,6 +282,24 @@ svg.waves.down {
   transform: rotate(180deg);
 }
 
+/* hide svg in IE9,10,11 */
+@media screen and (min-width:0\0) {
+  svg.waves {
+    display: none;
+  }
+  section .container {
+    padding-bottom: 20px;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  svg.waves {
+    display: none;
+  }
+  section .container {
+    padding-bottom: 20px;
+  }
+}
+
 /* Next section link */
 .next-section {
   display: none;
