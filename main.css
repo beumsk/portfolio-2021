@@ -288,7 +288,10 @@ svg.waves.down {
     display: none;
   }
   section .container {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+  }
+  #creations .container {
+    padding-bottom: 80px;
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

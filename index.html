@@ -57,6 +57,25 @@
       emailjs.init("user_z6OXM5nDIkjUNllax5fZH");
     })();
   </script>
+  <!-- if no script allowed, disable AOS and show all creations from start -->
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+      #creations .load-1.hidden, #creations .load-2.hidden {
+        height: auto;
+        opacity: 1;
+      }
+      .more a.hidden {
+        display: inline;
+      }
+      .more button {
+        display: none;
+      }
+    </style>
+  </noscript>
 </head>
 
 
@@ -530,6 +549,7 @@
           <div class="col-xs-12">
             <div class="more">
               <button title="Click for more projects" style="-webkit-appearance: button;">More creations</button>
+              <a class="hidden" href='https://codepen.io/beumsk/pens/public/' target='_blank' rel='noreferrer noopener'>More creations on Codepen</a>
             </div>
           </div>
         </div>
