@@ -520,8 +520,8 @@ main {
   opacity: 0;
 }
 
-#creations a:hover figure img,
-#creations a:focus figure img {
+#creations a:hover figure > img,
+#creations a:focus figure > img {
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
 }
@@ -565,6 +565,11 @@ main {
   line-height: 40px;
   font-size: 20px;
   letter-spacing: 0.1em;
+}
+
+#creations figcaption .languages img {
+  width: 16px;
+  height: auto;
 }
 
 #creations .more {
