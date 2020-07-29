@@ -529,6 +529,7 @@ main {
 #creations .creas {
   display: block;
   width: 100%;
+  height: auto;
   border: none;
   border-radius: 2px;
   transition: -webkit-filter 0.5s;
