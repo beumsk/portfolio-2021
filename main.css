@@ -642,6 +642,7 @@ main {
   margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 2px;
+  font-size: 14px;
   font-family: "Open Sans", Helvetica, sans-serif;
   resize: none;
   transition: box-shadow 0.7s ease;
@@ -817,7 +818,7 @@ footer {
 
 footer p {
   line-height: 40px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 footer img {
