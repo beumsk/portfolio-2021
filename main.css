@@ -569,6 +569,7 @@ main {
 }
 
 #creations figcaption .languages img {
+  display: inline;
   width: 16px;
   height: auto;
 }
