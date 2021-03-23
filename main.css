@@ -575,27 +575,29 @@ main {
 }
 
 #creations .more {
-  padding-top: 0;
+  margin-top: 20px;
   text-align: center;
-}
-@media only screen and (min-width: 992px) {
-  #creations .more {
-    padding-top: 20px;
-  }
 }
 
 #creations .more button,
 #creations .more a {
+  display: inline-block;
   position: relative;
   margin: auto;
   padding: 10px 20px;
   border: 1px #009688 solid;
   border-radius: 2px;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 16px;
   text-decoration: none;
   color: #009688;
   background-color: white;
   transition: box-shadow 1s ease, color 1s ease;
+}
+
+#creations .more button.hidden,
+#creations .more a.hidden {
+  display: none;
 }
 
 #creations .more button:hover,
