@@ -42,12 +42,12 @@ header {
   display: block;
 }
 
-.hidden {
+.menu {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  header .hidden {
+  .menu {
     display: block;
   }
 }
@@ -558,7 +558,7 @@ main {
 
 #creations figcaption p {
   margin-bottom: 10px;
-  line-height: 32px;
+  line-height: 1.4;
 }
 
 #creations figcaption .lead {
