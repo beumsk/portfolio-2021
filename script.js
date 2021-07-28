@@ -49,8 +49,8 @@ AOS.init({
 
 
 // Manage .more creation button (button transforms into codepen link when all loaded)
-var load1 = document.querySelectorAll(".load-1");
-var load2 = document.querySelectorAll(".load-2");
+var load1 = document.getElementsByClassName("load-1");
+var load2 = document.getElementsByClassName("load-2");
 var moreButton = document.querySelector(".more > button");
 var moreLink = document.querySelector(".more > a");
 var load = 0;
